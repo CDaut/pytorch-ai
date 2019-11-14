@@ -1,0 +1,45 @@
+% Preamble
+% ---
+\documentclass{article}
+
+% Packages
+% ---
+\usepackage{amsmath} % Advanced math typesetting
+\usepackage[utf8]{inputenc} % Unicode support (Umlauts etc.)
+\usepackage[ngerman]{babel} % Change hyphenation rules
+\usepackage[autostyle]{csquotes}
+\usepackage{hyperref} % Add a link to your document
+\usepackage{graphicx} % Add pictures to your document
+\usepackage{listings} % Source code formatting and highlighting
+\usepackage{fancyhdr}
+\usepackage{biblatex}
+
+\author{Clemens Dautermann}
+\title{Grundbegriffe des maschinellen Lernens} 
+\date{\today{}}
+\pagestyle{fancy}
+
+
+\begin{document}
+\maketitle{}
+\newpage
+\tableofcontents{}
+\newpage
+
+\section{Was ist maschinelles Lernen?}
+Die wohl bekannteste und am häufigsten zitierte Definiton maschinellen Lernens stammt von Arthur Samuel aus dem Jahr 1959. Er war Pionier auf diesem Gebiet und rief den Begriff des \glqq machine learnings'' ins Leben. So sagte er:
+\begin{quote}
+	[Machine learning is the] field of study that gives computers the ability to learn without being explicitly programmed\cite{1}.
+	\begin{flushright}
+		---Arthur Samuel, 1959
+	\end{flushright}
+\end{quote}
+\newpage
+\begin{thebibliography}{99}
+	\bibitem{1}
+	Hands-On Machine Learning with Scikit-Learn and TensorFlow\newline
+	by Aurélien Géron\newline
+	published: March 2017 O'Reilly Media, Inc\newline
+	ISBN: 9781491962282
+\end{thebibliography}
+\end{document}
