@@ -2,3 +2,9 @@
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Was ist maschinelles Lernen?}{3}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Neuronale Netze}{3}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Maschinelles Lernen und menschliches Lernen}{3}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Der Aufbau eines neuronalen Netzes}{4}{subsection.2.2}
