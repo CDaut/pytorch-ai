@@ -6,6 +6,8 @@
 % ---
 \usepackage{amsmath} % Advanced math typesetting
 \usepackage[utf8]{inputenc} % Unicode support (Umlauts etc.)
+\usepackage[T1]{fontenc}
+\usepackage{biolinum}
 \usepackage[ngerman]{babel} % Change hyphenation rules
 \usepackage[autostyle]{csquotes}
 \usepackage{hyperref} % Add a link to your document
@@ -21,13 +23,14 @@
 
 
 \begin{document}
+\biolinum
 \maketitle{}
 \newpage
 \tableofcontents{}
 \newpage
 
 \section{Was ist maschinelles Lernen?}
-Die wohl bekannteste und am häufigsten zitierte Definiton maschinellen Lernens stammt von Arthur Samuel aus dem Jahr 1959. Er war Pionier auf diesem Gebiet und rief den Begriff des \glqq machine learnings'' ins Leben. So sagte er:
+Die wohl bekannteste und am häufigsten zitierte Definiton des maschinellen Lernens stammt von Arthur Samuel aus dem Jahr 1959. Er war Pionier auf diesem Gebiet und rief den Begriff \glqq machine learning'' ins Leben. So sagte er:
 \begin{quote}
 	[Machine learning is the] field of study that gives computers the ability to learn without being explicitly programmed\cite{1}.
 	\begin{flushright}
@@ -36,7 +39,7 @@ Die wohl bekannteste und am häufigsten zitierte Definiton maschinellen Lernens 
 \end{quote}
 Beim maschinellen lernen werden Computer also nicht mit einem bestimmten Algorythmus programmiert um eine Aufgabe zu lösen, sondern lernen eigenständig diese Aufgabe zu bewältigen. Dies geschieht zumeist, indem das Programm aus einer großen, bereits \glqq gelabelten'', Datenmenge mit Hilfe bestimmter Methoden, die im Folgenden weiter erläutert werden sollen, lernt, gewisse Muster abzuleiten um eine ähnliche Datenmenge selber \glqq labeln'' zu können. Als Label bezeichent man in diesem Fall die gewünschte Ausgabe des Programmes. Dies kann beispielsweise eine Klassifikation sein. Soll das Programm etwa handgeschriebene Ziffern erkennen können, so bezeichnet man das (bearbeitete) Bild der Ziffer als \glqq Input Verctor'' und die Information welche Ziffer der Copmputer hätte erkennen sollen, als \glqq Label ''. Soll jedoch maschinell erlernt werden, ein simuliertes Auto zu fahren, so bestünde der Input Vector aus Sensorinformationen und das Label würde aussagen, in welche Richtung das Lenkrad hätte gedreht werden sollen, wie viel Gas das Programm hätte geben sollen oder andere Steuerungsinformationen. Der Input Vector ist also immer die Eingabe, die der Computer erhält um daraus zu lernen und das Label ist die richtige Antwort, die vom Programm erwartet wurde. Für maschinelles Lernen wird also vor allem eins benötigt: Ein enormer Datensatz, der bereits gelabelt wurde, damit das Programm daraus lernen kann.\newline
 Natürlich werden für maschinelles Lernen trotzdem Algorythmen benötigt. Diese Algorythmen sind jedoch keine problemspezifischen Algorythmen, sondern Algorythmen für maschinelles Lernen. Eine der populärsten Methoden des maschinellen Lernens ist das sogenannte \glqq Neuronale Netz''. 
-
+\subsection{Einsatzgebiete maschinellen Lernens}
 \section{Neuronale Netze}
 bei Neuronalen Netzen handelt es sich um eine programminterne Struktur, die für das maschinelle Lernen genutzt wird. Wie der Name bereits vermuten lässt, ist diese Methode ein Versuch das menschliche Lernen nachzuahmen.
 \subsection{Maschinelles Lernen und menschliches Lernen}
@@ -58,12 +61,37 @@ Ein neuronales Netz besteht aus Neuronen und Verbindungen zwischen diesen. Es gi
 \includegraphics[width=\linewidth]{../graphics/Neural_Net.png}
 \caption{Ein einfaches neuronales Netz}
 \end{figure}
-Jedes Neuron hat außerdem eine sogenannte Aktivierungsfunktion, die sich von Neuron zu Neuron unterscheiden kann, und jede Kante einen asoziierten Bias. Ein neuronales Netz besteht also aus:\newline
+Jedes Neuron hat außerdem eine sogenannte Aktivierungsfunktion, die sich von Neuron zu Neuron unterscheiden kann, und jede Kante eine asoziierte Gewichtung und einen Bias. Ein neuronales Netz besteht also aus:\newline
 \begin{enumerate}
 	\item Neuronen mit gegebenenfalls verschiedenen Aktivierungsfunktionen, aufgeteilt in ein Input-, beliebig viele Hidden- und ein Output-Layer.
-	\item Verbindungen zwischen diesen Neuronen, die jeweils einen eigenen Bias besitzen.
+	\item Verbindungen zwischen diesen Neuronen, die jeweils einen eigenen Bias und eine Gewichtung besitzen.
 \end{enumerate}
 Sind alle Neuronen eines Layers jeweils mit allen Neuronen des nächsten Layers verbunden, wird das Layer als \glqq fully connected layer'' bezeichnet.
+\subsection{Berechnung des Ausgabevektors}
+\subsection{Der Lernprozess}
+\subsubsection{Backpropagation}
+\subsubsection{Fehlerfunktionen}
+\subsubsection{SGD}
+\subsubsection{Zusammenfassung}
+\subsection{Verschiedene Layerarten}
+\subsubsection{Fully connected Layers}
+\subsubsection{Convolutional Layers}
+\subsubsection{Pooling Layers}
+\section{PyTorch}
+\subsection{Datenvorbereitung}
+\subsection{Definieren des Netzes}
+\subsection{Trainieren des Netzes}
+\section{Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk für handgeschriebene Ziffern}
+\subsection{Aufgabe}
+\subsection{Der MNIST Datensatz}
+\subsection{Fragmentbasierte Erkennung}
+\subsection{Ergebnis}
+\section{Fallbeispiel II:\newline Eine selbsttrainierende KI für Tic-Tac-Toe}
+\subsection{Das Prinzip}
+\subsection{Chance-Tree Optimierung}
+\subsection{Lösung mittels eines neuronalen Netzes}
+\subsection{Vergleich}
+\section{Schlusswort}
 \newpage
 \begin{thebibliography}{99}
 	\bibitem{1}
