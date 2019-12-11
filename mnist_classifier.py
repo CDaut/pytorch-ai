@@ -17,6 +17,7 @@ test = datasets.MNIST('./datasets', train=False, download=True,
 trainset = torch.utils.data.DataLoader(train, batch_size=10, shuffle=True)
 testset = torch.utils.data.DataLoader(test, batch_size=10, shuffle=False)
 
+
 class Net(nn.Module):
     def __init__(self):
         super().__init__()
