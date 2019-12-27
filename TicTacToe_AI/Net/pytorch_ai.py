@@ -79,7 +79,7 @@ class Net(torch.nn.Module):
         return F.log_softmax(x, dim=1)
 
 
-net = Net()
+net = torch.load('./nets/net_3.pt')
 
 optimizer = optim.Adam(net.parameters(), lr=0.001)
 
@@ -95,5 +95,5 @@ for epoch in range(100):
         optimizer.step()
 
     print(loss)
-    torch.save(net, './nets/net_' + str(epoch) + '.pt')
+    torch.save(net, './nets/net_' + str(epoch + 3) + '.pt')
     testnet(net, testset)

@@ -1,6 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Neuron \newline Quelle: simple.wikipedia.org/wiki/File:Neuron.svg\newline Copyright: CC Attribution-Share Alike von Nutzer Dhp1080,\newline bearbeitet}}{4}{figure.1}
+\contentsline {figure}{\numberline {1}{\ignorespaces Neuron \newline Quelle: simple.wikipedia.org/wiki/File:Neuron.svg\newline Copyright: CC Attribution-Share Alike von Nutzer Dhp1080,\newline bearbeitet}}{4}{figure.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Ein einfaches neuronales Netz}}{5}{figure.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Ein einfaches neuronales Netz}}{5}{figure.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3}{\ignorespaces Der Plot der Sigmoid Funktion $\sigma (x)=\frac {e^x}{e^x+1}$}}{6}{figure.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4}{\ignorespaces Formel zur Berechnung eines Ausgabevektors aus einem Eingabevektor durch ein Layer Neuronen. }}{7}{figure.4}% 
