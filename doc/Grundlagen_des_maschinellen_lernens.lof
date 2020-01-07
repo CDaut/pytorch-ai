@@ -1,10 +1,20 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Neuron \newline Quelle: simple.wikipedia.org/wiki/File:Neuron.svg\newline Copyright: CC Attribution-Share Alike von Nutzer Dhp1080,\newline bearbeitet}}{4}{figure.1}% 
+\contentsline {figure}{\numberline {1}{\ignorespaces Neuron \newline Quelle: simple.wikipedia.org/wiki/File:Neuron.svg\newline Copyright: CC Attribution-Share Alike von Nutzer Dhp1080,\newline bearbeitet}}{6}{figure.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Ein einfaches neuronales Netz}}{5}{figure.2}% 
+\contentsline {figure}{\numberline {2}{\ignorespaces Ein einfaches neuronales Netz}}{7}{figure.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Der Plot der Sigmoid Funktion $\sigma (x)=\frac {e^x}{e^x+1}$}}{6}{figure.3}% 
+\contentsline {figure}{\numberline {3}{\ignorespaces Der Plot der Sigmoid Funktion $\sigma (x)=\frac {e^x}{e^x+1}$}}{8}{figure.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Formel zur Berechnung eines Ausgabevektors aus einem Eingabevektor durch ein Layer Neuronen. }}{7}{figure.4}% 
+\contentsline {figure}{\numberline {4}{\ignorespaces Formel zur Berechnung eines Ausgabevektors aus einem Eingabevektor durch ein Layer Neuronen. }}{9}{figure.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen quadratischen Fehler}}{10}{figure.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen absoluten Fehler}}{10}{figure.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7}{\ignorespaces Der Graph der Kreuzentropie Fehlerfunktion wenn das tats\IeC {\"a}chliche Label 1 ist}}{11}{figure.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8}{\ignorespaces Die Gleichung f\IeC {\"u}r den Kreuzentropiefehler}}{12}{figure.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen absoluten Fehler}}{12}{figure.9}% 

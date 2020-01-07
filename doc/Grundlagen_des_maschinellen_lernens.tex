@@ -41,7 +41,16 @@ Die wohl bekannteste und am häufigsten zitierte Definiton des maschinellen Lern
 \end{quote}
 Beim maschinellen lernen werden Computer also nicht mit einem bestimmten Algorythmus programmiert um eine Aufgabe zu lösen, sondern lernen eigenständig diese Aufgabe zu bewältigen. Dies geschieht zumeist, indem das Programm aus einer großen, bereits \glqq gelabelten'', Datenmenge mit Hilfe bestimmter Methoden, die im Folgenden weiter erläutert werden sollen, lernt, gewisse Muster abzuleiten um eine ähnliche Datenmenge selber \glqq labeln'' zu können.  Als Label bezeichent man in diesem Fall die gewünschte Ausgabe des Programmes. Dies kann beispielsweise eine Klassifikation sein. Soll das Programm etwa handgeschriebene Ziffern erkennen können, so bezeichnet man das (bearbeitete) Bild der Ziffer als \glqq Input Verctor'' und die Information welche Ziffer der Copmputer hätte erkennen sollen, als \glqq Label ''. Soll jedoch maschinell erlernt werden, ein simuliertes Auto zu fahren, so bestünde der Input Vector aus Sensorinformationen und das Label würde aussagen, in welche Richtung das Lenkrad hätte gedreht werden sollen, wie viel Gas das Programm hätte geben sollen oder andere Steuerungsinformationen. Der Input Vector ist also immer die Eingabe, die der Computer erhält um daraus zu lernen und das Label ist die richtige Antwort, die vom Programm erwartet wurde. Für maschinelles Lernen wird also vor allem eins benötigt: Ein enormer Datensatz, der bereits gelabelt wurde, damit das Programm daraus lernen kann.\newline
 Natürlich werden für maschinelles Lernen trotzdem Algorythmen benötigt. Diese Algorythmen sind jedoch keine problemspezifischen Algorythmen, sondern Algorythmen für maschinelles Lernen. Eine der populärsten Methoden des maschinellen Lernens ist das sogenannte \glqq Neuronale Netz''. 
-\subsection{Einsatzgebiete maschinellen Lernens}
+\subsection{Klassifizierungsprobleme}
+\subsection{Regressionsprobleme}
+\subsection{Gefahren von maschinellem Lernen}
+\subsubsection{Eignung der Datensätze}
+\subsubsection{Overfitting}
+\subsubsection{Unbewusste Manipulation der Daten}
+\section{Verschiedene Techniken maschinellen lernens}
+\subsection{Überwachtes Lernen}
+\subsection{Unüberwachtes Lernen}
+\subsection{Bestärkendes Lernen}
 \section{Neuronale Netze}
 bei Neuronalen Netzen handelt es sich um eine programminterne Struktur, die für das maschinelle Lernen genutzt wird. Wie der Name bereits vermuten lässt, ist diese Methode ein Versuch das menschliche Lernen nachzuahmen.
 \subsection{Maschinelles Lernen und menschliches Lernen}
@@ -153,11 +162,75 @@ Beachtet man jetzt noch, dass bei jedem Neuron die Aktivierungsfunktion angewand
 \newline
 Zur Vereinfachung wurde die Funktion hier auf den gesamten Ausgabevektor angewandt. Dies ist korrekt, sofern alle Neuronen eines Layers die selbe Aktivierungsfunktion aufweisen. Dies muss natürlich nicht immer so sein. Sind die Aktivierungsfunktionen der Neuronen eines Layers verschieden, so wird die Aktivierungsfunktion des jeweiligen Neurones separat auf das korrespondierende Element des Vektors $W\cdot\vec{a}+\vec{b}$ angewandt.
 \subsection{Der Lernprozess}
-Der Lernprozess gliedert sich in wenige wesentliche Schritte. Zuerst wird unter Verwendung des oben beschriebenen Prozesses aus einem Eingabevektor ein Ausgabevektor berechnet. Diese Vektoroperation wird im Lernprozess extrem oft durchgeführt, weshalb sich neuronale Netze besonders schnell auf Grafikkarten trainieren lassen. Diese sind für mathematische Operationen im Bereich der linearen Algebra, wie Matritzenmultiplikation oder Addition optimiert und werden daher auch als Vektorprozessoren bezeichnet.\newline
-Dieser Ausgabevektor wird nun, mit Hilfe einer Fehlerfunktion, mit dem erwarteten Ausgabevektor verglichen. Dabei ergibt sich ein Skalarfeld, sodass die Fehlerfunktion die Zuordnung $\mathbb{P} \to \varmathbb{R}$ vornimmt, wobei $\mathbb{P}$ alle Variablen des Netzes darstellt. Wenn also das Minimum dieser Fehlerfunktion bestimmt wird, wird der Fehler minimiert und das Netz lernt.\newline
-Eine Methode, die hier erläutert werden soll, dieses Minimum zu finden ist das Gradientenverfahren. Nachdem mit Hilfe dieses Verfahrens der Fehler mimnimiert wurde, werden die Variablen des neuronalen Netzes entsprechend angepasst. Diesen Prozess der Fehlerminimierung mittels des Gradientenverfahrens und der anschließenden Anpassung der Werte bezeichnet man auch als \glqq Backpropagation''. Es existieren auch noch andere Verfahren zur Fehlerminimierung, der Einfachheit halber soll hier aber nur Backpropagation erläutert werden.
-\subsubsection{Fehlerfunktionen}
-\subsubsection{Gradientenverfahren}
+Der Lernprozess gliedert sich in wenige wesentliche Schritte. Zuerst wird unter Verwendung des oben beschriebenen Prozesses aus einem Eingabevektor ein Ausgabevektor berechnet. Diese Berechnung wird im Lernprozess extrem oft durchgeführt, weshalb sich neuronale Netze besonders schnell auf Grafikkarten trainieren lassen. Diese sind für mathematische Operationen im Bereich der linearen Algebra, wie Matritzenmultiplikation oder Addition optimiert und werden daher auch als Vektorprozessoren bezeichnet.\newline
+Dieser Ausgabevektor wird nun, mit Hilfe einer Fehlerfunktion, mit dem erwarteten Ausgabevektor verglichen. Je größer dabei die Differenz zwischen erwartetem Ausgabevektor und tatsächlichem Ausgabevektor ist, desto größer ist der Wert der Fehlerfunktion. Der Ausgabewert dieser Fehlerfunktion wird als \glqq Fehler'' oder auch als \glqq Kosten'' bezeichnet. Wenn also das Minimum dieser Fehlerfunktion bestimmt wird, wird der Fehler minimiert und die tatsächliche Ausgabe des Netzes nähert sich der korrekten Ausgabe immer weiter an.\newline
+Eine Methode, die hier erläutert werden soll, dieses Minimum zu finden ist das Gradientenverfahren. Nachdem mit Hilfe dieses Verfahrens der Fehler mimnimiert wurde, werden die Parameter, also die Gewichtungen und Biases, des neuronalen Netzes entsprechend angepasst. Diesen Prozess der Fehlerminimierung mittels des Gradientenverfahrens und der anschließenden Anpassung der Werte bezeichnet man auch als \glqq Backpropagation''. Es existieren auch noch andere Verfahren zur Fehlerminimierung, der Einfachheit halber soll hier aber nur Backpropagation erläutert werden.
+\subsection{Fehlerfunktionen}
+Es existiert eine Vielzahl von Fehlerfunktionen, die alle für unterschiedliche Anwendungsgebiete unterschiedlich passend sind. Im Groben lassen sich allerdings Fehlerfunktionen, die für Klassifizierungsprobleme geeignet sind von solchen unterscheiden, die für Regressionsprobleme geeignet sind.
+\subsubsection{MSE -- Durchschnittlicher quadratischer Fehler}
+Der sogenannte durchschnittliche quadratische Fehler ist eine häufig genutzte Fehlerfunktion für Regressionsprobleme. Die englische Bezeichnung lautet \glqq Mean squared error'', woraus sich auch die Abkürzung \glqq MSE loss'' ergibt. Sie ist wie in Abbildung \ref{MSE_equation} dargestellt, definiert.
+\begin{figure}[h]
+	\begin{equation*}
+		MSE=\dfrac{\sum\limits_{i=1}^n(y_i-\hat{y_i})^2}{n}
+	\end{equation*}
+	\caption{Die Gleichung für den durchschnittlichen quadratischen Fehler}
+	\label{MSE_equation}
+\end{figure}
+\newline
+Wie der Name vermuten lässt, gibt diese Fehlerfunktion den Durchschnitt der quadrierten Differenzen zwischen dem vorausgesagten und dem tatsächlichen Ergebnis an. Aufgrund der Quadrierung des Fehlers, werden durch diese Funktion stark abweichende Werte wesentlich stärker gewichtet, als weniger stark abweichende Werte. Ihr Gradient ist außerdem einfach berechenbar, was für das Gradientenverfahren später relevant ist.\cite{3}
+\subsubsection{MAE -- Durchschnitztlicher absoluter Fehler}
+Bei dem durchschnittlichen absoluten Fehler handelt es sich ebenfalls um eine Fehlerfunktion, die für Regressionsprobleme eingesetzt wird. Die englische Bezeichnung lautet \glqq Mean absolute error''. Sie ist ähnlich wie der durchschnittliche quadratische Fehler definiert.
+\begin{figure}[h]
+	\begin{equation*}
+	MAE=\dfrac{\sum\limits_{i=1}^n|y_i-\hat{y_i}|}{n}
+	\end{equation*}
+	\caption{Die Gleichung für den durchschnittlichen absoluten Fehler}
+	\label{MAE_equation}
+\end{figure}
+\newline
+Auch hier wird die \glqq Richtung'' des Fehlers, in diesem Fall durch die Normierung, verworfen. Außerdem ist diese Fehlerfunktion nicht so anfällig gegenüber Ausreißern in den Daten, da dieser Fehler nicht quadriert wird. Ein Nachteil des durchschnittlichen absoluten Fehlers ist allerdings die höhere Komplexität zur Berechnung des Gradienten.\cite{3}
+\subsubsection{Kreuzentropiefehler}
+Der Kreuzentropiefehler ist die am häufigsten verwendete Fehlerfunktion für Klassifizierungsprobleme. Sie gibt den Fehler für eine Klassifizierung an, die den gegebenen Klassen Wahrscheinlichkeiten im Intervall $I=[0;1]$ zuordnet. Dabei steigt der Fehler stärker, je weiter sich die Vorhersage vom tatsächlichen Wert entfernt. Wie aus Abbildung \ref{CEL_Graph} hervorgeht, wird also sicheren, aber falschen Vorhersagen der höhste Fehlerwert zugeordnet. 
+\begin{figure}[h]
+	\begin{center}
+		\begin{tikzpicture}
+		\begin{axis}[width=0.7\linewidth, 
+		xmax=1, 
+		ymax=10, 
+		xmin=0, 
+		samples=10,
+		xlabel={vorhergesagte Wahrscheinlichkeit},
+		ylabel={Kreuzentropiefehler}]
+		\addplot[blue]{-ln(x))};
+		\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	\caption{Der Graph der Kreuzentropie Fehlerfunktion wenn das tatsächliche Label 1 ist}
+	\label{CEL_Graph}
+\end{figure}
+\newline
+Der Fehler steigt also mit zunehmender Abweichung der Vorhersage zum tatsächlichen Label rapide an.\newline 
+Mathematisch ist der Kreuzentropiefehler nach der Funktion in Abbildung \ref{CEL_Function} definiert, wobei $y$ einen Binärindikator darstellt, der angibt ob das zu klassifizierende Objekt tatsächlich zur Klasse gehört (dann ist er 1) und $p$ die vorausgesagte Wahrscheinlichkeit ob das Objekt zur Klasse gehört, beschreibt.
+\begin{figure}[h]
+	\begin{equation*}
+	CrossEntropyLoss=-(yln(p)+(1-y)ln(1-p))
+	\end{equation*}
+	\caption{Die Gleichung für den Kreuzentropiefehler}
+	\label{CEL_Function}
+\end{figure}
+\newline
+Hier fällt auf, dass, falls das Label 0 ist, der linke Teil der Gleichung weg fällt und falls es 1 ist, der Rechte. Wenn berechnetes und tatsächliches Label identisch sind, ist der Fehler stets 0.\newline
+Existieren mehr als 2 Klassen, handelt es sich also nicht mehr um eine Binärklassifizierung, müssen die Fehler nach der Gleichung in Abbildung \ref{CEL_Finction_cummulative} summiert werden.
+\begin{figure}[h]
+	\begin{equation*}
+	CrossEntropyLoss(M)=-\sum\limits_{c=1}^My_{o,c}ln(p_{o,c})
+	\end{equation*}
+	\caption{Die Gleichung für den durchschnittlichen absoluten Fehler}
+	\label{CEL_Finction_cummulative}
+\end{figure}
+\newline
+Dabei gibt M die Anzahl der Klassen an, c das Label für die Klasse und o die berechnete Klassifizierung für diese Klasse.
+\subsection{Gradientenverfahren}
 \subsection{Verschiedene Layerarten}
 \subsubsection{Fully connected Layers}
 \subsubsection{Convolutional Layers}
@@ -187,6 +260,12 @@ Eine Methode, die hier erläutert werden soll, dieses Minimum zu finden ist das 
 	\bibitem{2}
 	Die Logistik des Lernens eine Studie der LMU München\newline
 	Quelle: www.uni-muenchen.de/forschung/news/2013/\newline f-71-13\_kiebler\_nervenzellen.html --abgerufen am 16.11.2019
+	\bibitem{3}
+	Common Loss functions in machine learning\newline
+	Von Ravindra Parmar\newline
+	Veröffentlicht am 02.09.2018, abgerufen am 07.01.2020\newline
+	Quelle: https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23 
+	
 \end{thebibliography}
 \listoffigures
 \end{document}
