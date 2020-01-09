@@ -18,7 +18,7 @@
 \BOOKMARK [3][-]{subsubsection.3.5.1}{MSE \205 Durchschnittlicher quadratischer Fehler}{subsection.3.5}% 18
 \BOOKMARK [3][-]{subsubsection.3.5.2}{MAE \205 Durchschnitztlicher absoluter Fehler}{subsection.3.5}% 19
 \BOOKMARK [3][-]{subsubsection.3.5.3}{Kreuzentropiefehler}{subsection.3.5}% 20
-\BOOKMARK [2][-]{subsection.3.6}{Gradientenverfahren}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.6}{Gradientenverfahren und Backpropagation}{section.3}% 21
 \BOOKMARK [2][-]{subsection.3.7}{Verschiedene Layerarten}{section.3}% 22
 \BOOKMARK [3][-]{subsubsection.3.7.1}{Fully connected Layers}{subsection.3.7}% 23
 \BOOKMARK [3][-]{subsubsection.3.7.2}{Convolutional Layers}{subsection.3.7}% 24

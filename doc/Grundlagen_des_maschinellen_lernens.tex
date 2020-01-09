@@ -230,7 +230,35 @@ Existieren mehr als 2 Klassen, handelt es sich also nicht mehr um eine Binärkla
 \end{figure}
 \newline
 Dabei gibt M die Anzahl der Klassen an, c das Label für die Klasse und o die berechnete Klassifizierung für diese Klasse.
-\subsection{Gradientenverfahren}
+\subsection{Gradientenverfahren und Backpropagation}
+Das Gradientenverfahren ist ein Verfahren um das Minimum einer Funktion zu finden. Die Funktion, deren Minimum gefunden werden soll ist in diesem Fall die Fehlerfunktion. Diese ist von allen Gewichtungen und Biases des Netzwerkes abhängig, da sie direkt vom Ausgabevektor des Netzes abhängig ist. Der Gradient dieser Funktion ist in Abbildung \ref{Gradient_Function} dargestellt.
+\begin{figure}[h]
+	\begin{equation*}
+	\nabla C(w_1,b_1,\ldots,w_n,b_n)=
+	\begin{bmatrix}
+		\frac{\partial C}{\partial w_1}\\
+		\frac{\partial C}{\partial b_1}\\
+		\vdots\\
+		\frac{\partial C}{\partial w_n}\\
+		\frac{\partial C}{\partial b_n}
+	\end{bmatrix}
+	\end{equation*}
+	\caption{Die Gleichung für den Gradienten der Fehlerfunktion}
+	\label{Gradient_Function}
+\end{figure}
+\newline
+Um also das Ergebnis \glqq richtiger'' zu machen, müssen alle Gewichtungen und Biases negativ zu diesem Gradienten angepasst werden, da der Gradient ja den Hochpunkt angibt.\newline
+Diese Anpassung erfolgt, indem das Netz vom Ausgabelayer an, deshalb heißt das Verfahren Backpropagation, durchgegangen wird, und die Gewichtungen und Biases angepasst werden. Dies geschieht in der Regel mit hilfe der \glqq Lernrate'' $\eta$, mit der die Änderung nach der Formel in Abbildung \ref{Learning_Rate_Function} berechnet wird.
+\begin{figure}[h]
+	\begin{equation*}
+	w^n_{neu}=w^n_{alt}-\eta\times\frac{\partial C}{\partial w^n}
+	\end{equation*}
+	\caption{Die Gleichung für die Anpassung eines einzelnen Parameters}
+	\label{Learning_Rate_Function}
+\end{figure}
+\newline
+Diese Lernrate ist notwendig um nicht über das Minimum \glqq hinweg zu springen''. Sollte sie zu groß sein, passiert genau dies, da die Anpassungen der Parameter in zu großen Schritten erfolgt, sollte sie hingegen zu klein sein, lernt das Netz sehr langsam. Typische Werte sind abhängig von der zu erlernenden Aufgabe, liegen jedoch in der Regel bei etwa 0.01 bis 0.00001
+
 \subsection{Verschiedene Layerarten}
 \subsubsection{Fully connected Layers}
 \subsubsection{Convolutional Layers}
