@@ -43,40 +43,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.6}Gradientenverfahren und Backpropagation}{12}{subsection.3.6}% 
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.6.1}Lernrate}{12}{subsubsection.3.6.1}% 
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.7}Verschiedene Layerarten}{13}{subsection.3.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.1}Fully connected Layers}{13}{subsubsection.3.7.1}% 
+\contentsline {subsubsection}{\numberline {3.7.1}Fully connected Layers}{14}{subsubsection.3.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.2}Convolutional Layers}{13}{subsubsection.3.7.2}% 
+\contentsline {subsubsection}{\numberline {3.7.2}Convolutional Layers}{14}{subsubsection.3.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.3}Pooling Layers}{13}{subsubsection.3.7.3}% 
+\contentsline {subsubsection}{\numberline {3.7.3}Pooling Layers}{14}{subsubsection.3.7.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}PyTorch}{13}{section.4}% 
+\contentsline {section}{\numberline {4}PyTorch}{14}{section.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Datenvorbereitung}{13}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.1}Datenvorbereitung}{14}{subsection.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Definieren des Netzes}{13}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.2}Definieren des Netzes}{14}{subsection.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Trainieren des Netzes}{13}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.3}Trainieren des Netzes}{14}{subsection.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk f\IeC {\"u}r handgeschriebene Ziffern}{13}{section.5}% 
+\contentsline {section}{\numberline {5}Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk f\IeC {\"u}r handgeschriebene Ziffern}{14}{section.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Aufgabe}{13}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.1}Aufgabe}{14}{subsection.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Der MNIST Datensatz}{13}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.2}Der MNIST Datensatz}{14}{subsection.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Fragmentbasierte Erkennung}{13}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.3}Fragmentbasierte Erkennung}{14}{subsection.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Ergebnis}{13}{subsection.5.4}% 
+\contentsline {subsection}{\numberline {5.4}Ergebnis}{14}{subsection.5.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fallbeispiel II:\newline Eine selbsttrainierende KI f\IeC {\"u}r Tic-Tac-Toe}{13}{section.6}% 
+\contentsline {section}{\numberline {6}Fallbeispiel II:\newline Eine selbsttrainierende KI f\IeC {\"u}r Tic-Tac-Toe}{14}{section.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Das Prinzip}{13}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.1}Das Prinzip}{14}{subsection.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Chance-Tree Optimierung}{13}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.2}Chance-Tree Optimierung}{14}{subsection.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}L\IeC {\"o}sung mittels eines neuronalen Netzes}{13}{subsection.6.3}% 
+\contentsline {subsection}{\numberline {6.3}L\IeC {\"o}sung mittels eines neuronalen Netzes}{14}{subsection.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Vergleich}{13}{subsection.6.4}% 
+\contentsline {subsection}{\numberline {6.4}Vergleich}{14}{subsection.6.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Schlusswort}{13}{section.7}% 
+\contentsline {section}{\numberline {7}Schlusswort}{14}{section.7}% 

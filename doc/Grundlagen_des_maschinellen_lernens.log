@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.27)  9 JAN 2020 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.27)  11 JAN 2020 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1382,7 +1382,7 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 LaTeX Warning: Citation '1' on page 4 undefined on input line 37.
 
 [4]
-<../graphics/Neuron.png, id=234, 299.9205pt x 158.994pt>
+<../graphics/Neuron.png, id=239, 299.9205pt x 158.994pt>
 File: ../graphics/Neuron.png Graphic file (type png)
 <use ../graphics/Neuron.png>
 Package pdftex.def Info: ../graphics/Neuron.png  used on input line 61.
@@ -1395,7 +1395,7 @@ LaTeX Warning: Citation '2' on page 5 undefined on input line 67.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5]
-<../graphics/Neural_Net.png, id=241, 548.16795pt x 432.8973pt>
+<../graphics/Neural_Net.png, id=246, 548.16795pt x 432.8973pt>
 File: ../graphics/Neural_Net.png Graphic file (type png)
 <use ../graphics/Neural_Net.png>
 Package pdftex.def Info: ../graphics/Neural_Net.png  used on input line 72.
@@ -1446,19 +1446,26 @@ nded (in y). (see also unbounded coords=jump).
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11]
+<../graphics/gdf_big_lr.png, id=303, 484.57034pt x 482.0409pt>
+File: ../graphics/gdf_big_lr.png Graphic file (type png)
+<use ../graphics/gdf_big_lr.png>
+Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 265.
+(pdftex.def)             Requested size: 172.5pt x 171.60013pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[12]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 270.
+(hyperref)                removing `\newline' on input line 281.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 275.
+(hyperref)                removing `\newline' on input line 286.
 
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 292--296
+[13 <../graphics/gdf_big_lr.png>] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 303--307
 \T1/LinuxBiolinumT-TLF/m/n/10 Quelle: https://towardsdatascience.com/common-los
 s-functions-in-machine-
  []
@@ -1467,16 +1474,16 @@ s-functions-in-machine-
 \tf@lof=\write7
 \openout7 = `Grundlagen_des_maschinellen_lernens.lof'.
 
- [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
+ [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
 
 (./Grundlagen_des_maschinellen_lernens.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 299.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 310.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
 Package rerunfilecheck Info: File `Grundlagen_des_maschinellen_lernens.out' has
  not changed.
-(rerunfilecheck)             Checksum: 41516AE22E63742FED19399773C7C20F;3003.
+(rerunfilecheck)             Checksum: 7E0FBC47986DDE9EDCD0A605F1EC2BAC;3071.
 
 
 LaTeX Warning: There were undefined references.
@@ -1492,13 +1499,13 @@ un.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37213 strings out of 492615
- 833403 string characters out of 6131389
- 1359789 words of memory out of 5000000
- 40449 multiletter control sequences out of 15000+600000
+ 37224 strings out of 492615
+ 833630 string characters out of 6131389
+ 1359847 words of memory out of 5000000
+ 40455 multiletter control sequences out of 15000+600000
  78207 words of font info for 117 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 62i,14n,100p,1509b,3432s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,14n,100p,1509b,3448s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}</usr/share/texlive/texm
 f-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-
@@ -1511,11 +1518,11 @@ hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Grundlagen_des_maschinellen_lernens.pdf (14 pages, 385078 byt
+Output written on Grundlagen_des_maschinellen_lernens.pdf (15 pages, 421440 byt
 es).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
- 359 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 410 PDF objects out of 1000 (max. 8388607)
+ 372 compressed objects within 4 object streams
+ 84 named destinations out of 1000 (max. 500000)
+ 356 words of extra memory for PDF output out of 10000 (max. 10000000)
 

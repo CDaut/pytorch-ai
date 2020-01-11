@@ -19,22 +19,23 @@
 \BOOKMARK [3][-]{subsubsection.3.5.2}{MAE \205 Durchschnitztlicher absoluter Fehler}{subsection.3.5}% 19
 \BOOKMARK [3][-]{subsubsection.3.5.3}{Kreuzentropiefehler}{subsection.3.5}% 20
 \BOOKMARK [2][-]{subsection.3.6}{Gradientenverfahren und Backpropagation}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.7}{Verschiedene Layerarten}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.7.1}{Fully connected Layers}{subsection.3.7}% 23
-\BOOKMARK [3][-]{subsubsection.3.7.2}{Convolutional Layers}{subsection.3.7}% 24
-\BOOKMARK [3][-]{subsubsection.3.7.3}{Pooling Layers}{subsection.3.7}% 25
-\BOOKMARK [1][-]{section.4}{PyTorch}{}% 26
-\BOOKMARK [2][-]{subsection.4.1}{Datenvorbereitung}{section.4}% 27
-\BOOKMARK [2][-]{subsection.4.2}{Definieren des Netzes}{section.4}% 28
-\BOOKMARK [2][-]{subsection.4.3}{Trainieren des Netzes}{section.4}% 29
-\BOOKMARK [1][-]{section.5}{Fallbeispiel I:Ein Klassifizierungsnetzwerk f\374r handgeschriebene Ziffern}{}% 30
-\BOOKMARK [2][-]{subsection.5.1}{Aufgabe}{section.5}% 31
-\BOOKMARK [2][-]{subsection.5.2}{Der MNIST Datensatz}{section.5}% 32
-\BOOKMARK [2][-]{subsection.5.3}{Fragmentbasierte Erkennung}{section.5}% 33
-\BOOKMARK [2][-]{subsection.5.4}{Ergebnis}{section.5}% 34
-\BOOKMARK [1][-]{section.6}{Fallbeispiel II:Eine selbsttrainierende KI f\374r Tic-Tac-Toe}{}% 35
-\BOOKMARK [2][-]{subsection.6.1}{Das Prinzip}{section.6}% 36
-\BOOKMARK [2][-]{subsection.6.2}{Chance-Tree Optimierung}{section.6}% 37
-\BOOKMARK [2][-]{subsection.6.3}{L\366sung mittels eines neuronalen Netzes}{section.6}% 38
-\BOOKMARK [2][-]{subsection.6.4}{Vergleich}{section.6}% 39
-\BOOKMARK [1][-]{section.7}{Schlusswort}{}% 40
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Lernrate}{subsection.3.6}% 22
+\BOOKMARK [2][-]{subsection.3.7}{Verschiedene Layerarten}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Fully connected Layers}{subsection.3.7}% 24
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Convolutional Layers}{subsection.3.7}% 25
+\BOOKMARK [3][-]{subsubsection.3.7.3}{Pooling Layers}{subsection.3.7}% 26
+\BOOKMARK [1][-]{section.4}{PyTorch}{}% 27
+\BOOKMARK [2][-]{subsection.4.1}{Datenvorbereitung}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.2}{Definieren des Netzes}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.3}{Trainieren des Netzes}{section.4}% 30
+\BOOKMARK [1][-]{section.5}{Fallbeispiel I:Ein Klassifizierungsnetzwerk f\374r handgeschriebene Ziffern}{}% 31
+\BOOKMARK [2][-]{subsection.5.1}{Aufgabe}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.2}{Der MNIST Datensatz}{section.5}% 33
+\BOOKMARK [2][-]{subsection.5.3}{Fragmentbasierte Erkennung}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.4}{Ergebnis}{section.5}% 35
+\BOOKMARK [1][-]{section.6}{Fallbeispiel II:Eine selbsttrainierende KI f\374r Tic-Tac-Toe}{}% 36
+\BOOKMARK [2][-]{subsection.6.1}{Das Prinzip}{section.6}% 37
+\BOOKMARK [2][-]{subsection.6.2}{Chance-Tree Optimierung}{section.6}% 38
+\BOOKMARK [2][-]{subsection.6.3}{L\366sung mittels eines neuronalen Netzes}{section.6}% 39
+\BOOKMARK [2][-]{subsection.6.4}{Vergleich}{section.6}% 40
+\BOOKMARK [1][-]{section.7}{Schlusswort}{}% 41

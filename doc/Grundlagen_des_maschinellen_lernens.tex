@@ -247,8 +247,10 @@ Das Gradientenverfahren ist ein Verfahren um das Minimum einer Funktion zu finde
 	\label{Gradient_Function}
 \end{figure}
 \newline
-Um also das Ergebnis \glqq richtiger'' zu machen, müssen alle Gewichtungen und Biases negativ zu diesem Gradienten angepasst werden, da der Gradient ja den Hochpunkt angibt.\newline
-Diese Anpassung erfolgt, indem das Netz vom Ausgabelayer an, deshalb heißt das Verfahren Backpropagation, durchgegangen wird, und die Gewichtungen und Biases angepasst werden. Dies geschieht in der Regel mit hilfe der \glqq Lernrate'' $\eta$, mit der die Änderung nach der Formel in Abbildung \ref{Learning_Rate_Function} berechnet wird.
+Um also das Ergebnis \glqq richtiger'' zu machen, müssen alle Gewichtungen und Biases negativ zu diesem Gradienten angepasst werden, da der Gradient ja den Hochpunkt angibt. Diese Anpassung erfolgt, indem das Netz vom Ausgabelayer an, deshalb heißt das Verfahren Backpropagation, durchgegangen wird, und die Gewichtungen und Biases angepasst werden.\newline
+Oft wird zur Verbildlichung des Gradientenverfahrens die Analogie eines Balles verwendet, der einen Hügel hinunter rollt. Er findet den Tiefpunkt indem er hinab rollt und dabei immer automatisch eine Kraft nach unten wirkt.
+\subsubsection{Lernrate}
+Eine wichtige Rolle dabei spielt die sogenannte \glqq Lernrate'' $\eta$, mit der die Änderung nach der Formel in Abbildung \ref{Learning_Rate_Function} berechnet wird.
 \begin{figure}[h]
 	\begin{equation*}
 	w^n_{neu}=w^n_{alt}-\eta\times\frac{\partial C}{\partial w^n}
@@ -257,9 +259,18 @@ Diese Anpassung erfolgt, indem das Netz vom Ausgabelayer an, deshalb heißt das 
 	\label{Learning_Rate_Function}
 \end{figure}
 \newline
-Diese Lernrate ist notwendig um nicht über das Minimum \glqq hinweg zu springen''. Sollte sie zu groß sein, passiert genau dies, da die Anpassungen der Parameter in zu großen Schritten erfolgt, sollte sie hingegen zu klein sein, lernt das Netz sehr langsam. Typische Werte sind abhängig von der zu erlernenden Aufgabe, liegen jedoch in der Regel bei etwa 0.01 bis 0.00001
-
+Diese Lernrate ist notwendig um nicht über das Minimum \glqq hinweg zu springen''. Sollte sie zu groß sein, passiert genau dies, da die Anpassungen der Parameter in zu großen Schritten erfolgt. Sollte sie hingegen zu klein sein, lernt das Netz sehr langsam. Typische Werte sind abhängig von der zu erlernenden Aufgabe, liegen jedoch in der Regel bei etwa 0.01 bis 0.0001 \footnote{Dies ist ein bloßer Erfahrungswert. Maschinelles Lernen erfordert oft sehr viele Versuche, weshalb nicht genau festgelegt werden kann, wann welche Lernrate optimal ist.}.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{../graphics/gdf_big_lr.png}
+	\end{center}
+	\caption{$\eta$ ist hier zu groß gewählt}
+	\label{Learning_Rate_Graphic}
+\end{figure}
+\newline
+Abbildung \ref{Learning_Rate_Graphic} stellt dar, wieso das Minimum nicht erreicht werden kann, falls die Lernrate zu groß gewählt wurde. Es ist zu sehen, dass der Parameter immer gleich viel geändert wird und dabei das Minimum übersprungen wird, da die Lernrate konstant zu groß ist. Dieses Problem kann behoben werden indem eine adaptive Lernrate verwendet wird. Dabei verringert sich die Lernrate im Laufe des Lernprozesses, sodass zu Beginn die Vorzüge des schnellen Lernens genutzt werden können und am Ende trotzdem ein hoher Grad an Präzision erreicht werden kann.
 \subsection{Verschiedene Layerarten}
+edtfh
 \subsubsection{Fully connected Layers}
 \subsubsection{Convolutional Layers}
 \subsubsection{Pooling Layers}
