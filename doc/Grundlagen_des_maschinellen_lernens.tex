@@ -19,15 +19,18 @@
 \usepackage{txfonts}
 
 \author{Clemens Dautermann}
-\title{Grundbegriffe des maschinellen Lernens} 
+\title{\Huge Grundbegriffe des maschinellen Lernens} 
 \date{\today{}}
 \pagestyle{fancy}
 
 
 \begin{document}
 \biolinum
-\maketitle{}
-\newpage
+\pagenumbering{gobble}
+\begin{titlepage}
+	\maketitle
+\end{titlepage}
+\pagenumbering{arabic}
 \tableofcontents{}
 \newpage
 
@@ -270,8 +273,7 @@ Diese Lernrate ist notwendig um nicht über das Minimum \glqq hinweg zu springen
 \newline
 Abbildung \ref{Learning_Rate_Graphic} stellt dar, wieso das Minimum nicht erreicht werden kann, falls die Lernrate zu groß gewählt wurde. Es ist zu sehen, dass der Parameter immer gleich viel geändert wird und dabei das Minimum übersprungen wird, da die Lernrate konstant zu groß ist. Dieses Problem kann behoben werden indem eine adaptive Lernrate verwendet wird. Dabei verringert sich die Lernrate im Laufe des Lernprozesses, sodass zu Beginn die Vorzüge des schnellen Lernens genutzt werden können und am Ende trotzdem ein hoher Grad an Präzision erreicht werden kann.
 \subsection{Verschiedene Layerarten}
-edtfh
-\subsubsection{Fully connected Layers}
+Mit Hilfe von maschinellem Lernen lassen sich eine Vielzahl von Aufgaben bewältigen. Entsprechend komplex müssen Neuronale Netze aber auch sein. Demzufolge ist es notwendig, Neuronen zu entwickeln, die andere Fähigkeiten aufweisenl, als das einfache oben im sogenannten \glqq Linear Layer'' verwendete Neuron. Da man in der Regel nur eine Art von Neuron in einem Layer verwendet, wird das gesamte Layer nach der verwendeten Neuronenart benannt. Die unten beschriebenen Layerarten werden vor allem in einer Klasse von neuronalen Netzen verwendet, die als \glqq Convolutional neural networks'' bezeichnet werden. Sie werden meißt im Bereich der komplexen fragmentbasierten Bilderkennung eingesetzt, da sie besonders gut geeignet sind um Kanten oder gewisse Teile eines Bildes, wie zum Beispiel Merkmale eines Gesichtes, zu erkennen.
 \subsubsection{Convolutional Layers}
 \subsubsection{Pooling Layers}
 \section{PyTorch}

@@ -1,84 +1,82 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Was ist maschinelles Lernen?}{4}{section.1}% 
+\contentsline {section}{\numberline {1}Was ist maschinelles Lernen?}{3}{section.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Klassifizierungsprobleme}{5}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.1}Klassifizierungsprobleme}{4}{subsection.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Regressionsprobleme}{5}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.2}Regressionsprobleme}{4}{subsection.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Gefahren von maschinellem Lernen}{5}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.3}Gefahren von maschinellem Lernen}{4}{subsection.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.1}Eignung der Datens\IeC {\"a}tze}{5}{subsubsection.1.3.1}% 
+\contentsline {subsubsection}{\numberline {1.3.1}Eignung der Datens\IeC {\"a}tze}{4}{subsubsection.1.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.2}Overfitting}{5}{subsubsection.1.3.2}% 
+\contentsline {subsubsection}{\numberline {1.3.2}Overfitting}{4}{subsubsection.1.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.3}Unbewusste Manipulation der Daten}{5}{subsubsection.1.3.3}% 
+\contentsline {subsubsection}{\numberline {1.3.3}Unbewusste Manipulation der Daten}{4}{subsubsection.1.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Verschiedene Techniken maschinellen lernens}{5}{section.2}% 
+\contentsline {section}{\numberline {2}Verschiedene Techniken maschinellen lernens}{4}{section.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}\IeC {\"U}berwachtes Lernen}{5}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.1}\IeC {\"U}berwachtes Lernen}{4}{subsection.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Un\IeC {\"u}berwachtes Lernen}{5}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.2}Un\IeC {\"u}berwachtes Lernen}{4}{subsection.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Best\IeC {\"a}rkendes Lernen}{5}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.3}Best\IeC {\"a}rkendes Lernen}{4}{subsection.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Neuronale Netze}{5}{section.3}% 
+\contentsline {section}{\numberline {3}Neuronale Netze}{4}{section.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Maschinelles Lernen und menschliches Lernen}{5}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.1}Maschinelles Lernen und menschliches Lernen}{4}{subsection.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Der Aufbau eines neuronalen Netzes}{6}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.2}Der Aufbau eines neuronalen Netzes}{5}{subsection.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Berechnung des Ausgabevektors}{7}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.3}Berechnung des Ausgabevektors}{6}{subsection.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Der Lernprozess}{9}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.4}Der Lernprozess}{8}{subsection.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Fehlerfunktionen}{10}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.5}Fehlerfunktionen}{9}{subsection.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.1}MSE -- Durchschnittlicher quadratischer Fehler}{10}{subsubsection.3.5.1}% 
+\contentsline {subsubsection}{\numberline {3.5.1}MSE -- Durchschnittlicher quadratischer Fehler}{9}{subsubsection.3.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.2}MAE -- Durchschnitztlicher absoluter Fehler}{10}{subsubsection.3.5.2}% 
+\contentsline {subsubsection}{\numberline {3.5.2}MAE -- Durchschnitztlicher absoluter Fehler}{9}{subsubsection.3.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.3}Kreuzentropiefehler}{11}{subsubsection.3.5.3}% 
+\contentsline {subsubsection}{\numberline {3.5.3}Kreuzentropiefehler}{10}{subsubsection.3.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6}Gradientenverfahren und Backpropagation}{12}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.6}Gradientenverfahren und Backpropagation}{11}{subsection.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.6.1}Lernrate}{12}{subsubsection.3.6.1}% 
+\contentsline {subsubsection}{\numberline {3.6.1}Lernrate}{11}{subsubsection.3.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.7}Verschiedene Layerarten}{13}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.7}Verschiedene Layerarten}{12}{subsection.3.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.1}Fully connected Layers}{14}{subsubsection.3.7.1}% 
+\contentsline {subsubsection}{\numberline {3.7.1}Convolutional Layers}{13}{subsubsection.3.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.2}Convolutional Layers}{14}{subsubsection.3.7.2}% 
+\contentsline {subsubsection}{\numberline {3.7.2}Pooling Layers}{13}{subsubsection.3.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.3}Pooling Layers}{14}{subsubsection.3.7.3}% 
+\contentsline {section}{\numberline {4}PyTorch}{13}{section.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}PyTorch}{14}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Datenvorbereitung}{13}{subsection.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Datenvorbereitung}{14}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Definieren des Netzes}{13}{subsection.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Definieren des Netzes}{14}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Trainieren des Netzes}{13}{subsection.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Trainieren des Netzes}{14}{subsection.4.3}% 
+\contentsline {section}{\numberline {5}Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk f\IeC {\"u}r handgeschriebene Ziffern}{13}{section.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk f\IeC {\"u}r handgeschriebene Ziffern}{14}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Aufgabe}{13}{subsection.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Aufgabe}{14}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Der MNIST Datensatz}{13}{subsection.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Der MNIST Datensatz}{14}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Fragmentbasierte Erkennung}{13}{subsection.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Fragmentbasierte Erkennung}{14}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.4}Ergebnis}{13}{subsection.5.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Ergebnis}{14}{subsection.5.4}% 
+\contentsline {section}{\numberline {6}Fallbeispiel II:\newline Eine selbsttrainierende KI f\IeC {\"u}r Tic-Tac-Toe}{13}{section.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fallbeispiel II:\newline Eine selbsttrainierende KI f\IeC {\"u}r Tic-Tac-Toe}{14}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Das Prinzip}{13}{subsection.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Das Prinzip}{14}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.2}Chance-Tree Optimierung}{13}{subsection.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Chance-Tree Optimierung}{14}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.3}L\IeC {\"o}sung mittels eines neuronalen Netzes}{13}{subsection.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}L\IeC {\"o}sung mittels eines neuronalen Netzes}{14}{subsection.6.3}% 
+\contentsline {subsection}{\numberline {6.4}Vergleich}{13}{subsection.6.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Vergleich}{14}{subsection.6.4}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Schlusswort}{14}{section.7}% 
+\contentsline {section}{\numberline {7}Schlusswort}{13}{section.7}% 

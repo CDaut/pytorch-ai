@@ -1,26 +1,26 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Neuron \newline Quelle: simple.wikipedia.org/wiki/File:Neuron.svg\newline Copyright: CC Attribution-Share Alike von Nutzer Dhp1080,\newline bearbeitet}}{6}{figure.1}% 
+\contentsline {figure}{\numberline {1}{\ignorespaces Neuron \newline Quelle: simple.wikipedia.org/wiki/File:Neuron.svg\newline Copyright: CC Attribution-Share Alike von Nutzer Dhp1080,\newline bearbeitet}}{5}{figure.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Ein einfaches neuronales Netz}}{7}{figure.2}% 
+\contentsline {figure}{\numberline {2}{\ignorespaces Ein einfaches neuronales Netz}}{6}{figure.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Der Plot der Sigmoid Funktion $\sigma (x)=\frac {e^x}{e^x+1}$}}{8}{figure.3}% 
+\contentsline {figure}{\numberline {3}{\ignorespaces Der Plot der Sigmoid Funktion $\sigma (x)=\frac {e^x}{e^x+1}$}}{7}{figure.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Formel zur Berechnung eines Ausgabevektors aus einem Eingabevektor durch ein Layer Neuronen. }}{9}{figure.4}% 
+\contentsline {figure}{\numberline {4}{\ignorespaces Formel zur Berechnung eines Ausgabevektors aus einem Eingabevektor durch ein Layer Neuronen. }}{8}{figure.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen quadratischen Fehler}}{10}{figure.5}% 
+\contentsline {figure}{\numberline {5}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen quadratischen Fehler}}{9}{figure.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen absoluten Fehler}}{10}{figure.6}% 
+\contentsline {figure}{\numberline {6}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen absoluten Fehler}}{9}{figure.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Der Graph der Kreuzentropie Fehlerfunktion wenn das tats\IeC {\"a}chliche Label 1 ist}}{11}{figure.7}% 
+\contentsline {figure}{\numberline {7}{\ignorespaces Der Graph der Kreuzentropie Fehlerfunktion wenn das tats\IeC {\"a}chliche Label 1 ist}}{10}{figure.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Die Gleichung f\IeC {\"u}r den Kreuzentropiefehler}}{12}{figure.8}% 
+\contentsline {figure}{\numberline {8}{\ignorespaces Die Gleichung f\IeC {\"u}r den Kreuzentropiefehler}}{11}{figure.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen absoluten Fehler}}{12}{figure.9}% 
+\contentsline {figure}{\numberline {9}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen absoluten Fehler}}{11}{figure.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Die Gleichung f\IeC {\"u}r den Gradienten der Fehlerfunktion}}{12}{figure.10}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces Die Gleichung f\IeC {\"u}r den Gradienten der Fehlerfunktion}}{11}{figure.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Die Gleichung f\IeC {\"u}r die Anpassung eines einzelnen Parameters}}{13}{figure.11}% 
+\contentsline {figure}{\numberline {11}{\ignorespaces Die Gleichung f\IeC {\"u}r die Anpassung eines einzelnen Parameters}}{12}{figure.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces $\eta $ ist hier zu gro\IeC {\ss } gew\IeC {\"a}hlt}}{13}{figure.12}% 
+\contentsline {figure}{\numberline {12}{\ignorespaces $\eta $ ist hier zu gro\IeC {\ss } gew\IeC {\"a}hlt}}{12}{figure.12}% 
