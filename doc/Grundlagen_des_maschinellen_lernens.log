@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.27)  11 JAN 2020 22:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.27)  12 JAN 2020 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1458,16 +1458,85 @@ Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 268.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11] [12 <../graphics/gdf_big_lr.png>]
+<../graphics/conv/conv008.png, id=317, 396.48125pt x 450.68375pt>
+File: ../graphics/conv/conv008.png Graphic file (type png)
+<use ../graphics/conv/conv008.png>
+Package pdftex.def Info: ../graphics/conv/conv008.png  used on input line 286.
+(pdftex.def)             Requested size: 120.7521pt x 137.25546pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+[]\T1/txr/m/n/10 Abbildung 14:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+[]\T1/txr/m/n/10 Erkennt obe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+\T1/txr/m/n/10 re ho-ri-zon-ta-le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[]\T1/txr/m/n/10 Abbildung 15:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[]\T1/txr/m/n/10 Erkennt lin-ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+[]\T1/txr/m/n/10 Abbildung 16:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+[]\T1/txr/m/n/10 Erkennt un-te-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
+\T1/txr/m/n/10 re ho-ri-zon-ta-le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+[]\T1/txr/m/n/10 Abbildung 17:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+[]\T1/txr/m/n/10 Erkennt rech-te
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+txr on input line 342.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
+)
+Overfull \hbox (0.36746pt too wide) in paragraph at lines 281--346
+\T1/LinuxBiolinumT-TLF/m/n/10 beispielsweise zur ein-fa-chen Kan-te-ner-ken-nun
+g ge-nutzt wer-den. Das ist de-fi-ni-tiv mehr
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13 <../graphics/conv/conv008.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 283.
+(hyperref)                removing `\newline' on input line 351.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 288.
+(hyperref)                removing `\newline' on input line 356.
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 305--309
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 373--377
 \T1/LinuxBiolinumT-TLF/m/n/10 Quelle: https://towardsdatascience.com/common-los
 s-functions-in-machine-
  []
@@ -1476,13 +1545,13 @@ s-functions-in-machine-
 \tf@lof=\write7
 \openout7 = `Grundlagen_des_maschinellen_lernens.lof'.
 
- [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+ [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
 
 (./Grundlagen_des_maschinellen_lernens.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
 Package rerunfilecheck Info: File `Grundlagen_des_maschinellen_lernens.out' has
  not changed.
 (rerunfilecheck)             Checksum: B310243FE389BD4A3D39E25B868838EA;2989.
@@ -1501,11 +1570,11 @@ un.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37224 strings out of 492615
- 833630 string characters out of 6131389
- 1360846 words of memory out of 5000000
- 40456 multiletter control sequences out of 15000+600000
- 83070 words of font info for 118 fonts, out of 8000000 for 9000
+ 37270 strings out of 492615
+ 834308 string characters out of 6131389
+ 1360979 words of memory out of 5000000
+ 40487 multiletter control sequences out of 15000+600000
+ 83731 words of font info for 120 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  62i,14n,100p,1509b,3432s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
@@ -1520,11 +1589,11 @@ hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Grundlagen_des_maschinellen_lernens.pdf (15 pages, 421838 byt
+Output written on Grundlagen_des_maschinellen_lernens.pdf (17 pages, 457912 byt
 es).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
- 83 named destinations out of 1000 (max. 500000)
- 348 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 432 PDF objects out of 1000 (max. 8388607)
+ 390 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -275,6 +275,74 @@ Abbildung \ref{Learning_Rate_Graphic} stellt dar, wieso das Minimum nicht erreic
 \subsection{Verschiedene Layerarten}
 Mit Hilfe von maschinellem Lernen lassen sich eine Vielzahl von Aufgaben bewältigen. Entsprechend komplex müssen Neuronale Netze aber auch sein. Demzufolge ist es notwendig, Neuronen zu entwickeln, die andere Fähigkeiten aufweisenl, als das einfache oben im sogenannten \glqq Linear Layer'' verwendete Neuron. Da man in der Regel nur eine Art von Neuron in einem Layer verwendet, wird das gesamte Layer nach der verwendeten Neuronenart benannt. Die unten beschriebenen Layerarten werden vor allem in einer Klasse von neuronalen Netzen verwendet, die als \glqq Convolutional neural networks'' bezeichnet werden. Sie werden meißt im Bereich der komplexen fragmentbasierten Bilderkennung eingesetzt, da sie besonders gut geeignet sind um Kanten oder gewisse Teile eines Bildes, wie zum Beispiel Merkmale eines Gesichtes, zu erkennen.
 \subsubsection{Convolutional Layers}
+Convolutional Layers weisen eine fundamental andere Funktionsweise als lineare Layers auf. Sie nehmen zwar ebenfalls rationale Zahlen an und geben rationale Zahlen aus \footnote{Im Folgenden werden 2 Dimensionale convolutional Layers betrachtet, da diese einfacher vorstellbar sind. Sie nehmen dann eine Matrix rationaler Zahlen an und geben auch eine Matrix rationaler Zahlen aus. Dies korrespondiert mit dem Anwendungsbereich der Erkennung von schwarz weiß Bildern.}, berechnen die Ausgabe jedoch nicht nur mit Hilfe einer Aktivierungsfunktion sondern unter der Verwendung sogenannter \glqq Filter''. Diese Filter sind eine $m\times n$ große Matrix, die auch als \glqq Kernel'' bezeichnet wird. Der Kernel wird dabei über die Eingabematrix bewegt (daher der Zusatz convolution) und erzeugt eine Ausgabematrix. Dafür wird der betrachtete Abschnitt der Eingabematrix $A$ und des Kernels $B$ skalar multipliziert wobei das Skalarprodukt als Frobenius-Skalarprodukt also als
+\begin{equation*}
+	\langle A, B\rangle=\sum_{i=1}^{m}\sum_{j=1}^{n}a_{ij}b_{ij}
+\end{equation*} 
+definiert ist. Die Matritzen werden also Komponentenweise multipliziert und diese Produkte dann summiert.\newline
+Dies ist in Abbildung \ref{Convolution_illustration} verbildlicht.
+\begin{figure}[h]
+	\begin{center}
+	\includegraphics[width=0.35\linewidth]{../graphics/conv/conv008.png}
+	\end{center}
+	\caption[Eine Verbildlichung einer Convolution\newline
+	Aus einer Animation von\newline
+	https://deeplizard.com/learn/video/YRhxdVk\_sIs]{Eine Verbildlichung einer Convolution}
+	\label{Convolution_illustration}
+\end{figure}
+\newline
+Ein Filter kann ganz verschiedene Werte aufweisen. So können Filter der Form
+\begin{figure}[h]
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\begin{equation*}
+			\begin{bmatrix}
+			-1 & -1 & -1\\
+			1 & 1 & 1\\
+			0 & 0 & 0
+			\end{bmatrix}
+		\end{equation*}
+		\caption{Erkennt obere horizontale Kanten}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\begin{equation*}
+			\begin{bmatrix}
+			-1 & 1 & 0\\
+			-1 & 1 & 0\\
+			-1 & 1 & 0
+			\end{bmatrix}
+		\end{equation*}
+		\caption{Erkennt linke vertikale Kanten}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\begin{equation*}
+			\begin{bmatrix}
+			0 & 0 & 0\\
+			1 & 1 & 1\\
+			-1 & -1 & -1
+			\end{bmatrix}
+		\end{equation*}
+		\caption{Erkennt untere horizontale Kanten}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\begin{equation*}
+			\begin{bmatrix}
+			0 & 1 & -1\\
+			0 & 1 & -1\\
+			0 & 1 & -1
+			\end{bmatrix}
+		\end{equation*}
+		\caption{Erkennt rechte vertikale Kanten}
+	\end{minipage}´
+\end{figure}
+\newline
+beispielsweise zur einfachen Kantenerkennung genutzt werden. Das ist definitiv mehr text als auf die Seite passt lalalalalalala
 \subsubsection{Pooling Layers}
 \section{PyTorch}
 \subsection{Datenvorbereitung}
