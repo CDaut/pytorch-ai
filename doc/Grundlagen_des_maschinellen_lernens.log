@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.27)  12 JAN 2020 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.27)  15 JAN 2020 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1182,6 +1182,25 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 (Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
 LaTeX Info: Redefining \not on input line 1043.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen183
+\captionmargin@=\dimen184
+\captionwidth=\dimen185
+\caption@tempdima=\dimen186
+\caption@indent=\dimen187
+\caption@parindent=\dimen188
+\caption@hangindent=\dimen189
+)
+\c@caption@flags=\count344
+\c@ContinuedFloat=\count345
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package biblatex Info: Trying to load language 'ngerman'...
@@ -1204,59 +1223,59 @@ File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 (./Grundlagen_des_maschinellen_lernens.aux)
 \openout1 = `Grundlagen_des_maschinellen_lernens.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 27.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 27.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 30.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 30.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 27.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 27.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 30.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 27.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 27.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 30.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 27.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 27.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Try loading font information for T1+txr on input line 27.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
 )
-\c@mv@tabular=\count344
-\c@mv@boldtabular=\count345
+\c@mv@tabular=\count346
+\c@mv@boldtabular=\count347
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1264,11 +1283,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count346
+\c@section@level=\count348
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 
 (./Grundlagen_des_maschinellen_lernens.out)
 (./Grundlagen_des_maschinellen_lernens.out)
@@ -1278,16 +1297,16 @@ LaTeX Info: Redefining \nameref on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count347
-\scratchdimen=\dimen183
+\scratchcounter=\count349
+\scratchdimen=\dimen190
 \scratchbox=\box44
-\nofMPsegments=\count348
-\nofMParguments=\count349
+\nofMPsegments=\count350
+\nofMParguments=\count351
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count350
-\MPscratchDim=\dimen184
-\MPnumerator=\count351
-\makeMPintoPDFobject=\count352
+\MPscratchCnt=\count352
+\MPscratchDim=\dimen191
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
 \everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1306,7 +1325,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count353
+\c@lstlisting=\count355
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1317,50 +1336,52 @@ Package biblatex Info: ... file 'Grundlagen_des_maschinellen_lernens.bbl' not f
 ound.
 
 No file Grundlagen_des_maschinellen_lernens.bbl.
-Package biblatex Info: Reference section=0 on input line 27.
-Package biblatex Info: Reference segment=0 on input line 27.
+Package biblatex Info: Reference section=0 on input line 30.
+Package biblatex Info: Reference segment=0 on input line 30.
 ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 27.
+ on input line 30.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on i
-nput line 28.
+nput line 31.
 (/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
 uxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 28.
+(Font)              scaled to size 10.0pt on input line 31.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 32.
+(Font)              scaled to size 17.28pt on input line 35.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 32.
+(Font)              scaled to size 24.88pt on input line 35.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 32.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 32.
+(Font)              scaled to size 12.0pt on input line 35.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 32.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 32.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 32.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 32.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1381,17 +1402,17 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 
  [2]
 
-LaTeX Warning: Citation '1' on page 3 undefined on input line 40.
+LaTeX Warning: Citation '1' on page 3 undefined on input line 43.
 
 [3]
 <../graphics/Neuron.png, id=234, 299.9205pt x 158.994pt>
 File: ../graphics/Neuron.png Graphic file (type png)
 <use ../graphics/Neuron.png>
-Package pdftex.def Info: ../graphics/Neuron.png  used on input line 64.
+Package pdftex.def Info: ../graphics/Neuron.png  used on input line 67.
 (pdftex.def)             Requested size: 299.91975pt x 158.9936pt.
 
 
-LaTeX Warning: Citation '2' on page 4 undefined on input line 70.
+LaTeX Warning: Citation '2' on page 4 undefined on input line 73.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1400,10 +1421,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../graphics/Neural_Net.png, id=241, 548.16795pt x 432.8973pt>
 File: ../graphics/Neural_Net.png Graphic file (type png)
 <use ../graphics/Neural_Net.png>
-Package pdftex.def Info: ../graphics/Neural_Net.png  used on input line 75.
+Package pdftex.def Info: ../graphics/Neural_Net.png  used on input line 78.
 (pdftex.def)             Requested size: 345.0pt x 272.45592pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--79
+Underfull \hbox (badness 10000) in paragraph at lines 75--82
 
  []
 
@@ -1422,10 +1443,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6 <../graphics/Neural_Net.png>] [7] [8]
 
-LaTeX Warning: Citation '3' on page 9 undefined on input line 183.
+LaTeX Warning: Citation '3' on page 9 undefined on input line 186.
 
 
-LaTeX Warning: Citation '3' on page 9 undefined on input line 194.
+LaTeX Warning: Citation '3' on page 9 undefined on input line 197.
 
 [9]
 Missing character: There is no . in font nullfont!
@@ -1451,107 +1472,94 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../graphics/gdf_big_lr.png, id=297, 484.57034pt x 482.0409pt>
 File: ../graphics/gdf_big_lr.png Graphic file (type png)
 <use ../graphics/gdf_big_lr.png>
-Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 268.
+Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 271.
 (pdftex.def)             Requested size: 172.5pt x 171.60013pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11] [12 <../graphics/gdf_big_lr.png>]
+ [11] [12 <../graphics/gdf_big_lr.png>]
 <../graphics/conv/conv008.png, id=317, 396.48125pt x 450.68375pt>
 File: ../graphics/conv/conv008.png Graphic file (type png)
 <use ../graphics/conv/conv008.png>
-Package pdftex.def Info: ../graphics/conv/conv008.png  used on input line 286.
-(pdftex.def)             Requested size: 120.7521pt x 137.25546pt.
+Package pdftex.def Info: ../graphics/conv/conv008.png  used on input line 289.
+(pdftex.def)             Requested size: 68.99895pt x 78.43071pt.
+ [13 <../graphics/conv/conv008.png>]
+<../graphics/mnist_5/mnist_5_raw.png, id=327, 462.528pt x 346.896pt>
+File: ../graphics/mnist_5/mnist_5_raw.png Graphic file (type png)
+<use ../graphics/mnist_5/mnist_5_raw.png>
+Package pdftex.def Info: ../graphics/mnist_5/mnist_5_raw.png  used on input lin
+e 352.
+(pdftex.def)             Requested size: 172.5pt x 129.37639pt.
+<../graphics/mnist_5/mnist_5_upper_edges.png, id=328, 462.528pt x 346.896pt>
+File: ../graphics/mnist_5/mnist_5_upper_edges.png Graphic file (type png)
+<use ../graphics/mnist_5/mnist_5_upper_edges.png>
+Package pdftex.def Info: ../graphics/mnist_5/mnist_5_upper_edges.png  used on i
+nput line 361.
+(pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
+<../graphics/mnist_5/mnist_5_left_edges.png, id=329, 462.528pt x 346.896pt>
+File: ../graphics/mnist_5/mnist_5_left_edges.png Graphic file (type png)
+<use ../graphics/mnist_5/mnist_5_left_edges.png>
+Package pdftex.def Info: ../graphics/mnist_5/mnist_5_left_edges.png  used on in
+put line 366.
+(pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
+<../graphics/mnist_5/mnist_5_lower_edges.png, id=330, 462.528pt x 346.896pt>
+File: ../graphics/mnist_5/mnist_5_lower_edges.png Graphic file (type png)
+<use ../graphics/mnist_5/mnist_5_lower_edges.png>
+Package pdftex.def Info: ../graphics/mnist_5/mnist_5_lower_edges.png  used on i
+nput line 371.
+(pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
+<../graphics/mnist_5/mnist_5_right_edges.png, id=331, 462.528pt x 346.896pt>
+File: ../graphics/mnist_5/mnist_5_right_edges.png Graphic file (type png)
+<use ../graphics/mnist_5/mnist_5_right_edges.png>
+Package pdftex.def Info: ../graphics/mnist_5/mnist_5_right_edges.png  used on i
+nput line 376.
+(pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
+<../graphics/features.png, id=334, 833.1125pt x 388.45125pt>
+File: ../graphics/features.png Graphic file (type png)
+<use ../graphics/features.png>
+Package pdftex.def Info: ../graphics/features.png  used on input line 387.
+(pdftex.def)             Requested size: 345.0pt x 160.86047pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
-[]\T1/txr/m/n/10 Abbildung 14:
+Underfull \hbox (badness 10000) in paragraph at lines 298--393
+
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
-[]\T1/txr/m/n/10 Erkennt obe-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
-\T1/txr/m/n/10 re ho-ri-zon-ta-le
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--317
-[]\T1/txr/m/n/10 Abbildung 15:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--317
-[]\T1/txr/m/n/10 Erkennt lin-ke
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-[]\T1/txr/m/n/10 Abbildung 16:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-[]\T1/txr/m/n/10 Erkennt un-te-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
-\T1/txr/m/n/10 re ho-ri-zon-ta-le
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--341
-[]\T1/txr/m/n/10 Abbildung 17:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--341
-[]\T1/txr/m/n/10 Erkennt rech-te
- []
-
-LaTeX Font Info:    Try loading font information for TS1+txr on input line 342.
-
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
-File: ts1txr.fd 2000/12/15 v3.1
-)
-Overfull \hbox (0.36746pt too wide) in paragraph at lines 281--346
-\T1/LinuxBiolinumT-TLF/m/n/10 beispielsweise zur ein-fa-chen Kan-te-ner-ken-nun
-g ge-nutzt wer-den. Das ist de-fi-ni-tiv mehr
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13 <../graphics/conv/conv008.png>]
+[14 <../graphics/mnist_5/mnist_5_raw.png> <../graphics/mnist_5/mnist_5_upper_ed
+ges.png> <../graphics/mnist_5/mnist_5_left_edges.png> <../graphics/mnist_5/mnis
+t_5_lower_edges.png> <../graphics/mnist_5/mnist_5_right_edges.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 351.
+(hyperref)                removing `\newline' on input line 398.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 356.
+(hyperref)                removing `\newline' on input line 403.
 
-[14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 373--377
+[15 <../graphics/features.png>] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 420--424
 \T1/LinuxBiolinumT-TLF/m/n/10 Quelle: https://towardsdatascience.com/common-los
 s-functions-in-machine-
  []
 
-(./Grundlagen_des_maschinellen_lernens.lof)
+(./Grundlagen_des_maschinellen_lernens.lof
+Overfull \hbox (21.8196pt too wide) in paragraph at lines 28--28
+ \T1/LinuxBiolinumT-TLF/m/n/10 https://github.com/vdumoulin/conv_arithmetic/blo
+b/master/README.md 
+ []
+
+[17]
+Overfull \hbox (5.42265pt too wide) in paragraph at lines 42--42
+ [][] [][]\T1/LinuxBiolinumT-TLF/m/n/10 Beispiele für low- mid- und high-level 
+Fea-tu-res in Con-vo-lu-tio-nal Neural 
+ []
+
+)
 \tf@lof=\write7
 \openout7 = `Grundlagen_des_maschinellen_lernens.lof'.
 
- [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
-
-(./Grundlagen_des_maschinellen_lernens.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
+ [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 427.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 427.
+ (./Grundlagen_des_maschinellen_lernens.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 427.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 427.
 Package rerunfilecheck Info: File `Grundlagen_des_maschinellen_lernens.out' has
  not changed.
 (rerunfilecheck)             Checksum: B310243FE389BD4A3D39E25B868838EA;2989.
@@ -1570,13 +1578,13 @@ un.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37270 strings out of 492615
- 834308 string characters out of 6131389
- 1360979 words of memory out of 5000000
- 40487 multiletter control sequences out of 15000+600000
- 83731 words of font info for 120 fonts, out of 8000000 for 9000
+ 38343 strings out of 492615
+ 854737 string characters out of 6131389
+ 1381825 words of memory out of 5000000
+ 41550 multiletter control sequences out of 15000+600000
+ 83070 words of font info for 118 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 62i,14n,100p,1509b,3432s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,14n,100p,1509b,3444s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}</usr/share/texlive/texm
 f-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-
@@ -1589,11 +1597,11 @@ hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Grundlagen_des_maschinellen_lernens.pdf (17 pages, 457912 byt
-es).
+Output written on Grundlagen_des_maschinellen_lernens.pdf (19 pages, 1088555 by
+tes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
- 353 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 465 PDF objects out of 1000 (max. 8388607)
+ 409 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 383 words of extra memory for PDF output out of 10000 (max. 10000000)
 

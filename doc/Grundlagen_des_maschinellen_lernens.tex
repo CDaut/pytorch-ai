@@ -17,11 +17,14 @@
 \usepackage{biblatex}
 \usepackage{pgfplots}
 \usepackage{txfonts}
+\usepackage{caption}
 
 \author{Clemens Dautermann}
 \title{\Huge Grundbegriffe des maschinellen Lernens} 
 \date{\today{}}
 \pagestyle{fancy}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+
 
 
 \begin{document}
@@ -275,7 +278,7 @@ Abbildung \ref{Learning_Rate_Graphic} stellt dar, wieso das Minimum nicht erreic
 \subsection{Verschiedene Layerarten}
 Mit Hilfe von maschinellem Lernen lassen sich eine Vielzahl von Aufgaben bewältigen. Entsprechend komplex müssen Neuronale Netze aber auch sein. Demzufolge ist es notwendig, Neuronen zu entwickeln, die andere Fähigkeiten aufweisenl, als das einfache oben im sogenannten \glqq Linear Layer'' verwendete Neuron. Da man in der Regel nur eine Art von Neuron in einem Layer verwendet, wird das gesamte Layer nach der verwendeten Neuronenart benannt. Die unten beschriebenen Layerarten werden vor allem in einer Klasse von neuronalen Netzen verwendet, die als \glqq Convolutional neural networks'' bezeichnet werden. Sie werden meißt im Bereich der komplexen fragmentbasierten Bilderkennung eingesetzt, da sie besonders gut geeignet sind um Kanten oder gewisse Teile eines Bildes, wie zum Beispiel Merkmale eines Gesichtes, zu erkennen.
 \subsubsection{Convolutional Layers}
-Convolutional Layers weisen eine fundamental andere Funktionsweise als lineare Layers auf. Sie nehmen zwar ebenfalls rationale Zahlen an und geben rationale Zahlen aus \footnote{Im Folgenden werden 2 Dimensionale convolutional Layers betrachtet, da diese einfacher vorstellbar sind. Sie nehmen dann eine Matrix rationaler Zahlen an und geben auch eine Matrix rationaler Zahlen aus. Dies korrespondiert mit dem Anwendungsbereich der Erkennung von schwarz weiß Bildern.}, berechnen die Ausgabe jedoch nicht nur mit Hilfe einer Aktivierungsfunktion sondern unter der Verwendung sogenannter \glqq Filter''. Diese Filter sind eine $m\times n$ große Matrix, die auch als \glqq Kernel'' bezeichnet wird. Der Kernel wird dabei über die Eingabematrix bewegt (daher der Zusatz convolution) und erzeugt eine Ausgabematrix. Dafür wird der betrachtete Abschnitt der Eingabematrix $A$ und des Kernels $B$ skalar multipliziert wobei das Skalarprodukt als Frobenius-Skalarprodukt also als
+Convolutional Layers weisen eine fundamental andere Funktionsweise als lineare Layers auf. Sie nehmen zwar ebenfalls rationale Zahlen an und geben rationale Zahlen aus \footnote{Im Folgenden werden 2 Dimensionale convolutional Layers betrachtet, da diese einfacher vorstellbar sind. Sie nehmen dann eine Matrix rationaler Zahlen an und geben auch eine Matrix rationaler Zahlen aus. Dies korrespondiert mit dem Anwendungsbereich der Erkennung von schwarz weiß Bildern.}, berechnen die Ausgabe jedoch nicht nur mit Hilfe einer Aktivierungsfunktion sondern unter der Verwendung sogenannter \glqq Filter''. Diese Filter sind eine $m\times n$ große Matrix, die auch als \glqq Kernel'' bezeichnet wird. Der Kernel wird dabei über die Eingabematrix bewegt (daher der Name convolution) und erzeugt eine Ausgabematrix. Dafür wird der betrachtete Abschnitt der Eingabematrix $A$ und des Kernels $B$ skalar multipliziert wobei das Skalarprodukt als Frobenius-Skalarprodukt, also als
 \begin{equation*}
 	\langle A, B\rangle=\sum_{i=1}^{m}\sum_{j=1}^{n}a_{ij}b_{ij}
 \end{equation*} 
@@ -283,15 +286,16 @@ definiert ist. Die Matritzen werden also Komponentenweise multipliziert und dies
 Dies ist in Abbildung \ref{Convolution_illustration} verbildlicht.
 \begin{figure}[h]
 	\begin{center}
-	\includegraphics[width=0.35\linewidth]{../graphics/conv/conv008.png}
+	\includegraphics[width=0.2\linewidth]{../graphics/conv/conv008.png}
 	\end{center}
-	\caption[Eine Verbildlichung einer Convolution\newline
+	\caption[Eine Verbildlichung der Vorgänge in einem convolutional Layer\newline
 	Aus einer Animation von\newline
-	https://deeplizard.com/learn/video/YRhxdVk\_sIs]{Eine Verbildlichung einer Convolution}
+	https://github.com/vdumoulin/conv\_arithmetic/blob/master/README.md\\
+	Vincent Dumoulin, Francesco Visin - A guide to convolution arithmetic for deep learning (BibTeX)]{Eine Verbildlichung der Vorgänge in einem convolutional Layer. Das blaue Raster stellt die Eingabe dar, das grüne die Ausgabe.}
 	\label{Convolution_illustration}
 \end{figure}
-\newline
-Ein Filter kann ganz verschiedene Werte aufweisen. So können Filter der Form
+\newpage
+Ein Filter kann ganz verschiedene Werte aufweisen. So können Filter der Form 
 \begin{figure}[h]
 	\begin{minipage}{0.2\linewidth}
 		\centering
@@ -339,10 +343,53 @@ Ein Filter kann ganz verschiedene Werte aufweisen. So können Filter der Form
 			\end{bmatrix}
 		\end{equation*}
 		\caption{Erkennt rechte vertikale Kanten}
-	\end{minipage}´
+	\end{minipage}
 \end{figure}
 \newline
-beispielsweise zur einfachen Kantenerkennung genutzt werden. Das ist definitiv mehr text als auf die Seite passt lalalalalalala
+beispielsweise zur einfachen Kantenerkennung genutzt werden. Zur Veranschaulichung wurden diese Filter auf das Beispielbild in Abbildung \ref{Filter_Example_raw} angewandt. Das Ergebnis ist in Abbildung \ref{Filter_output dargestellt} dargestellt.
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{../graphics/mnist_5/mnist_5_raw.png}
+		\caption{Das Beispielbild aus dem Mnist Datensatz}
+		\label{Filter_Example_raw}
+	\end{center}
+\end{figure}
+\\
+\begin{figure}[h]
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/mnist_5_upper_edges.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/mnist_5_left_edges.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/mnist_5_lower_edges.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/mnist_5_right_edges.png}
+	\end{minipage}
+\caption{Die jeweils oben stehenden Filter wurden auf das Beispielbild angewandt.}
+\label{Filter_output dargestellt}
+\end{figure}
+\\
+Der jeweils dunkel dargestellte Bereich kann als das identifiziert werden, was vom convolutional Layer als Kante erkannt wurde. Hier werden eindeutige Limitationen deutlich: Es kann nur als Kante erkannt werden, was auch eindeutig senkrecht oder waagerecht ist. Außerdem kann es zu Fehlentscheidungen kommen.\\
+Die Kernels werden natürlich nicht per Hand initialisiert und angepasst, sondern setzen sich aus Parameternm zusammen, die im Laufe des Lernprozesses durch das Netz anpassbar sind. Das Netz kann also die Filtermatrix selber verändern. Die Filter werden meißt mit Zufallswerten initialisiert und dann während des Lernens  angepasst. Ferner muss ein Kernel auch nicht immer drei Einheiten breit sein, sondern kann jede Größe $\ge2$ annehmen. Je nachdem, wie sich der Kernel über die Eingabematrix bewegt, ist außerdem ein sogenanntes \glqq Padding'' nötig, da gegebenenfalls Werte betrachtet werden müssten, die nicht in der Eingabematrix liegen. In der Regel werden daher alle Werte, die nicht in der Eingabematrix vorhanden sind durch 0 ersetzt. Das Padding ist in Abbildung \ref{Convolution_illustration} als weiß in der Eingabematrix dargestellt. Es ist eine Art \glqq Rand aus Nullen'', der um dasd Bild gelegt wird.\\ 
+\\
+Hintereinander können convolutional Layers auch ganze Elemente eines Bildes erkennen. Erkennt das erste Layer wie oben gezeigt beispielsweise Kanten, so kann das Layer darauf Kombinationen aus diesen, wie beispielsweise Ecken oder Winkel, erkennen. Wie gefilterte Bilder für sogenannte \glqq High-Level-Features'' aussehen können ist in Abbilldung \ref{HL_features_conv} dargestellt. 
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{../graphics/features.png}
+	\caption[Beispiele für low- mid- und high-level Features in Convolutional Neural Nets\newline
+	Quelle: https://tvirdi.github.io/2017-10-29/cnn/]{Beispiele für low- mid- und high-level Features in Convolutional Neural Nets}
+	\label{HL_features_conv}
+\end{figure}
+Das bemerkenswerte an Convolutional Layers ist vor allem, dass duch ähnliche Optimierungsalgorytmen auch hier maschinelles lernen möglich ist, dass sich ein neuronales Netz diese Filter also selbstständig beibringen kann.
 \subsubsection{Pooling Layers}
 \section{PyTorch}
 \subsection{Datenvorbereitung}
