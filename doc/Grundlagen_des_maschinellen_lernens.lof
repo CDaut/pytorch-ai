@@ -40,3 +40,9 @@
 \contentsline {figure}{\numberline {19}{\ignorespaces Die jeweils oben stehenden Filter wurden auf das Beispielbild angewandt.\relax }}{14}{figure.caption.17}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {20}{\ignorespaces Beispiele f\IeC {\"u}r low- mid- und high-level Features in Convolutional Neural Nets\newline Quelle: https://tvirdi.github.io/2017-10-29/cnn/}}{15}{figure.caption.18}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {21}{\ignorespaces Max Pooling mit $2\times 2$ gro\IeC {\ss }en Submatritzen\newline Quelle: https://computersciencewiki.org/index.php/Max-pooling\_/\_Pooling CC BY NC SA Lizenz}}{16}{figure.caption.19}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {22}{\ignorespaces Average Pooling mit $2\times 2$ gro\IeC {\ss }en Submatritzen\newline Aus: Dominguez-Morales, Juan Pedro. (2018). Neuromorphic audio processing through real-time embedded spiking neural networks. Abbildung 33}}{16}{figure.caption.20}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {23}{\ignorespaces Gegen\IeC {\"u}berstellung von Max und Average Pooling\relax }}{17}{figure.caption.21}% 

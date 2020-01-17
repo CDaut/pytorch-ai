@@ -358,22 +358,22 @@ beispielsweise zur einfachen Kantenerkennung genutzt werden. Zur Veranschaulichu
 \begin{figure}[h]
 	\begin{minipage}{0.2\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{../graphics/mnist_5/mnist_5_upper_edges.png}
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_only/mnist_5_upper_edges.png}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{0.2\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{../graphics/mnist_5/mnist_5_left_edges.png}
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_only/mnist_5_left_edges.png}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{0.2\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{../graphics/mnist_5/mnist_5_lower_edges.png}
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_only/mnist_5_lower_edges.png}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{0.2\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{../graphics/mnist_5/mnist_5_right_edges.png}
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_only/mnist_5_right_edges.png}
 	\end{minipage}
 \caption{Die jeweils oben stehenden Filter wurden auf das Beispielbild angewandt.}
 \label{Filter_output dargestellt}
@@ -382,15 +382,105 @@ beispielsweise zur einfachen Kantenerkennung genutzt werden. Zur Veranschaulichu
 Der jeweils dunkel dargestellte Bereich kann als das identifiziert werden, was vom convolutional Layer als Kante erkannt wurde. Hier werden eindeutige Limitationen deutlich: Es kann nur als Kante erkannt werden, was auch eindeutig senkrecht oder waagerecht ist. Außerdem kann es zu Fehlentscheidungen kommen.\\
 Die Kernels werden natürlich nicht per Hand initialisiert und angepasst, sondern setzen sich aus Parameternm zusammen, die im Laufe des Lernprozesses durch das Netz anpassbar sind. Das Netz kann also die Filtermatrix selber verändern. Die Filter werden meißt mit Zufallswerten initialisiert und dann während des Lernens  angepasst. Ferner muss ein Kernel auch nicht immer drei Einheiten breit sein, sondern kann jede Größe $\ge2$ annehmen. Je nachdem, wie sich der Kernel über die Eingabematrix bewegt, ist außerdem ein sogenanntes \glqq Padding'' nötig, da gegebenenfalls Werte betrachtet werden müssten, die nicht in der Eingabematrix liegen. In der Regel werden daher alle Werte, die nicht in der Eingabematrix vorhanden sind durch 0 ersetzt. Das Padding ist in Abbildung \ref{Convolution_illustration} als weiß in der Eingabematrix dargestellt. Es ist eine Art \glqq Rand aus Nullen'', der um dasd Bild gelegt wird.\\ 
 \\
-Hintereinander können convolutional Layers auch ganze Elemente eines Bildes erkennen. Erkennt das erste Layer wie oben gezeigt beispielsweise Kanten, so kann das Layer darauf Kombinationen aus diesen, wie beispielsweise Ecken oder Winkel, erkennen. Wie gefilterte Bilder für sogenannte \glqq High-Level-Features'' aussehen können ist in Abbilldung \ref{HL_features_conv} dargestellt. 
+Hintereinander können convolutional Layers auch ganze Elemente eines Bildes erkennen. Erkennt das erste Layer wie oben gezeigt beispielsweise Kanten, so kann das Layer darauf Kombinationen aus diesen, wie beispielsweise Ecken oder Winkel, erkennen. Wie gefilterte Bilder für sogenannte \glqq High-Level-Features'' aussehen können ist in Abbilldung \ref{HL_features_conv} dargestellt. Die Ausgabebilder von Convolutional Layers werden als \glqq Feature map'' bezeichnet.
 \begin{figure}[h]
 	\includegraphics[width=\linewidth]{../graphics/features.png}
 	\caption[Beispiele für low- mid- und high-level Features in Convolutional Neural Nets\newline
 	Quelle: https://tvirdi.github.io/2017-10-29/cnn/]{Beispiele für low- mid- und high-level Features in Convolutional Neural Nets}
 	\label{HL_features_conv}
 \end{figure}
+\\
 Das bemerkenswerte an Convolutional Layers ist vor allem, dass duch ähnliche Optimierungsalgorytmen auch hier maschinelles lernen möglich ist, dass sich ein neuronales Netz diese Filter also selbstständig beibringen kann.
 \subsubsection{Pooling Layers}
+Pooling Layers werden ebenfalls hauptsächlich in Convolutional Neural Networks verwendet. Sie werden nach Convolutional Layers genutzt um das Ausgabebild herunterzutakten, also verlustbehaftet zu Komprimieren. Dabei wird die Feature Map im wesentlichen zusammengefasst um die Datenmenge, die das Folgende Convolutional Layer erhält zu reduzieren und sie Verschiebungen im Originalbild gegenüber immuner zu machen. Das ist deshalb notwendig, da die Convolutional Layers die Features lokal sehr begrenzt erkennen und daher eine kleine Verschiebung des Originalbildes zur Folge haben kann, dass im Folgenden Convolutional Layer die Kombination der Features gegebenenfalls nicht richtig erkannt wird. Das Pooling Layer kann diesem Effekt entgegenwirken, indem es die Features zusammenfasst. So kann aus einer ganzen Kante beispielsweise ein einziger Pixel werden.\\
+Es werden im Wesentlichen zwei Techniken zum Pooling eingesetzt. 
+\begin{enumerate}
+	\item Max Pooling (Abbildung \ref{Maxpool})
+	\item Average Pooling (Abbildung \ref{AvgPool})
+\end{enumerate}
+Sie unterscheiden sich darin, wie die zu komprimierenden Werte mit einander verrechnet werden, sind ansonsten jedoch identisch.\\
+Beim Pooling wird die Eingabematrix in Submatritzen partitioniert\footnote{Hier ist die Mengenteorethische Partitionierung gemeint. Eine Menge wird in nicht leere Teilmengen unterteilt, sodass jedes Element der Ausgangsmenge in genau einer der Teilmengen enthalten ist.}. Jede Submatrix stellt später einen Pixel in der Ausgabematrix dar. Hier unterscheiden sich jetzt Max- und Avarage- Pooling. Beim Max Pooling ist der neue Wert der höhste Wert aus dieser Submatrix, beim Avarage Pooling wird der Durchschnitt aller Werte Der Submatrix gebildet und als Neuer Wert verwendet.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../graphics/MaxpoolSample2.png}
+	\caption[Max Pooling mit $2\times2$ großen Submatritzen\newline
+	Quelle: https://computersciencewiki.org/index.php/Max-pooling\_/\_Pooling\\
+	CC BY NC SA Lizenz]{Max Pooling mit $2\times2$ großen Submatritzen}
+	\label{Maxpool}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../graphics/Average-Pooling-Example.png}
+	\caption[Average Pooling mit $2\times2$ großen Submatritzen\newline
+	Aus: Dominguez-Morales, Juan Pedro. (2018). Neuromorphic audio processing through real-time embedded spiking neural networks. Abbildung 33]{Average Pooling mit $2\times2$ großen Submatritzen}
+	\label{AvgPool}
+\end{figure}
+\\
+Die Dimension der Submatritzen beträgt meißt $2\times2$. In Abbildung \ref{Pooling_Mnist} ist dargestellt, wie Pooling konkret auf das im letzten Abschnitt beschriebene Bild abgewandt aussieht. Dafür sind in der ersten Zeile die $28\times28$ Pixel großen Bilder dargestellt, die das Convolutional Layer mit Hilfe der Kantenerkennungsfilter berechnet hat. In Zeile zwei wurde auf die jeweils darüber stehenden Bilder Max Pooling angewandt, in Zeile drei auf die selben Bilder Average Pooling. Die Bilder sind nach dem Pooling $14\times14$ Pixel groß.
+\begin{figure}[h]
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_only/mnist_5_upper_edges.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_only/mnist_5_left_edges.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_only/mnist_5_lower_edges.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.2\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_only/mnist_5_right_edges.png}
+	\end{minipage}
+\\
+	\begin{minipage}{0.2\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_pool/upper_horiz_pooled.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_pool/left_vert_pooled.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_pool/lower_horiz_pooled.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_pool/right_vert_pooled.png}
+\end{minipage}
+\\
+	\begin{minipage}{0.2\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_pool/left_vert_avgpooled.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\linewidth}
+	\centering
+	\includegraphics[width=\linewidth]{../graphics/mnist_5/conv_pool/right_vert_avgpooled.png}
+\end{minipage}
+\caption{Gegenüberstellung von Max und Average Pooling}
+\label{Pooling_Mnist}
+\end{figure}
+\\
 \section{PyTorch}
 \subsection{Datenvorbereitung}
 \subsection{Definieren des Netzes}
