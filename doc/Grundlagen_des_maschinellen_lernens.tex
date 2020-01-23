@@ -70,10 +70,23 @@ Als Regressionsproblem hingegen bezeichnet man das Finden einer Funktion, die ei
 \\
 Die Kurve stellt hier Keine Grenze, sondern die Funktion, die die Werte approximiert, dar. Die Punkte repräsentieren die Eingabedaten, in denen auch hier einige Ausreißer erkennbar sind.
 \subsection{Gefahren von maschinellem Lernen}
-\subsubsection{Eignung der Datensätze}
+Maschinelles Lernen kann eine mächtige Technologie sein. Eine Vielzahl von Problemen lässt sich damit lösen, alle jedoch nicht. Man sollte sich bevor man maschinelles Lernen nutzt also Fragen: Lässt sich dieses Problem nicht einfacher auf konventionelle Weise lösen? Außerdem sollte man sich stets bewusst sein, dass maschinelles Lernen im Gegensatz zu den meißten Algorythmen, keine Technologie ist, die eine Treffsicherheit von 100\% aufweist. In Systemen, wo eine korrekte Antwort kritisch ist, sollte man also nicht alleine auf maschinelles Lernen setzen.\\
+Auch ist für maschinelles Lernen stets eine enorme Datenmenge nötig. Diese Daten müssen erst gesammelt werden. Hier stellt sich natürlich sofort eine ethische Frage: Welche Daten können guten Gewissens gesammelt und ausgewertret werden? Dabei sollte das Persönlichkeitsrecht und das Recht auf Privatsphäre eine zentrale Rolle spielen. Niemals sollte der Nutzen der Technologie über die Rechte der Nutzer gestellt werden. Betrachtet man hier beispielsweise den Flukhafen von Peking, sind erschreckende Tendenzen festzustellen. Dort wird beim Check-In via Gesichtserkennung die Identität der Person mit ihrem Gesicht verknüpft. Danach läuft alles vom Ticketkauf bis hin zum Duty-free-shop mit Hilfe von Gesichtserkennung ab \cite{4}.\\
+Die zentralen Gefahren maschinellen Lernens sind also die eventuelle Unsicherheit im Ergebnis, der hohe Trainingsaufwand, der gegebenenfalls mit klassischen Algorythmen vermieden werden kann und die Verletzung von Rechten durch das Auswerten persönlicher Daten.
 \subsubsection{Overfitting}
-\subsubsection{Unbewusste Manipulation der Daten}
-\section{Verschiedene Techniken maschinellen lernens}
+Overfitting ist ein häufig auftretendes Problem bei Klassifizierungsaufgaben. Die Klassengrenzen werden dabei zu genau aber falsch definiert. In Abbildung \ref{Overfitting} ist dies dargestellt.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../graphics/overfitting.png}
+	\caption{Overfitting}
+	\label{Overfitting}
+\end{figure}
+\\
+Overfitting tritt auf, wenn man ein neuronales Netz zu lange auf einem Datensatz trainiert. Das Netz lernt dann die Daten auswendig, da es so einen Fehler von 0 erreichen kann. Dadurch wurden aber keine wirklichen Klassengrenzen erlernt.\\
+Um Overfitting entgegenzuwirken reicht es oftmals den Trainingsdatensatz in der Reihenfolge zu randomisieren. Dadurch kann das Netz diese gar nicht auswendig lernen.
+\subsubsection{Die Daten}
+Wie bereits erwähnt sind die Datensätze oft der limitierende Faktor beim maschinellen Lernen. Das gravierendste Problem ist, überhaupt einen passenden Datensatz für das Problem zu finden oder generieren zu können. Dabei muss man beachten, dass man in den alle für das Problem relevanten Faktoren berücksichtigt. Möchte man beispielsweise Gesichter jeglicher Art erkennen, genügt es nicht den Algorythmus auf einem Datensatz von Gesichtern hellhäutiger Menschen zu trainieren, da dieser zum Erkennen von Gesichtern dunkelhäuitiger Menschen dann nutzlos wäre. Dass dies kein theoretisches, sondern auch ein praktisch auftretendes Phänomen ist, zeigt eine Studie des National Institute for Standards and Technology (NIST)\cite{5}. Diese hat ergeben, dass beispielsweise ein in den USA entwickelter und dort sehr populärer Algorythmus eine extremn hohe Fehlerquote für afroamerikanische Frauen hat. Da dieses System unter anderem von der Polizei in den USA verwendet wird, haben afroamerikanische Frauen eine wesentlich höhere Chance fälschlicherweise einer Straftat beschuldigt zu werden.
+\section{Verschiedene Techniken maschinellen Lernens}
 \subsection{Überwachtes Lernen}
 \subsection{Unüberwachtes Lernen}
 \subsection{Bestärkendes Lernen}
@@ -531,7 +544,16 @@ Die Dimension der Submatritzen beträgt meißt $2\times2$. In Abbildung \ref{Poo
 	Von Ravindra Parmar\newline
 	Veröffentlicht am 02.09.2018, abgerufen am 07.01.2020\newline
 	Quelle: https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23 
-	
+	\bibitem{4}
+	Facial Recognition Is Everywhere at China’s New Mega Airport\\
+	Bloomberg, 11. Dezember 2019\\
+	https://www.bloomberg.com/news/articles/2019-12-11/face-recognition-tech-is-everywhere-at-china-s-new-mega-airport\\
+	Abgerufen am 23.01.2020
+	\bibitem{5}
+	A US government study confirms most face recognition systems are racist\\
+	20.12.2019 MIT technology review\\
+	https://www.technologyreview.com/f/614986/ai-face-recognition-racist-us-government-nist-study/\\
+	Abgerufen am 23.01.2019
 \end{thebibliography}
 \listoffigures
 \end{document}

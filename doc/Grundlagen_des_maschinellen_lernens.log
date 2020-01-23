@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.12.27)  22 JAN 2020 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.1.22)  23 JAN 2020 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -283,10 +283,10 @@ LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/11/13 3.27 The Babel package
+Package: babel 2019/06/03 3.32 The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
+File: switch.def 2019/06/03 3.32 Babel switching mechanism
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
@@ -297,7 +297,7 @@ Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
 aphy)
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/11/13 3.27 Babel common definitions
+File: babel.def 2019/06/03 3.32 Babel common definitions
 \babel@savecnt=\count101
 \U@D=\dimen112
 
@@ -307,7 +307,7 @@ File: babel.def 2018/11/13 3.27 Babel common definitions
 Package babel Info: Making " an active character on input line 121.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
+Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
@@ -322,7 +322,7 @@ Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \csq@ltx@everypar=\toks23
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
+File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
@@ -473,15 +473,15 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \lst@maxwidth=\dimen122
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 \c@lstnumber=\count126
 \lst@skipnumbers=\count127
 \lst@framebox=\box30
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2018/09/02 1.7 listings configuration
+File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
-Package: listings 2018/09/02 1.7 (Carsten Heinz)
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
@@ -728,14 +728,14 @@ Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2019/02/02 v3.1.1 (3.1.1)
+Package: pgfrcs 2019/05/09 v3.1.3 (3.1.3)
 ))
-Package: pgf 2019/02/02 v3.1.1 (3.1.1)
+Package: pgf 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2019/02/02 v3.1.1 (3.1.1)
+Package: pgfsys 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks26
@@ -753,6 +753,8 @@ ex
 \pgf@yb=\dimen130
 \pgf@xc=\dimen131
 \pgf@yc=\dimen132
+\pgf@xd=\dimen133
+\pgf@yd=\dimen134
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
 \c@pgf@counta=\count316
@@ -764,26 +766,26 @@ ex
 \t@pgf@tokc=\toks31
 \pgf@sys@id@count=\count320
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2019/02/02 v3.1.1 (3.1.1)
+File: pgf.cfg 2019/05/09 v3.1.3 (3.1.3)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2019/02/02 v3.1.1 (3.1.1)
+File: pgfsys-pdftex.def 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
 f
-File: pgfsys-common-pdf.def 2019/02/02 v3.1.1 (3.1.1)
+File: pgfsys-common-pdf.def 2019/05/09 v3.1.3 (3.1.3)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
-File: pgfsyssoftpath.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfsyssoftpath.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfsyssoftpath@smallbuffer@items=\count321
 \pgfsyssoftpath@bigbuffer@items=\count322
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
-File: pgfsysprotocol.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfsysprotocol.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -802,13 +804,13 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2019/02/02 v3.1.1 (3.1.1)
+Package: pgfcore 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen133
+\pgfmath@dimen=\dimen135
 \pgfmath@count=\count323
 \pgfmath@box=\box32
 \pgfmath@toks=\toks32
@@ -835,39 +837,40 @@ thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count324
 ))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
-File: pgfcorepoints.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@picminx=\dimen134
-\pgf@picmaxx=\dimen135
-\pgf@picminy=\dimen136
-\pgf@picmaxy=\dimen137
-\pgf@pathminx=\dimen138
-\pgf@pathmaxx=\dimen139
-\pgf@pathminy=\dimen140
-\pgf@pathmaxy=\dimen141
-\pgf@xx=\dimen142
-\pgf@xy=\dimen143
-\pgf@yx=\dimen144
-\pgf@yy=\dimen145
-\pgf@zx=\dimen146
-\pgf@zy=\dimen147
+File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@picminx=\dimen136
+\pgf@picmaxx=\dimen137
+\pgf@picminy=\dimen138
+\pgf@picmaxy=\dimen139
+\pgf@pathminx=\dimen140
+\pgf@pathmaxx=\dimen141
+\pgf@pathminy=\dimen142
+\pgf@pathmaxy=\dimen143
+\pgf@xx=\dimen144
+\pgf@xy=\dimen145
+\pgf@yx=\dimen146
+\pgf@yy=\dimen147
+\pgf@zx=\dimen148
+\pgf@zy=\dimen149
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
-File: pgfcorepathconstruct.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@path@lastx=\dimen148
-\pgf@path@lasty=\dimen149
+File: pgfcorepathconstruct.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@path@lastx=\dimen150
+\pgf@path@lasty=\dimen151
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
-File: pgfcorepathusage.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@shorten@end@additional=\dimen150
-\pgf@shorten@start@additional=\dimen151
+File: pgfcorepathusage.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@shorten@end@additional=\dimen152
+\pgf@shorten@start@additional=\dimen153
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
-File: pgfcorescopes.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfpic=\box33
 \pgf@hbox=\box34
 \pgf@layerbox@main=\box35
@@ -875,133 +878,134 @@ File: pgfcorescopes.code.tex 2019/02/02 v3.1.1 (3.1.1)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
-File: pgfcoregraphicstate.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgflinewidth=\dimen152
+File: pgfcoregraphicstate.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgflinewidth=\dimen154
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
-File: pgfcoretransformations.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@pt@x=\dimen153
-\pgf@pt@y=\dimen154
-\pgf@pt@temp=\dimen155
+File: pgfcoretransformations.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@pt@x=\dimen155
+\pgf@pt@y=\dimen156
+\pgf@pt@temp=\dimen157
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcorequick.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
 ex
-File: pgfcoreobjects.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcoreobjects.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
 .code.tex
-File: pgfcorepathprocessing.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcorepathprocessing.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
-File: pgfcorearrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfarrowsep=\dimen156
+File: pgfcorearrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfarrowsep=\dimen158
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@max=\dimen157
+File: pgfcoreshade.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@max=\dimen159
 \pgf@sys@shading@range@num=\count326
+\pgf@shadingcount=\count327
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcoreimage.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
-File: pgfcoreexternal.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcoreexternal.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfexternal@startupbox=\box36
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
-File: pgfcorelayers.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcorelayers.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
 ode.tex
-File: pgfcoretransparency.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcoretransparency.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
 tex
-File: pgfcorepatterns.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcorepatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfcorerdf.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfmoduleshapes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfnodeparttextbox=\box37
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgfmoduleplot.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
-Package: pgfcomp-version-0-65 2019/02/02 v3.1.1 (3.1.1)
-\pgf@nodesepstart=\dimen158
-\pgf@nodesepend=\dimen159
+Package: pgfcomp-version-0-65 2019/05/09 v3.1.3 (3.1.3)
+\pgf@nodesepstart=\dimen160
+\pgf@nodesepend=\dimen161
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
-Package: pgfcomp-version-1-18 2019/02/02 v3.1.1 (3.1.1)
+Package: pgfcomp-version-1-18 2019/05/09 v3.1.3 (3.1.3)
 )) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2019/02/02 v3.1.1 (3.1.1)
+Package: pgffor 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen160
-\pgffor@skip=\dimen161
+\pgffor@iter=\dimen162
+\pgffor@skip=\dimen163
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2019/02/02 v3.1.1 (3.1.1)
+Package: tikz 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
-File: pgflibraryplothandlers.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgf@plot@mark@count=\count327
-\pgfplotmarksize=\dimen162
+File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@plot@mark@count=\count328
+\pgfplotmarksize=\dimen164
 )
-\tikz@lastx=\dimen163
-\tikz@lasty=\dimen164
-\tikz@lastxsaved=\dimen165
-\tikz@lastysaved=\dimen166
-\tikzleveldistance=\dimen167
-\tikzsiblingdistance=\dimen168
+\tikz@lastx=\dimen165
+\tikz@lasty=\dimen166
+\tikz@lastxsaved=\dimen167
+\tikz@lastysaved=\dimen168
+\tikzleveldistance=\dimen169
+\tikzsiblingdistance=\dimen170
 \tikz@figbox=\box38
 \tikz@figbox@bg=\box39
 \tikz@tempbox=\box40
 \tikz@tempbox@bg=\box41
-\tikztreelevel=\count328
-\tikznumberofchildren=\count329
-\tikznumberofcurrentchild=\count330
-\tikz@fig@count=\count331
+\tikztreelevel=\count329
+\tikznumberofchildren=\count330
+\tikznumberofcurrentchild=\count331
+\tikz@fig@count=\count332
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\pgfmatrixcurrentrow=\count332
-\pgfmatrixcurrentcolumn=\count333
-\pgf@matrix@numberofcolumns=\count334
+File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfmatrixcurrentrow=\count333
+\pgfmatrixcurrentcolumn=\count334
+\pgf@matrix@numberofcolumns=\count335
 )
-\tikz@expandcount=\count335
+\tikz@expandcount=\count336
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: tikzlibrarytopaths.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
 \t@pgfplots@toka=\toks37
 \t@pgfplots@tokb=\toks38
 \t@pgfplots@tokc=\toks39
-\pgfplots@tmpa=\dimen169
-\c@pgfplots@coordindex=\count336
-\c@pgfplots@scanlineindex=\count337
+\pgfplots@tmpa=\dimen171
+\c@pgfplots@coordindex=\count337
+\c@pgfplots@scanlineindex=\count338
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -1017,7 +1021,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 gfsupp_pgflibraryfpu.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count338
+\c@pgfmathroundto@lastzeros=\count339
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
@@ -1026,13 +1030,13 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count339
+\c@pgfplotsarray@tmp=\count340
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count340
+\c@pgfplotstable@counta=\count341
 \t@pgfplotstable@a=\toks40
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
@@ -1045,7 +1049,7 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count341
+\c@pgfplotslibrarysurf@no=\count342
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-pdftex.def)))
@@ -1072,14 +1076,14 @@ e.tex)
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen170
-\pgfdecoratedremainingdistance=\dimen171
-\pgfdecoratedinputsegmentcompleteddistance=\dimen172
-\pgfdecoratedinputsegmentremainingdistance=\dimen173
-\pgf@decorate@distancetomove=\dimen174
-\pgf@decorate@repeatstate=\count342
-\pgfdecorationsegmentamplitude=\dimen175
-\pgfdecorationsegmentlength=\dimen176
+\pgfdecoratedcompleteddistance=\dimen172
+\pgfdecoratedremainingdistance=\dimen173
+\pgfdecoratedinputsegmentcompleteddistance=\dimen174
+\pgfdecoratedinputsegmentremainingdistance=\dimen175
+\pgf@decorate@distancetomove=\dimen176
+\pgf@decorate@repeatstate=\count343
+\pgfdecorationsegmentamplitude=\dimen177
+\pgfdecorationsegmentlength=\dimen178
 )
 \tikz@lib@dec@box=\box42
 )
@@ -1091,21 +1095,21 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count343
-\pgfplots@xmin@reg=\dimen177
-\pgfplots@xmax@reg=\dimen178
-\pgfplots@ymin@reg=\dimen179
-\pgfplots@ymax@reg=\dimen180
-\pgfplots@zmin@reg=\dimen181
-\pgfplots@zmax@reg=\dimen182
+\pgfplots@numplots=\count344
+\pgfplots@xmin@reg=\dimen179
+\pgfplots@xmax@reg=\dimen180
+\pgfplots@ymin@reg=\dimen181
+\pgfplots@ymax@reg=\dimen182
+\pgfplots@zmin@reg=\dimen183
+\pgfplots@zmax@reg=\dimen184
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: tikzlibraryplotmarks.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
 de.tex
-File: pgflibraryplotmarks.code.tex 2019/02/02 v3.1.1 (3.1.1)
+File: pgflibraryplotmarks.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/txfonts/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
@@ -1188,16 +1192,16 @@ Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen183
-\captionmargin@=\dimen184
-\captionwidth=\dimen185
-\caption@tempdima=\dimen186
-\caption@indent=\dimen187
-\caption@parindent=\dimen188
-\caption@hangindent=\dimen189
+\captionmargin=\dimen185
+\captionmargin@=\dimen186
+\captionwidth=\dimen187
+\caption@tempdima=\dimen188
+\caption@indent=\dimen189
+\caption@parindent=\dimen190
+\caption@hangindent=\dimen191
 )
-\c@caption@flags=\count344
-\c@ContinuedFloat=\count345
+\c@caption@flags=\count345
+\c@ContinuedFloat=\count346
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
@@ -1272,8 +1276,8 @@ LaTeX Font Info:    Try loading font information for T1+txr on input line 30.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
 )
-\c@mv@tabular=\count346
-\c@mv@boldtabular=\count347
+\c@mv@tabular=\count347
+\c@mv@boldtabular=\count348
 \AtBeginShipoutBox=\box43
 Package hyperref Info: Link coloring OFF on input line 30.
 
@@ -1283,7 +1287,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count348
+\c@section@level=\count349
 )
 LaTeX Info: Redefining \ref on input line 30.
 LaTeX Info: Redefining \pageref on input line 30.
@@ -1297,16 +1301,16 @@ LaTeX Info: Redefining \nameref on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count349
-\scratchdimen=\dimen190
+\scratchcounter=\count350
+\scratchdimen=\dimen192
 \scratchbox=\box44
-\nofMPsegments=\count350
-\nofMParguments=\count351
+\nofMPsegments=\count351
+\nofMParguments=\count352
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count352
-\MPscratchDim=\dimen191
-\MPnumerator=\count353
-\makeMPintoPDFobject=\count354
+\MPscratchCnt=\count353
+\MPscratchDim=\dimen193
+\MPnumerator=\count354
+\makeMPintoPDFobject=\count355
 \everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1325,7 +1329,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count355
+\c@lstlisting=\count356
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1395,78 +1399,86 @@ ailable
 ut line 4.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 4.
-
-[1])
+)
 \tf@toc=\write6
 \openout6 = `Grundlagen_des_maschinellen_lernens.toc'.
 
- [2]
+[1] [2]
 
 LaTeX Warning: Citation '1' on page 3 undefined on input line 43.
 
-<../graphics/Classification.png, id=230, 467.5869pt x 464.6961pt>
+<../graphics/Classification.png, id=225, 467.5869pt x 464.6961pt>
 File: ../graphics/Classification.png Graphic file (type png)
 <use ../graphics/Classification.png>
 Package pdftex.def Info: ../graphics/Classification.png  used on input line 56.
 
 (pdftex.def)             Requested size: 137.9979pt x 137.14088pt.
 [3]
-<../graphics/Regression.png, id=237, 467.5869pt x 464.6961pt>
+<../graphics/Regression.png, id=232, 467.5869pt x 464.6961pt>
 File: ../graphics/Regression.png Graphic file (type png)
 <use ../graphics/Regression.png>
 Package pdftex.def Info: ../graphics/Regression.png  used on input line 66.
 (pdftex.def)             Requested size: 137.9979pt x 137.14088pt.
  [4 <../graphics/classification.png> <../graphics/regression.png>]
-<../graphics/Neuron.png, id=247, 299.9205pt x 158.994pt>
-File: ../graphics/Neuron.png Graphic file (type png)
-<use ../graphics/Neuron.png>
-Package pdftex.def Info: ../graphics/Neuron.png  used on input line 87.
-(pdftex.def)             Requested size: 299.91975pt x 158.9936pt.
 
+LaTeX Warning: Citation '4' on page 5 undefined on input line 74.
 
-LaTeX Warning: Citation '2' on page 5 undefined on input line 93.
+<../graphics/overfitting.png, id=242, 467.5869pt x 529.0164pt>
+File: ../graphics/overfitting.png Graphic file (type png)
+<use ../graphics/overfitting.png>
+Package pdftex.def Info: ../graphics/overfitting.png  used on input line 80.
+(pdftex.def)             Requested size: 207.0021pt x 234.1967pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5]
-<../graphics/Neural_Net.png, id=253, 548.16795pt x 432.8973pt>
-File: ../graphics/Neural_Net.png Graphic file (type png)
-<use ../graphics/Neural_Net.png>
-Package pdftex.def Info: ../graphics/Neural_Net.png  used on input line 98.
-(pdftex.def)             Requested size: 345.0pt x 272.45592pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--102
-
+Overfull \hbox (1.84744pt too wide) in paragraph at lines 77--87
+\T1/LinuxBiolinumT-TLF/m/n/10 Overfitting ist ein häu-fig auf-tre-ten-des Pro-b
+lem bei Klas-si-fi-zie-rungs-auf-ga-ben. Die Klas-
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <../graphics/Neuron.png>]
+
+LaTeX Warning: Citation '5' on page 5 undefined on input line 88.
+
+[5] [6 <../graphics/overfitting.png>]
+<../graphics/Neuron.png, id=255, 299.9205pt x 158.994pt>
+File: ../graphics/Neuron.png Graphic file (type png)
+<use ../graphics/Neuron.png>
+Package pdftex.def Info: ../graphics/Neuron.png  used on input line 100.
+(pdftex.def)             Requested size: 299.91975pt x 158.9936pt.
+
+
+LaTeX Warning: Citation '2' on page 7 undefined on input line 106.
+
+<../graphics/Neural_Net.png, id=256, 548.16795pt x 432.8973pt>
+File: ../graphics/Neural_Net.png Graphic file (type png)
+<use ../graphics/Neural_Net.png>
+Package pdftex.def Info: ../graphics/Neural_Net.png  used on input line 111.
+(pdftex.def)             Requested size: 345.0pt x 272.45592pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--115
+
+ []
+
+[7 <../graphics/Neuron.png>] [8 <../graphics/Neural_Net.png>]
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
+ [9] [10]
 
+LaTeX Warning: Citation '3' on page 11 undefined on input line 219.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[11]
 
-[7 <../graphics/Neural_Net.png>] [8] [9]
+LaTeX Warning: Citation '3' on page 12 undefined on input line 230.
 
-LaTeX Warning: Citation '3' on page 10 undefined on input line 206.
-
-
-LaTeX Warning: Citation '3' on page 10 undefined on input line 217.
-
-[10]
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
-
 NOTE: coordinate (2Y5.0e0],3Y0.0e0]) has been dropped because it is unbounded (
 in y). (see also unbounded coords=jump). 
 NOTE: coordinate (2Y3.889e0],3Y0.0e0]) has been dropped because it is unbounded
@@ -1480,210 +1492,235 @@ nded (in y). (see also unbounded coords=jump).
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11]
-<../graphics/gdf_big_lr.png, id=310, 484.57034pt x 482.0409pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../graphics/gdf_big_lr.png, id=315, 484.57034pt x 482.0409pt>
 File: ../graphics/gdf_big_lr.png Graphic file (type png)
 <use ../graphics/gdf_big_lr.png>
-Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 291.
+Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 304.
 (pdftex.def)             Requested size: 172.5pt x 171.60013pt.
- [12] [13 <../graphics/gdf_big_lr.png>]
-<../graphics/conv/conv008.png, id=329, 396.48125pt x 450.68375pt>
+[13]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]
+<../graphics/conv/conv008.png, id=331, 396.48125pt x 450.68375pt>
 File: ../graphics/conv/conv008.png Graphic file (type png)
 <use ../graphics/conv/conv008.png>
-Package pdftex.def Info: ../graphics/conv/conv008.png  used on input line 309.
+Package pdftex.def Info: ../graphics/conv/conv008.png  used on input line 322.
 (pdftex.def)             Requested size: 68.99895pt x 78.43071pt.
- [14 <../graphics/conv/conv008.png>]
-<../graphics/mnist_5/mnist_5_raw.png, id=339, 462.528pt x 346.896pt>
+ [15 <../graphics/gdf_big_lr.png>] [16 <../graphics/conv/conv008.png>]
+<../graphics/mnist_5/mnist_5_raw.png, id=346, 462.528pt x 346.896pt>
 File: ../graphics/mnist_5/mnist_5_raw.png Graphic file (type png)
 <use ../graphics/mnist_5/mnist_5_raw.png>
 Package pdftex.def Info: ../graphics/mnist_5/mnist_5_raw.png  used on input lin
-e 372.
+e 385.
 (pdftex.def)             Requested size: 172.5pt x 129.37639pt.
-<../graphics/mnist_5/conv_only/mnist_5_upper_edges.png, id=340, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_upper_edges.png, id=347, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png 
- used on input line 381.
+ used on input line 394.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_only/mnist_5_left_edges.png, id=341, 462.528pt x 346.
+<../graphics/mnist_5/conv_only/mnist_5_left_edges.png, id=348, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png Graphic file (type p
 ng)
 <use ../graphics/mnist_5/conv_only/mnist_5_left_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png  
-used on input line 386.
+used on input line 399.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_only/mnist_5_lower_edges.png, id=342, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_lower_edges.png, id=349, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png 
- used on input line 391.
+ used on input line 404.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_only/mnist_5_right_edges.png, id=343, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_right_edges.png, id=350, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_right_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png 
- used on input line 396.
+ used on input line 409.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/features.png, id=346, 833.1125pt x 388.45125pt>
+<../graphics/features.png, id=353, 833.1125pt x 388.45125pt>
 File: ../graphics/features.png Graphic file (type png)
 <use ../graphics/features.png>
-Package pdftex.def Info: ../graphics/features.png  used on input line 407.
+Package pdftex.def Info: ../graphics/features.png  used on input line 420.
 (pdftex.def)             Requested size: 345.0pt x 160.86047pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--414
+Underfull \hbox (badness 10000) in paragraph at lines 331--427
 
  []
 
-[15 <../graphics/mnist_5/mnist_5_raw.png> <../graphics/mnist_5/conv_only/mnist_
+[17 <../graphics/mnist_5/mnist_5_raw.png> <../graphics/mnist_5/conv_only/mnist_
 5_upper_edges.png> <../graphics/mnist_5/conv_only/mnist_5_left_edges.png> <../g
 raphics/mnist_5/conv_only/mnist_5_lower_edges.png> <../graphics/mnist_5/conv_on
-ly/mnist_5_right_edges.png>] [16 <../graphics/features.png>]
-<../graphics/MaxpoolSample2.png, id=367, 164.25pt x 68.547pt>
+ly/mnist_5_right_edges.png>] [18 <../graphics/features.png>]
+<../graphics/MaxpoolSample2.png, id=375, 164.25pt x 68.547pt>
 File: ../graphics/MaxpoolSample2.png Graphic file (type png)
 <use ../graphics/MaxpoolSample2.png>
-Package pdftex.def Info: ../graphics/MaxpoolSample2.png  used on input line 425
+Package pdftex.def Info: ../graphics/MaxpoolSample2.png  used on input line 438
 .
 (pdftex.def)             Requested size: 241.49895pt x 100.79422pt.
-<../graphics/Average-Pooling-Example.png, id=368, 746.79pt x 337.26pt>
+<../graphics/Average-Pooling-Example.png, id=376, 746.79pt x 337.26pt>
 File: ../graphics/Average-Pooling-Example.png Graphic file (type png)
 <use ../graphics/Average-Pooling-Example.png>
 Package pdftex.def Info: ../graphics/Average-Pooling-Example.png  used on input
- line 433.
+ line 446.
 (pdftex.def)             Requested size: 241.49895pt x 109.0627pt.
 File: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png 
- used on input line 443.
+ used on input line 456.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
 File: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png Graphic file (type p
 ng)
 <use ../graphics/mnist_5/conv_only/mnist_5_left_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png  
-used on input line 448.
+used on input line 461.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
 File: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png 
- used on input line 453.
+ used on input line 466.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
 File: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_right_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png 
- used on input line 458.
+ used on input line 471.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/upper_horiz_pooled.png, id=370, 462.528pt x 346.
+<../graphics/mnist_5/conv_pool/upper_horiz_pooled.png, id=378, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png Graphic file (type p
 ng)
 <use ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png  
-used on input line 463.
+used on input line 476.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/left_vert_pooled.png, id=371, 462.528pt x 346.89
+<../graphics/mnist_5/conv_pool/left_vert_pooled.png, id=379, 462.528pt x 346.89
 6pt>
 File: ../graphics/mnist_5/conv_pool/left_vert_pooled.png Graphic file (type png
 )
 <use ../graphics/mnist_5/conv_pool/left_vert_pooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/left_vert_pooled.png  us
-ed on input line 468.
+ed on input line 481.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/lower_horiz_pooled.png, id=372, 462.528pt x 346.
+<../graphics/mnist_5/conv_pool/lower_horiz_pooled.png, id=380, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png Graphic file (type p
 ng)
 <use ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png  
-used on input line 473.
+used on input line 486.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/right_vert_pooled.png, id=373, 462.528pt x 346.8
+<../graphics/mnist_5/conv_pool/right_vert_pooled.png, id=381, 462.528pt x 346.8
 96pt>
 File: ../graphics/mnist_5/conv_pool/right_vert_pooled.png Graphic file (type pn
 g)
 <use ../graphics/mnist_5/conv_pool/right_vert_pooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/right_vert_pooled.png  u
-sed on input line 478.
+sed on input line 491.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png, id=374, 462.528pt x 3
+<../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png, id=382, 462.528pt x 3
 46.896pt>
 File: ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png Graphic file (typ
 e png)
 <use ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.pn
-g  used on input line 483.
+g  used on input line 496.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/left_vert_avgpooled.png, id=375, 462.528pt x 346
+<../graphics/mnist_5/conv_pool/left_vert_avgpooled.png, id=383, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png 
- used on input line 488.
+ used on input line 501.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png, id=376, 462.528pt x 3
+<../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png, id=384, 462.528pt x 3
 46.896pt>
 File: ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png Graphic file (typ
 e png)
 <use ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.pn
-g  used on input line 493.
+g  used on input line 506.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/right_vert_avgpooled.png, id=377, 462.528pt x 34
+<../graphics/mnist_5/conv_pool/right_vert_avgpooled.png, id=385, 462.528pt x 34
 6.896pt>
 File: ../graphics/mnist_5/conv_pool/right_vert_avgpooled.png Graphic file (type
  png)
 <use ../graphics/mnist_5/conv_pool/right_vert_avgpooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/right_vert_avgpooled.png
-  used on input line 498.
+  used on input line 511.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--504
+Underfull \hbox (badness 10000) in paragraph at lines 434--517
 
  []
 
-[17 <../graphics/MaxpoolSample2.png> <../graphics/Average-pooling-example.png>]
+[19 <../graphics/MaxpoolSample2.png> <../graphics/Average-pooling-example.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 508.
+(hyperref)                removing `\newline' on input line 521.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 513.
+(hyperref)                removing `\newline' on input line 526.
 
-[18 <../graphics/mnist_5/conv_pool/upper_horiz_pooled.png> <../graphics/mnist_5
+[20 <../graphics/mnist_5/conv_pool/upper_horiz_pooled.png> <../graphics/mnist_5
 /conv_pool/left_vert_pooled.png> <../graphics/mnist_5/conv_pool/lower_horiz_poo
 led.png> <../graphics/mnist_5/conv_pool/right_vert_pooled.png> <../graphics/mni
 st_5/conv_pool/upper_horiz_avgpooled.png> <../graphics/mnist_5/conv_pool/left_v
 ert_avgpooled.png> <../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png> <.
-./graphics/mnist_5/conv_pool/right_vert_avgpooled.png>] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 530--534
+./graphics/mnist_5/conv_pool/right_vert_avgpooled.png>] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 543--547
 \T1/LinuxBiolinumT-TLF/m/n/10 Quelle: https://towardsdatascience.com/common-los
 s-functions-in-machine-
  []
 
-(./Grundlagen_des_maschinellen_lernens.lof
-Overfull \hbox (21.8196pt too wide) in paragraph at lines 32--32
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--552
+\T1/LinuxBiolinumT-TLF/m/n/10 https://www.bloomberg.com/news/articles/2019-12-1
+1/face-recognition-tech-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--557
+\T1/LinuxBiolinumT-TLF/m/n/10 https://www.technologyreview.com/f/614986/ai-face
+-recognition-racist-us-
+ []
+
+(./Grundlagen_des_maschinellen_lernens.lof [22]
+Overfull \hbox (21.8196pt too wide) in paragraph at lines 34--34
  \T1/LinuxBiolinumT-TLF/m/n/10 https://github.com/vdumoulin/conv_arithmetic/blo
 b/master/README.md 
  []
 
-[20]
-Overfull \hbox (5.42265pt too wide) in paragraph at lines 46--46
+
+Overfull \hbox (5.42265pt too wide) in paragraph at lines 48--48
  [][] [][]\T1/LinuxBiolinumT-TLF/m/n/10 Beispiele für low- mid- und high-level 
 Fea-tu-res in Con-vo-lu-tio-nal Neural 
  []
 
 
-Overfull \hbox (23.8891pt too wide) in paragraph at lines 48--48
+Overfull \hbox (23.8891pt too wide) in paragraph at lines 50--50
  \T1/LinuxBiolinumT-TLF/m/n/10 Quelle: https://computersciencewiki.org/index.ph
 p/Max-pooling_/_Pooling 
  []
@@ -1692,15 +1729,15 @@ p/Max-pooling_/_Pooling
 \tf@lof=\write7
 \openout7 = `Grundlagen_des_maschinellen_lernens.lof'.
 
- [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 537.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 537.
+ [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 559.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 559.
  (./Grundlagen_des_maschinellen_lernens.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 537.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 537.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 559.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 559.
 Package rerunfilecheck Info: File `Grundlagen_des_maschinellen_lernens.out' has
  not changed.
-(rerunfilecheck)             Checksum: B310243FE389BD4A3D39E25B868838EA;2989.
+(rerunfilecheck)             Checksum: 0E54AACBB11CF153F035C5523DB10E3D;2880.
 
 
 LaTeX Warning: There were undefined references.
@@ -1716,13 +1753,13 @@ un.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38421 strings out of 492615
- 857822 string characters out of 6131389
- 1382389 words of memory out of 5000000
- 41603 multiletter control sequences out of 15000+600000
+ 38566 strings out of 492609
+ 860436 string characters out of 6131462
+ 1389284 words of memory out of 5000000
+ 41748 multiletter control sequences out of 15000+600000
  83070 words of font info for 118 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 62i,14n,100p,1509b,3444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,14n,100p,1509b,3448s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}</usr/share/texlive/texm
 f-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-
@@ -1735,11 +1772,11 @@ hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Grundlagen_des_maschinellen_lernens.pdf (22 pages, 1288712 by
+Output written on Grundlagen_des_maschinellen_lernens.pdf (24 pages, 1423323 by
 tes).
 PDF statistics:
- 527 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 443 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 537 PDF objects out of 1000 (max. 8388607)
+ 450 compressed objects within 5 object streams
+ 108 named destinations out of 1000 (max. 500000)
+ 440 words of extra memory for PDF output out of 10000 (max. 10000000)
 
