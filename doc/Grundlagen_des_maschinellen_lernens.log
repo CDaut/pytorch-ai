@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.1.22)  23 JAN 2020 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.1.22)  25 JAN 2020 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1227,51 +1227,51 @@ File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 (./Grundlagen_des_maschinellen_lernens.aux)
 \openout1 = `Grundlagen_des_maschinellen_lernens.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 30.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 30.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 35.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 35.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 30.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 35.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 30.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 35.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 30.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Try loading font information for T1+txr on input line 30.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
@@ -1279,7 +1279,7 @@ File: t1txr.fd 2000/12/15 v3.1
 \c@mv@tabular=\count347
 \c@mv@boldtabular=\count348
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1289,9 +1289,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count349
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 
 (./Grundlagen_des_maschinellen_lernens.out)
 (./Grundlagen_des_maschinellen_lernens.out)
@@ -1340,52 +1340,60 @@ Package biblatex Info: ... file 'Grundlagen_des_maschinellen_lernens.bbl' not f
 ound.
 
 No file Grundlagen_des_maschinellen_lernens.bbl.
-Package biblatex Info: Reference section=0 on input line 30.
-Package biblatex Info: Reference segment=0 on input line 30.
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
 ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 30.
+ on input line 35.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on i
-nput line 31.
+nput line 36.
 (/usr/share/texlive/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
 uxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 31.
+(Font)              scaled to size 10.0pt on input line 36.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 35.
+(Font)              scaled to size 17.28pt on input line 40.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 35.
+(Font)              scaled to size 24.88pt on input line 40.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 35.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 35.
+(Font)              scaled to size 20.74pt on input line 40.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 40.
 
+Overfull \hbox (5.0pt too wide) in paragraph at lines 40--40
+ | 
+ []
+
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 40.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 40.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 35.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 35.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 35.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 35.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1405,80 +1413,87 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 
 [1] [2]
 
-LaTeX Warning: Citation '1' on page 3 undefined on input line 43.
+LaTeX Warning: Citation '1' on page 3 undefined on input line 48.
 
 <../graphics/Classification.png, id=225, 467.5869pt x 464.6961pt>
 File: ../graphics/Classification.png Graphic file (type png)
 <use ../graphics/Classification.png>
-Package pdftex.def Info: ../graphics/Classification.png  used on input line 56.
+Package pdftex.def Info: ../graphics/Classification.png  used on input line 61.
 
 (pdftex.def)             Requested size: 137.9979pt x 137.14088pt.
 [3]
 <../graphics/Regression.png, id=232, 467.5869pt x 464.6961pt>
 File: ../graphics/Regression.png Graphic file (type png)
 <use ../graphics/Regression.png>
-Package pdftex.def Info: ../graphics/Regression.png  used on input line 66.
+Package pdftex.def Info: ../graphics/Regression.png  used on input line 71.
 (pdftex.def)             Requested size: 137.9979pt x 137.14088pt.
  [4 <../graphics/classification.png> <../graphics/regression.png>]
 
-LaTeX Warning: Citation '4' on page 5 undefined on input line 74.
+LaTeX Warning: Citation '4' on page 5 undefined on input line 79.
 
-<../graphics/overfitting.png, id=242, 467.5869pt x 529.0164pt>
+
+LaTeX Warning: Citation '5' on page 5 undefined on input line 83.
+
+[5]
+<../graphics/overfitting.png, id=249, 467.5869pt x 529.0164pt>
 File: ../graphics/overfitting.png Graphic file (type png)
 <use ../graphics/overfitting.png>
-Package pdftex.def Info: ../graphics/overfitting.png  used on input line 80.
+Package pdftex.def Info: ../graphics/overfitting.png  used on input line 90.
 (pdftex.def)             Requested size: 207.0021pt x 234.1967pt.
 
-Overfull \hbox (1.84744pt too wide) in paragraph at lines 77--87
+Overfull \hbox (1.84744pt too wide) in paragraph at lines 87--97
 \T1/LinuxBiolinumT-TLF/m/n/10 Overfitting ist ein häu-fig auf-tre-ten-des Pro-b
 lem bei Klas-si-fi-zie-rungs-auf-ga-ben. Die Klas-
+ []
+
+[6 <../graphics/overfitting.png>]
+<../graphics/Neuron.png, id=259, 299.9205pt x 158.994pt>
+File: ../graphics/Neuron.png Graphic file (type png)
+<use ../graphics/Neuron.png>
+Package pdftex.def Info: ../graphics/Neuron.png  used on input line 109.
+(pdftex.def)             Requested size: 299.91975pt x 158.9936pt.
+
+
+LaTeX Warning: Citation '2' on page 7 undefined on input line 115.
+
+[7 <../graphics/Neuron.png>]
+<../graphics/Neural_Net.png, id=267, 548.16795pt x 432.8973pt>
+File: ../graphics/Neural_Net.png Graphic file (type png)
+<use ../graphics/Neural_Net.png>
+Package pdftex.def Info: ../graphics/Neural_Net.png  used on input line 120.
+(pdftex.def)             Requested size: 345.0pt x 272.45592pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--124
+
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation '5' on page 5 undefined on input line 88.
-
-[5] [6 <../graphics/overfitting.png>]
-<../graphics/Neuron.png, id=255, 299.9205pt x 158.994pt>
-File: ../graphics/Neuron.png Graphic file (type png)
-<use ../graphics/Neuron.png>
-Package pdftex.def Info: ../graphics/Neuron.png  used on input line 100.
-(pdftex.def)             Requested size: 299.91975pt x 158.9936pt.
-
-
-LaTeX Warning: Citation '2' on page 7 undefined on input line 106.
-
-<../graphics/Neural_Net.png, id=256, 548.16795pt x 432.8973pt>
-File: ../graphics/Neural_Net.png Graphic file (type png)
-<use ../graphics/Neural_Net.png>
-Package pdftex.def Info: ../graphics/Neural_Net.png  used on input line 111.
-(pdftex.def)             Requested size: 345.0pt x 272.45592pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--115
-
- []
-
-[7 <../graphics/Neuron.png>] [8 <../graphics/Neural_Net.png>]
+[8]
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
- [9] [10]
 
-LaTeX Warning: Citation '3' on page 11 undefined on input line 219.
 
-[11]
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Warning: Citation '3' on page 12 undefined on input line 230.
+[9 <../graphics/Neural_Net.png>] [10] [11]
 
+LaTeX Warning: Citation '3' on page 12 undefined on input line 228.
+
+
+LaTeX Warning: Citation '3' on page 12 undefined on input line 239.
+
+[12]
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
+
 NOTE: coordinate (2Y5.0e0],3Y0.0e0]) has been dropped because it is unbounded (
 in y). (see also unbounded coords=jump). 
 NOTE: coordinate (2Y3.889e0],3Y0.0e0]) has been dropped because it is unbounded
@@ -1492,77 +1507,64 @@ nded (in y). (see also unbounded coords=jump).
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../graphics/gdf_big_lr.png, id=315, 484.57034pt x 482.0409pt>
+[13]
+<../graphics/gdf_big_lr.png, id=322, 484.57034pt x 482.0409pt>
 File: ../graphics/gdf_big_lr.png Graphic file (type png)
 <use ../graphics/gdf_big_lr.png>
-Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 304.
+Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 314.
 (pdftex.def)             Requested size: 172.5pt x 171.60013pt.
-[13]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14]
-<../graphics/conv/conv008.png, id=331, 396.48125pt x 450.68375pt>
+ [14] [15 <../graphics/gdf_big_lr.png>]
+<../graphics/conv/conv008.png, id=340, 396.48125pt x 450.68375pt>
 File: ../graphics/conv/conv008.png Graphic file (type png)
 <use ../graphics/conv/conv008.png>
-Package pdftex.def Info: ../graphics/conv/conv008.png  used on input line 322.
+Package pdftex.def Info: ../graphics/conv/conv008.png  used on input line 332.
 (pdftex.def)             Requested size: 68.99895pt x 78.43071pt.
- [15 <../graphics/gdf_big_lr.png>] [16 <../graphics/conv/conv008.png>]
-<../graphics/mnist_5/mnist_5_raw.png, id=346, 462.528pt x 346.896pt>
+ [16 <../graphics/conv/conv008.png>]
+<../graphics/mnist_5/mnist_5_raw.png, id=350, 462.528pt x 346.896pt>
 File: ../graphics/mnist_5/mnist_5_raw.png Graphic file (type png)
 <use ../graphics/mnist_5/mnist_5_raw.png>
 Package pdftex.def Info: ../graphics/mnist_5/mnist_5_raw.png  used on input lin
-e 385.
+e 395.
 (pdftex.def)             Requested size: 172.5pt x 129.37639pt.
-<../graphics/mnist_5/conv_only/mnist_5_upper_edges.png, id=347, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_upper_edges.png, id=351, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png 
- used on input line 394.
+ used on input line 404.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_only/mnist_5_left_edges.png, id=348, 462.528pt x 346.
+<../graphics/mnist_5/conv_only/mnist_5_left_edges.png, id=352, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png Graphic file (type p
 ng)
 <use ../graphics/mnist_5/conv_only/mnist_5_left_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png  
-used on input line 399.
+used on input line 409.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_only/mnist_5_lower_edges.png, id=349, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_lower_edges.png, id=353, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png 
- used on input line 404.
+ used on input line 414.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_only/mnist_5_right_edges.png, id=350, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_right_edges.png, id=354, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_right_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png 
- used on input line 409.
+ used on input line 419.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/features.png, id=353, 833.1125pt x 388.45125pt>
+<../graphics/features.png, id=357, 833.1125pt x 388.45125pt>
 File: ../graphics/features.png Graphic file (type png)
 <use ../graphics/features.png>
-Package pdftex.def Info: ../graphics/features.png  used on input line 420.
+Package pdftex.def Info: ../graphics/features.png  used on input line 430.
 (pdftex.def)             Requested size: 345.0pt x 160.86047pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--427
+Underfull \hbox (badness 10000) in paragraph at lines 341--437
 
  []
 
@@ -1570,119 +1572,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--427
 5_upper_edges.png> <../graphics/mnist_5/conv_only/mnist_5_left_edges.png> <../g
 raphics/mnist_5/conv_only/mnist_5_lower_edges.png> <../graphics/mnist_5/conv_on
 ly/mnist_5_right_edges.png>] [18 <../graphics/features.png>]
-<../graphics/MaxpoolSample2.png, id=375, 164.25pt x 68.547pt>
+<../graphics/MaxpoolSample2.png, id=379, 164.25pt x 68.547pt>
 File: ../graphics/MaxpoolSample2.png Graphic file (type png)
 <use ../graphics/MaxpoolSample2.png>
-Package pdftex.def Info: ../graphics/MaxpoolSample2.png  used on input line 438
+Package pdftex.def Info: ../graphics/MaxpoolSample2.png  used on input line 448
 .
 (pdftex.def)             Requested size: 241.49895pt x 100.79422pt.
-<../graphics/Average-Pooling-Example.png, id=376, 746.79pt x 337.26pt>
+<../graphics/Average-Pooling-Example.png, id=380, 746.79pt x 337.26pt>
 File: ../graphics/Average-Pooling-Example.png Graphic file (type png)
 <use ../graphics/Average-Pooling-Example.png>
 Package pdftex.def Info: ../graphics/Average-Pooling-Example.png  used on input
- line 446.
+ line 456.
 (pdftex.def)             Requested size: 241.49895pt x 109.0627pt.
 File: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png 
- used on input line 456.
+ used on input line 466.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
 File: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png Graphic file (type p
 ng)
 <use ../graphics/mnist_5/conv_only/mnist_5_left_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png  
-used on input line 461.
+used on input line 471.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
 File: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png 
- used on input line 466.
+ used on input line 476.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
 File: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_right_edges.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png 
- used on input line 471.
+ used on input line 481.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/upper_horiz_pooled.png, id=378, 462.528pt x 346.
+<../graphics/mnist_5/conv_pool/upper_horiz_pooled.png, id=382, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png Graphic file (type p
 ng)
 <use ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png  
-used on input line 476.
+used on input line 486.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/left_vert_pooled.png, id=379, 462.528pt x 346.89
+<../graphics/mnist_5/conv_pool/left_vert_pooled.png, id=383, 462.528pt x 346.89
 6pt>
 File: ../graphics/mnist_5/conv_pool/left_vert_pooled.png Graphic file (type png
 )
 <use ../graphics/mnist_5/conv_pool/left_vert_pooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/left_vert_pooled.png  us
-ed on input line 481.
+ed on input line 491.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/lower_horiz_pooled.png, id=380, 462.528pt x 346.
+<../graphics/mnist_5/conv_pool/lower_horiz_pooled.png, id=384, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png Graphic file (type p
 ng)
 <use ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png  
-used on input line 486.
+used on input line 496.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/right_vert_pooled.png, id=381, 462.528pt x 346.8
+<../graphics/mnist_5/conv_pool/right_vert_pooled.png, id=385, 462.528pt x 346.8
 96pt>
 File: ../graphics/mnist_5/conv_pool/right_vert_pooled.png Graphic file (type pn
 g)
 <use ../graphics/mnist_5/conv_pool/right_vert_pooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/right_vert_pooled.png  u
-sed on input line 491.
+sed on input line 501.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png, id=382, 462.528pt x 3
+<../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png, id=386, 462.528pt x 3
 46.896pt>
 File: ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png Graphic file (typ
 e png)
 <use ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.pn
-g  used on input line 496.
+g  used on input line 506.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/left_vert_avgpooled.png, id=383, 462.528pt x 346
+<../graphics/mnist_5/conv_pool/left_vert_avgpooled.png, id=387, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png 
- used on input line 501.
+ used on input line 511.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png, id=384, 462.528pt x 3
+<../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png, id=388, 462.528pt x 3
 46.896pt>
 File: ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png Graphic file (typ
 e png)
 <use ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.pn
-g  used on input line 506.
+g  used on input line 516.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/right_vert_avgpooled.png, id=385, 462.528pt x 34
+<../graphics/mnist_5/conv_pool/right_vert_avgpooled.png, id=389, 462.528pt x 34
 6.896pt>
 File: ../graphics/mnist_5/conv_pool/right_vert_avgpooled.png Graphic file (type
  png)
 <use ../graphics/mnist_5/conv_pool/right_vert_avgpooled.png>
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/right_vert_avgpooled.png
-  used on input line 511.
+  used on input line 521.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 434--517
+Underfull \hbox (badness 10000) in paragraph at lines 444--527
 
  []
 
 [19 <../graphics/MaxpoolSample2.png> <../graphics/Average-pooling-example.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 521.
+(hyperref)                removing `\newline' on input line 531.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 526.
+(hyperref)                removing `\newline' on input line 536.
 
 [20 <../graphics/mnist_5/conv_pool/upper_horiz_pooled.png> <../graphics/mnist_5
 /conv_pool/left_vert_pooled.png> <../graphics/mnist_5/conv_pool/lower_horiz_poo
@@ -1690,19 +1692,19 @@ led.png> <../graphics/mnist_5/conv_pool/right_vert_pooled.png> <../graphics/mni
 st_5/conv_pool/upper_horiz_avgpooled.png> <../graphics/mnist_5/conv_pool/left_v
 ert_avgpooled.png> <../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png> <.
 ./graphics/mnist_5/conv_pool/right_vert_avgpooled.png>] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 543--547
+Underfull \hbox (badness 10000) in paragraph at lines 553--557
 \T1/LinuxBiolinumT-TLF/m/n/10 Quelle: https://towardsdatascience.com/common-los
 s-functions-in-machine-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--552
+Underfull \hbox (badness 10000) in paragraph at lines 558--562
 \T1/LinuxBiolinumT-TLF/m/n/10 https://www.bloomberg.com/news/articles/2019-12-1
 1/face-recognition-tech-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--557
+Underfull \hbox (badness 10000) in paragraph at lines 563--567
 \T1/LinuxBiolinumT-TLF/m/n/10 https://www.technologyreview.com/f/614986/ai-face
 -recognition-racist-us-
  []
@@ -1730,14 +1732,14 @@ p/Max-pooling_/_Pooling
 \openout7 = `Grundlagen_des_maschinellen_lernens.lof'.
 
  [23]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 559.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 559.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 569.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 569.
  (./Grundlagen_des_maschinellen_lernens.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 559.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 559.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 569.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 569.
 Package rerunfilecheck Info: File `Grundlagen_des_maschinellen_lernens.out' has
  not changed.
-(rerunfilecheck)             Checksum: 0E54AACBB11CF153F035C5523DB10E3D;2880.
+(rerunfilecheck)             Checksum: 6B7BC4D35395A22E712E0049E7FB94ED;2880.
 
 
 LaTeX Warning: There were undefined references.
@@ -1753,11 +1755,11 @@ un.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38566 strings out of 492609
- 860436 string characters out of 6131462
- 1389284 words of memory out of 5000000
- 41748 multiletter control sequences out of 15000+600000
- 83070 words of font info for 118 fonts, out of 8000000 for 9000
+ 38572 strings out of 492609
+ 860576 string characters out of 6131462
+ 1388446 words of memory out of 5000000
+ 41751 multiletter control sequences out of 15000+600000
+ 93620 words of font info for 122 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  62i,14n,100p,1509b,3448s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
@@ -1772,11 +1774,11 @@ hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on Grundlagen_des_maschinellen_lernens.pdf (24 pages, 1423323 by
+Output written on Grundlagen_des_maschinellen_lernens.pdf (24 pages, 1424471 by
 tes).
 PDF statistics:
- 537 PDF objects out of 1000 (max. 8388607)
- 450 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
+ 543 PDF objects out of 1000 (max. 8388607)
+ 456 compressed objects within 5 object streams
+ 109 named destinations out of 1000 (max. 500000)
  440 words of extra memory for PDF output out of 10000 (max. 10000000)
 

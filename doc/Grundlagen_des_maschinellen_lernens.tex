@@ -20,7 +20,12 @@
 \usepackage{caption}
 
 \author{Clemens Dautermann}
-\title{\Huge Grundbegriffe des maschinellen Lernens} 
+\title{\Huge Grundbegriffe des maschinellen Lernens\\
+	\bigskip
+\huge Neuronale Netze \line(1,0){350}
+\vspace*{10mm}
+\Large Besondere Lernleistung im Fach Informatik
+\vspace*{70mm}} 
 \date{\today{}}
 \pagestyle{fancy}
 \captionsetup{justification=raggedright,singlelinecheck=false}
@@ -73,6 +78,11 @@ Die Kurve stellt hier Keine Grenze, sondern die Funktion, die die Werte approxim
 Maschinelles Lernen kann eine mächtige Technologie sein. Eine Vielzahl von Problemen lässt sich damit lösen, alle jedoch nicht. Man sollte sich bevor man maschinelles Lernen nutzt also Fragen: Lässt sich dieses Problem nicht einfacher auf konventionelle Weise lösen? Außerdem sollte man sich stets bewusst sein, dass maschinelles Lernen im Gegensatz zu den meißten Algorythmen, keine Technologie ist, die eine Treffsicherheit von 100\% aufweist. In Systemen, wo eine korrekte Antwort kritisch ist, sollte man also nicht alleine auf maschinelles Lernen setzen.\\
 Auch ist für maschinelles Lernen stets eine enorme Datenmenge nötig. Diese Daten müssen erst gesammelt werden. Hier stellt sich natürlich sofort eine ethische Frage: Welche Daten können guten Gewissens gesammelt und ausgewertret werden? Dabei sollte das Persönlichkeitsrecht und das Recht auf Privatsphäre eine zentrale Rolle spielen. Niemals sollte der Nutzen der Technologie über die Rechte der Nutzer gestellt werden. Betrachtet man hier beispielsweise den Flukhafen von Peking, sind erschreckende Tendenzen festzustellen. Dort wird beim Check-In via Gesichtserkennung die Identität der Person mit ihrem Gesicht verknüpft. Danach läuft alles vom Ticketkauf bis hin zum Duty-free-shop mit Hilfe von Gesichtserkennung ab \cite{4}.\\
 Die zentralen Gefahren maschinellen Lernens sind also die eventuelle Unsicherheit im Ergebnis, der hohe Trainingsaufwand, der gegebenenfalls mit klassischen Algorythmen vermieden werden kann und die Verletzung von Rechten durch das Auswerten persönlicher Daten.
+
+\subsubsection{Die Daten}
+Wie bereits erwähnt sind die Datensätze oft der limitierende Faktor beim maschinellen Lernen. Das gravierendste Problem ist, überhaupt einen passenden Datensatz für das Problem zu finden oder generieren zu können. Dabei muss man beachten, dass man in den alle für das Problem relevanten Faktoren berücksichtigt. Möchte man beispielsweise Gesichter jeglicher Art erkennen, genügt es nicht den Algorythmus auf einem Datensatz von Gesichtern hellhäutiger Menschen zu trainieren, da dieser zum Erkennen von Gesichtern dunkelhäuitiger Menschen dann nutzlos wäre. Dass dies kein theoretisches, sondern auch ein praktisch auftretendes Phänomen ist, zeigt eine Studie des National Institute for Standards and Technology (NIST)\cite{5}. Diese hat ergeben, dass beispielsweise ein in den USA entwickelter und dort sehr populärer Algorythmus eine extrem hohe Fehlerquote für afroamerikanische Frauen hat. Da dieses System unter anderem von der Polizei in den USA verwendet wird, haben afroamerikanische Frauen eine wesentlich höhere Chance fälschlicherweise einer Straftat beschuldigt zu werden.\\
+Man sollte außerdem beachten, dass der Datensatz gut ausgeglichen ist. Das bedeutet, dass alle Trainingsdaten gleichmäßig verteilt sind. Möchte man beispielsweise Eingabedaten in 4 verschiedene Klassen klassifizieren, so sollten etwa 25\% der Daten zu Klasse A gehören, 25\% zu Klasse B und so weiter. Der in dieser Arbeit später verwendete MNIST Datensatz hat einen Umfang von 60000 handgeschriebenben Ziffern von 0 bis 9. Den größten Anteil haben einsen mit rund 11\%, den niedrigsten haben Fünfen mir 9\%. Damit kann der Datensatz als ausgeglichen betrachtet werden. Eine genaue Definition, ab wann ein Datensatz nicht mehr ausgeglichen ist, existiert nicht.\\
+Datensätze müssen ausgeglichen sein, da das Netz sonst den Fehler minimiert, indem es öfter die Klasse mit dem höhsten Anteil als Antwort liefert. Es erkennt, dass die höhste Trefferquote vorliegt, wenn es diese Antwort gibt, da so die Wahrscheinlichkeit eines Treffers maximal ist\footnote{In diesem Fall wird dann in der Fehlerfunktion ein lokales Minnimum gefunden. Dazu mehr unter Abschnitt \ref{Gradient_section}, \nameref{Gradient_section}}.
 \subsubsection{Overfitting}
 Overfitting ist ein häufig auftretendes Problem bei Klassifizierungsaufgaben. Die Klassengrenzen werden dabei zu genau aber falsch definiert. In Abbildung \ref{Overfitting} ist dies dargestellt.
 \begin{figure}[h]
@@ -84,8 +94,7 @@ Overfitting ist ein häufig auftretendes Problem bei Klassifizierungsaufgaben. D
 \\
 Overfitting tritt auf, wenn man ein neuronales Netz zu lange auf einem Datensatz trainiert. Das Netz lernt dann die Daten auswendig, da es so einen Fehler von 0 erreichen kann. Dadurch wurden aber keine wirklichen Klassengrenzen erlernt.\\
 Um Overfitting entgegenzuwirken reicht es oftmals den Trainingsdatensatz in der Reihenfolge zu randomisieren. Dadurch kann das Netz diese gar nicht auswendig lernen.
-\subsubsection{Die Daten}
-Wie bereits erwähnt sind die Datensätze oft der limitierende Faktor beim maschinellen Lernen. Das gravierendste Problem ist, überhaupt einen passenden Datensatz für das Problem zu finden oder generieren zu können. Dabei muss man beachten, dass man in den alle für das Problem relevanten Faktoren berücksichtigt. Möchte man beispielsweise Gesichter jeglicher Art erkennen, genügt es nicht den Algorythmus auf einem Datensatz von Gesichtern hellhäutiger Menschen zu trainieren, da dieser zum Erkennen von Gesichtern dunkelhäuitiger Menschen dann nutzlos wäre. Dass dies kein theoretisches, sondern auch ein praktisch auftretendes Phänomen ist, zeigt eine Studie des National Institute for Standards and Technology (NIST)\cite{5}. Diese hat ergeben, dass beispielsweise ein in den USA entwickelter und dort sehr populärer Algorythmus eine extremn hohe Fehlerquote für afroamerikanische Frauen hat. Da dieses System unter anderem von der Polizei in den USA verwendet wird, haben afroamerikanische Frauen eine wesentlich höhere Chance fälschlicherweise einer Straftat beschuldigt zu werden.
+
 \section{Verschiedene Techniken maschinellen Lernens}
 \subsection{Überwachtes Lernen}
 \subsection{Unüberwachtes Lernen}
@@ -270,6 +279,7 @@ Existieren mehr als 2 Klassen, handelt es sich also nicht mehr um eine Binärkla
 \newline
 Dabei gibt M die Anzahl der Klassen an, c das Label für die Klasse und o die berechnete Klassifizierung für diese Klasse.
 \subsection{Gradientenverfahren und Backpropagation}
+\label{Gradient_section}
 Das Gradientenverfahren ist ein Verfahren um das Minimum einer Funktion zu finden. Die Funktion, deren Minimum gefunden werden soll ist in diesem Fall die Fehlerfunktion. Diese ist von allen Gewichtungen und Biases des Netzwerkes abhängig, da sie direkt vom Ausgabevektor des Netzes abhängig ist. Der Gradient dieser Funktion ist in Abbildung \ref{Gradient_Function} dargestellt.
 \begin{figure}[h]
 	\begin{equation*}
