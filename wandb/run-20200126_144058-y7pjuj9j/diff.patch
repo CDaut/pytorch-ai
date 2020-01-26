@@ -1,0 +1,64 @@
+diff --git a/mnist_classifier.py b/mnist_classifier.py
+index 8eac991..4578ce3 100644
+--- a/mnist_classifier.py
++++ b/mnist_classifier.py
+@@ -3,7 +3,10 @@ import torch.nn as nn
+ import torch.optim as optim
+ import torch.nn.functional as F
+ from torchvision import transforms, datasets
++from tqdm import tqdm
++import wandb
+ 
++wandb.init(project='pytorch_ai')
+ train = datasets.MNIST('./datasets', train=True, download=True,
+                        transform=transforms.Compose([
+                            transforms.ToTensor()
+@@ -37,31 +40,32 @@ class Net(nn.Module):
+ 
+ 
+ net = Net()
++wandb.watch(net)
+ 
+ loss_function = nn.CrossEntropyLoss()
+ optimizer = optim.Adam(net.parameters(), lr=0.001)
+ 
+-for epoch in range(10):  # 3 full passes over the data
+-    for data in trainset:  # `data` is a batch of data
++for epoch in range(10):  # 10 full passes over the data
++    for data in tqdm(trainset):  # `data` is a batch of data
+         X, y = data  # X is the batch of features, y is the batch of targets.
+         net.zero_grad()  # sets gradients to 0 before loss calc. You will do this likely every step.
+         output = net(X.view(-1, 784))  # pass in the reshaped batch (recall they are 28x28 atm)
+-        loss = F.nll_loss(output, y)  # calc and grab the loss value
++        loss = loss_function(output, y)  # calc and grab the loss value
+         loss.backward()  # apply this loss backwards thru the network's parameters
+         optimizer.step()  # attempt to optimize weights to account for loss/gradients
++        wandb.log({'loss': loss})
+ 
+-    print(loss)  # print loss. We hope loss (a measure of wrong-ness) declines!
+-    torch.save(net, './nets/net_' + str(epoch) + ".pt")
++    # torch.save(net, './nets/net_' + str(epoch) + ".pt")
+     correct = 0
+     total = 0
+     with torch.no_grad():
+         for data in testset:
+             X, y = data
+             output = net(X.view(-1, 784))
+-            # print(output)
+             for idx, i in enumerate(output):
+-                # print(torch.argmax(i), y[idx])
+                 if torch.argmax(i) == y[idx]:
+                     correct += 1
+                 total += 1
++    wandb.log({'test_accuracy': correct / total})
+     print("Accuracy: ", round(correct / total, 3))
++    wandb.log({'epoch': epoch})
+diff --git a/wandb/settings b/wandb/settings
+index 8dae664..73c329e 100644
+--- a/wandb/settings
++++ b/wandb/settings
+@@ -1,2 +1,4 @@
+ [default]
++project = pytorch_ai
++entity = cdautermann
+ 

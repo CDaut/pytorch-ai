@@ -1,2 +1,4 @@
 [default]
+project = pytorch_ai
+entity = cdautermann
 
