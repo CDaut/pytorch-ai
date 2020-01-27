@@ -1,0 +1,248 @@
+diff --git a/mnist_classifier.py b/mnist_classifier.py
+index 4578ce3..c71a5c8 100644
+--- a/mnist_classifier.py
++++ b/mnist_classifier.py
+@@ -17,7 +17,7 @@ test = datasets.MNIST('./datasets', train=False, download=True,
+                           transforms.ToTensor()
+                       ]))
+ 
+-trainset = torch.utils.data.DataLoader(train, batch_size=15, shuffle=True)
++trainset = torch.utils.data.DataLoader(train, batch_size=64, shuffle=True)
+ testset = torch.utils.data.DataLoader(test, batch_size=10, shuffle=False)
+ 
+ 
+@@ -42,6 +42,11 @@ class Net(nn.Module):
+ net = Net()
+ wandb.watch(net)
+ 
++device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
++print('runnning on %s' % device)
++
++net = net.to(device)
++
+ loss_function = nn.CrossEntropyLoss()
+ optimizer = optim.Adam(net.parameters(), lr=0.001)
+ 
+@@ -49,19 +54,24 @@ for epoch in range(10):  # 10 full passes over the data
+     for data in tqdm(trainset):  # `data` is a batch of data
+         X, y = data  # X is the batch of features, y is the batch of targets.
+         net.zero_grad()  # sets gradients to 0 before loss calc. You will do this likely every step.
++        X = X.to(device)
+         output = net(X.view(-1, 784))  # pass in the reshaped batch (recall they are 28x28 atm)
++        output = output.cpu()
+         loss = loss_function(output, y)  # calc and grab the loss value
+         loss.backward()  # apply this loss backwards thru the network's parameters
+         optimizer.step()  # attempt to optimize weights to account for loss/gradients
+         wandb.log({'loss': loss})
+-
+-    # torch.save(net, './nets/net_' + str(epoch) + ".pt")
++    net = net.cpu()
++    torch.save(net, './nets/net_gpu_large_batch_' + str(epoch) + ".pt")
++    net = net.to(device)
+     correct = 0
+     total = 0
+     with torch.no_grad():
+         for data in testset:
+             X, y = data
++            X = X.to(device)
+             output = net(X.view(-1, 784))
++            output = output.cpu()
+             for idx, i in enumerate(output):
+                 if torch.argmax(i) == y[idx]:
+                     correct += 1
+diff --git a/wandb/debug.log b/wandb/debug.log
+index 0c37b2a..0be4d95 100644
+--- a/wandb/debug.log
++++ b/wandb/debug.log
+@@ -1,173 +1,18 @@
+-2020-01-26 15:40:59,370 DEBUG   MainThread:14805 [wandb_config.py:_load_defaults():111] no defaults not found in config-defaults.yaml
+-2020-01-26 15:40:59,388 DEBUG   MainThread:14805 [cmd.py:execute():728] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/clemens/repositorys/pytorch-ai, universal_newlines=False, shell=None, istream=<valid stream>)
+-2020-01-26 15:40:59,411 DEBUG   MainThread:14805 [cmd.py:execute():728] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/clemens/repositorys/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-26 15:40:59,424 DEBUG   MainThread:14805 [cmd.py:execute():728] Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=/home/clemens/repositorys/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-26 15:40:59,443 DEBUG   MainThread:14805 [run_manager.py:__init__():535] Initialized sync for pytorch_ai/y7pjuj9j
+-2020-01-26 15:40:59,504 INFO    MainThread:14805 [run_manager.py:wrap_existing_process():1133] wrapping existing process 14799
+-2020-01-26 15:40:59,505 WARNING MainThread:14805 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+-2020-01-26 15:40:59,515 DEBUG   MainThread:14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): pypi.org:443
+-2020-01-26 15:40:59,647 DEBUG   MainThread:14805 [connectionpool.py:_make_request():393] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 39767
+-2020-01-26 15:40:59,700 INFO    MainThread:14805 [run_manager.py:init_run():918] system metrics and metadata threads started
+-2020-01-26 15:40:59,700 INFO    MainThread:14805 [run_manager.py:init_run():952] upserting run before process can begin, waiting at most 10 seconds
+-2020-01-26 15:40:59,717 DEBUG   Thread-14 :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+-2020-01-26 15:41:00,007 DEBUG   Thread-14 :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 540
+-2020-01-26 15:41:00,046 INFO    Thread-14 :14805 [run_manager.py:_upsert_run():1037] saving patches
+-2020-01-26 15:41:00,048 DEBUG   Thread-14 :14805 [cmd.py:execute():728] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/clemens/repositorys/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-26 15:41:00,077 DEBUG   Thread-14 :14805 [cmd.py:execute():728] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/clemens/repositorys/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-26 15:41:00,086 DEBUG   Thread-14 :14805 [cmd.py:execute():728] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/clemens/repositorys/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-26 15:41:00,098 DEBUG   Thread-14 :14805 [cmd.py:execute():728] Popen(['git', 'version'], cwd=/home/clemens/repositorys/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-26 15:41:00,127 DEBUG   Thread-14 :14805 [cmd.py:execute():728] Popen(['git', 'merge-base', 'HEAD', '8aec5e4d07a210e412aaea245303788228d5cf72'], cwd=/home/clemens/repositorys/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-26 15:41:00,139 INFO    Thread-14 :14805 [run_manager.py:_upsert_run():1041] saving pip packages
+-2020-01-26 15:41:00,141 INFO    Thread-14 :14805 [run_manager.py:_upsert_run():1043] initializing streaming files api
+-2020-01-26 15:41:00,144 INFO    Thread-14 :14805 [run_manager.py:_upsert_run():1050] unblocking file change observer, beginning sync with W&B servers
+-2020-01-26 15:41:00,145 INFO    MainThread:14805 [run_manager.py:wrap_existing_process():1150] informing user process we are ready to proceed
+-2020-01-26 15:41:00,151 INFO    MainThread:14805 [run_manager.py:_sync_etc():1257] entering loop for messages from user process
+-2020-01-26 15:41:00,153 DEBUG   Thread-15 :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+-2020-01-26 15:41:00,385 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/config.yaml
+-2020-01-26 15:41:00,406 DEBUG   Thread-3  :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+-2020-01-26 15:41:00,426 DEBUG   Thread-15 :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+-2020-01-26 15:41:00,647 DEBUG   Thread-3  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 588
+-2020-01-26 15:41:00,672 INFO    Thread-3  :14805 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:00,673 INFO    Thread-3  :14805 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-metadata.json
+-2020-01-26 15:41:00,673 INFO    Thread-3  :14805 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/diff.patch
+-2020-01-26 15:41:00,674 INFO    Thread-3  :14805 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/requirements.txt
+-2020-01-26 15:41:01,380 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:01,381 INFO    Thread-3  :14805 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:02,263 DEBUG   Thread-7  :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+-2020-01-26 15:41:02,382 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:02,385 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:02,386 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:02,399 DEBUG   Thread-17 :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+-2020-01-26 15:41:02,545 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:02,728 DEBUG   Thread-17 :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 780
+-2020-01-26 15:41:02,738 DEBUG   Thread-17 :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): storage.googleapis.com:443
+-2020-01-26 15:41:03,308 DEBUG   Thread-17 :14805 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/cdautermann/pytorch_ai/y7pjuj9j/___batch_archive_1.tgz?Expires=1580049722&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=jt9pnrivh9DwvhZq7VR6YpjspO039ipbfmdO%2FSWpipHZfhZTHLFF2Qnlcr2jhGePr5Q4K28M2usKEuiHrO%2BQLx7GP%2FNtMRba%2BN0h6CRNXb3kNeKdrLiGfVFT%2B1dByvGo8%2BBNlxlsbKyHldFBCVmM8JY7hnr5RsAzsP9pZvV4o2r8hh8870ALQd7nFpm1JVhWYQUM19ge%2BTu6VW3%2Bt9HcCA798nxz86WYHHkZh7X0rHHqBZbox5YoDSIIhJ5WdkkLNXidWr2uoO6oFiE0cvEN3YTGHxEZwRTe4J62HpRfI0HcW078ded%2FeU4fSqNCpmmAFzuC8ARKIRmJKEnmCYeAdQ%3D%3D HTTP/1.1" 200 0
+-2020-01-26 15:41:03,382 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:03,383 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:03,384 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:04,383 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:04,384 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:04,384 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:04,528 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:05,384 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:05,385 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:05,386 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:06,385 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:06,385 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:06,386 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:06,554 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:07,385 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:07,386 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:07,387 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:08,386 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:08,387 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:08,387 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:08,561 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:09,388 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:09,389 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:09,391 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:10,388 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:10,389 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:10,389 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:10,582 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:11,389 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:11,390 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:11,390 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:12,390 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:12,390 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:12,391 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:12,569 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:13,390 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:13,391 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:13,392 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:14,392 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:14,393 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:14,394 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:14,561 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:15,393 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:15,394 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:15,397 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:15,441 DEBUG   Thread-15 :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+-2020-01-26 15:41:15,660 DEBUG   Thread-15 :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+-2020-01-26 15:41:16,393 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:16,394 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:16,395 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-metadata.json
+-2020-01-26 15:41:16,400 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:16,661 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:17,394 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:17,395 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:17,396 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:18,395 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:18,396 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:18,397 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:18,646 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:19,396 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:19,397 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:19,398 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:20,397 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:20,398 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:20,400 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:20,598 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:21,398 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:21,399 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:21,400 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:22,400 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:22,401 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:22,402 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:23,136 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:23,400 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:23,402 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:23,403 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:24,401 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:24,402 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:24,404 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:24,610 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:25,402 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:25,404 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:25,405 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:26,404 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:26,405 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:26,406 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:26,635 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:27,404 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:27,405 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:27,406 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:28,406 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:28,409 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:28,410 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:28,411 INFO    Thread-3  :14805 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-events.jsonl
+-2020-01-26 15:41:28,616 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:29,406 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:29,406 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:29,407 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:30,406 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:30,407 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:30,408 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:30,670 DEBUG   Thread-15 :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+-2020-01-26 15:41:30,685 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:30,878 DEBUG   Thread-15 :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+-2020-01-26 15:41:31,407 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:31,409 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:31,410 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:31,557 INFO    MainThread:14805 [run_manager.py:_sync_etc():1313] process received interrupt signal, shutting down
+-2020-01-26 15:41:31,558 INFO    MainThread:14805 [run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
+-2020-01-26 15:41:31,559 INFO    MainThread:14805 [run_manager.py:shutdown():1057] shutting down system stats and metadata service
+-2020-01-26 15:41:31,741 INFO    MainThread:14805 [run_manager.py:shutdown():1069] stopping streaming files and file change observer
+-2020-01-26 15:41:32,408 INFO    Thread-3  :14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-history.jsonl
+-2020-01-26 15:41:32,410 INFO    MainThread:14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-events.jsonl
+-2020-01-26 15:41:32,411 INFO    MainThread:14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/output.log
+-2020-01-26 15:41:32,412 INFO    MainThread:14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-summary.json
+-2020-01-26 15:41:32,412 INFO    MainThread:14805 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/repositorys/pytorch-ai/wandb/run-20200126_144058-y7pjuj9j/wandb-metadata.json
+-2020-01-26 15:41:32,433 DEBUG   MainThread:14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+-2020-01-26 15:41:32,663 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:32,666 DEBUG   MainThread:14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 588
+-2020-01-26 15:41:34,490 DEBUG   Thread-19 :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): api.wandb.ai:443
+-2020-01-26 15:41:34,619 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 311
+-2020-01-26 15:41:34,771 DEBUG   Thread-7  :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /files/cdautermann/pytorch_ai/y7pjuj9j/file_stream HTTP/1.1" 200 310
+-2020-01-26 15:41:34,775 INFO    MainThread:14805 [run_manager.py:_sync_etc():1385] rendering summary
+-2020-01-26 15:41:34,783 INFO    MainThread:14805 [run_manager.py:_sync_etc():1418] syncing files to cloud storage
+-2020-01-26 15:41:34,789 DEBUG   Thread-19 :14805 [connectionpool.py:_make_request():393] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 782
+-2020-01-26 15:41:34,798 DEBUG   Thread-19 :14805 [connectionpool.py:_new_conn():815] Starting new HTTPS connection (1): storage.googleapis.com:443
+-2020-01-26 15:41:35,834 DEBUG   Thread-19 :14805 [connectionpool.py:_make_request():393] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/cdautermann/pytorch_ai/y7pjuj9j/___batch_archive_2.tgz?Expires=1580049754&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=JjXpVxc7dAgkJqvThshwnsrp%2Bd12Uwd3tTS5zFxz%2FEXgnM47eQp0R%2F%2FEsuOBxK0hYeITTtsW%2BpQxneTuRV6jMHBNbbjkDwREkLBYqz4T4SG3EPVB3Eowbe1JD8EV%2B47Tfz5lfZLEDHnuBdVdbCGfojn0Ej9d2vzn9rkajQkceM%2FSFf7qp%2ByHlK6HZoRIpXKhyl04EQECNZ68%2BNsAR76XxGtbEHXdRwWZK5LTv9Y3YkqejqILPAMqIBehF1kDaRIJ3tUaLjll32e6Nex2VzWSRacPGTvIqBausxBOzJJhFxdwxMvUlZmF5TQT4MQHk4ah5vaqHu0U8A%2FXo08xbXY97A%3D%3D HTTP/1.1" 200 0
+-2020-01-26 15:41:37,044 INFO    MainThread:14805 [run_manager.py:_sync_etc():1433] syncing complete: https://app.wandb.ai/cdautermann/pytorch_ai/runs/y7pjuj9j
+-2020-01-26 15:41:37,044 INFO    MainThread:14805 [y7pjuj9j:run_manager.py:_sync_etc():1433] syncing complete: https://app.wandb.ai/cdautermann/pytorch_ai/runs/y7pjuj9j
++2020-01-27 16:07:52,024 DEBUG   MainThread:7896 [wandb_config.py:_load_defaults():111] no defaults not found in config-defaults.yaml
++2020-01-27 16:07:52,036 DEBUG   MainThread:7896 [cmd.py:execute():728] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=<valid stream>)
++2020-01-27 16:07:52,042 DEBUG   MainThread:7896 [cmd.py:execute():728] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-27 16:07:52,049 DEBUG   MainThread:7896 [cmd.py:execute():728] Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-27 16:07:52,067 DEBUG   MainThread:7896 [run_manager.py:__init__():535] Initialized sync for pytorch_ai/y1w180kc
++2020-01-27 16:07:52,072 INFO    MainThread:7896 [run_manager.py:wrap_existing_process():1133] wrapping existing process 7886
++2020-01-27 16:07:52,073 WARNING MainThread:7896 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
++2020-01-27 16:07:52,078 DEBUG   MainThread:7896 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): pypi.org
++2020-01-27 16:07:52,191 DEBUG   MainThread:7896 [connectionpool.py:_make_request():396] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 39767
++2020-01-27 16:07:52,220 INFO    MainThread:7896 [run_manager.py:init_run():918] system metrics and metadata threads started
++2020-01-27 16:07:52,220 INFO    MainThread:7896 [run_manager.py:init_run():952] upserting run before process can begin, waiting at most 10 seconds
++2020-01-27 16:07:52,235 DEBUG   Thread-14 :7896 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
++2020-01-27 16:07:52,472 DEBUG   Thread-14 :7896 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 538
++2020-01-27 16:07:52,483 INFO    Thread-14 :7896 [run_manager.py:_upsert_run():1037] saving patches
++2020-01-27 16:07:52,484 DEBUG   Thread-14 :7896 [cmd.py:execute():728] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-27 16:07:52,493 DEBUG   Thread-14 :7896 [cmd.py:execute():728] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-27 16:07:52,501 DEBUG   Thread-14 :7896 [cmd.py:execute():728] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-27 16:07:52,510 DEBUG   Thread-14 :7896 [cmd.py:execute():728] Popen(['git', 'version'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
