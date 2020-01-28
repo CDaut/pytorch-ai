@@ -1,0 +1,23 @@
+{
+    "root": "/home/clemens/repositorys/pytorch-ai",
+    "program": "pytorch_ai.py",
+    "git": {
+        "remote": "git@github.com:Clemens-Dautermann/pytorch-ai.git",
+        "commit": "55cff9b18f8558ae7a9170e56a3d5c6f6665d9ab"
+    },
+    "email": "clemens.dautermann@gmail.com",
+    "startedAt": "2020-01-28T10:04:19.609416",
+    "host": "ubuntu-laptop",
+    "username": "clemens",
+    "executable": "/usr/bin/python3",
+    "os": "Linux-5.3.0-26-generic-x86_64-with-Ubuntu-19.10-eoan",
+    "python": "3.7.5",
+    "cpu_count": 2,
+    "args": [],
+    "state": "finished",
+    "jobType": null,
+    "mode": "run",
+    "project": "tictactoe",
+    "heartbeatAt": "2020-01-28T10:04:28.075857",
+    "exitcode": 0
+}

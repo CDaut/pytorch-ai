@@ -1,0 +1,131 @@
+diff --git a/TicTacToe_AI/Net/pytorch_ai.py b/TicTacToe_AI/Net/pytorch_ai.py
+index efea5ae..05da941 100644
+--- a/TicTacToe_AI/Net/pytorch_ai.py
++++ b/TicTacToe_AI/Net/pytorch_ai.py
+@@ -4,6 +4,11 @@ import torch.optim as optim
+ from torch import nn
+ import torch.nn.functional as F
+ from tqdm import tqdm
++import wandb
++
++wandb.init(project="tictactoe")
++
++BATCH_SIZE = 15
+ 
+ 
+ def to_set(raw_list):
+@@ -35,6 +40,39 @@ def to_set(raw_list):
+     return out_set
+ 
+ 
++def to_batched_set(raw_list):
++    counter = 0
++    out_set = []
++    boardtensor = torch.zeros((BATCH_SIZE, 1, 9))
++    labeltensor = torch.zeros(BATCH_SIZE)
++    for line in tqdm(raw_list):
++        line = line.replace('\n', '')
++        raw_board, raw_label = line.split('|')[0], line.split('|')[1]
++
++        if not (int(raw_label) is -1):
++            labeltensor[counter] = int(raw_label)
++        else:
++            labeltensor[counter] = 9
++
++        for n, block in enumerate(raw_board):
++            if int(block) is -1:
++                boardtensor[counter][0][n] = 0
++            elif int(block) is 0:
++                boardtensor[counter][0][n] = 0.5
++            elif int(block) is 1:
++                boardtensor[counter][0][n] = 1
++
++        if counter == (BATCH_SIZE - 1):
++            out_set.append([boardtensor, labeltensor])
++            boardtensor = torch.zeros((BATCH_SIZE, 1, 9))
++            labeltensor = torch.zeros(BATCH_SIZE)
++            counter = 0
++        else:
++            counter += 1
++
++    return out_set
++
++
+ def buildsets():
+     with open('boards.bds', 'r') as infile:
+         print('Loading file...')
+@@ -44,9 +82,11 @@ def buildsets():
+ 
+         print('Generating testset...')
+         testset = to_set(alllines[0:10000])
++        print(testset[0])
++        exit(0)
+ 
+         print('Generating trainset...')
+-        trainset = to_set(alllines[10001:200000])
++        trainset = to_set(alllines[10001:100000])
+ 
+     return trainset, testset
+ 
+@@ -60,6 +100,7 @@ def testnet(net, testset):
+             if torch.argmax(output) == label[0]:
+                 correct += 1
+             total += 1
++    wandb.log({'test_accuracy': correct / total})
+     print("Accuracy: ", round(correct / total, 3))
+ 
+ 
+@@ -79,7 +120,15 @@ class Net(torch.nn.Module):
+         return F.log_softmax(x, dim=1)
+ 
+ 
+-net = torch.load('./nets/net_3.pt')
++device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
++print('running on %s' % device)
++
++# net = torch.load('./nets/net_3.pt')
++
++net = Net()
++wandb.watch(net)
++
++net.to(device)
+ 
+ optimizer = optim.Adam(net.parameters(), lr=0.001)
+ 
+@@ -87,13 +136,16 @@ trainset, testset = buildsets()
+ 
+ for epoch in range(100):
+     print('Epoch: ' + str(epoch))
++    wandb.log({'epoch': epoch})
+     for X, label in tqdm(trainset):
+         net.zero_grad()
++        X.to(device)
+         output = net(X)
++        output.cpu()
+         loss = F.nll_loss(output.view(1, 10), label[0])
+         loss.backward()
+         optimizer.step()
++        wandb.log({'loss': loss})
+ 
+-    print(loss)
+-    torch.save(net, './nets/net_' + str(epoch + 3) + '.pt')
++    torch.save(net, './nets/gpunets/net_' + str(epoch) + '.pt')
+     testnet(net, testset)
+diff --git a/other_scripts/setcounter.py b/other_scripts/setcounter.py
+index 9735f20..e9eb00c 100644
+--- a/other_scripts/setcounter.py
++++ b/other_scripts/setcounter.py
+@@ -7,9 +7,12 @@ data = datasets.MNIST('../datasets', train=True, download=True,
+                           transforms.ToTensor()
+                       ]))
+ 
+-loader = torch.utils.data.DataLoader(data, batch_size=1, shuffle=False)
++loader = torch.utils.data.DataLoader(data, batch_size=15, shuffle=False)
+ set = {'0': 0, '1': 0, '2': 0, '3': 0, '4': 0, '5': 0, '6': 0, '7': 0, '8': 0, '9': 0}
+ 
++for data in loader:
++    print(data[1].shape)
++
+ for _, label in tqdm(loader):
+     set[str(label[0].item())] += 1
+ 

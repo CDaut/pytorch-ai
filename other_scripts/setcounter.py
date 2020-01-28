@@ -7,8 +7,11 @@ data = datasets.MNIST('../datasets', train=True, download=True,
                           transforms.ToTensor()
                       ]))
 
-loader = torch.utils.data.DataLoader(data, batch_size=1, shuffle=False)
+loader = torch.utils.data.DataLoader(data, batch_size=15, shuffle=False)
 set = {'0': 0, '1': 0, '2': 0, '3': 0, '4': 0, '5': 0, '6': 0, '7': 0, '8': 0, '9': 0}
+
+for data in loader:
+    print(data[1].shape)
 
 for _, label in tqdm(loader):
     set[str(label[0].item())] += 1

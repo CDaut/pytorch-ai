@@ -1,0 +1,5 @@
+[default]
+project = tictactoe
+entity = cdautermann
+disabled = true
+
