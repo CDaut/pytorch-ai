@@ -1,0 +1,95 @@
+diff --git a/TicTacToe_AI/Net/wandb/debug.log b/TicTacToe_AI/Net/wandb/debug.log
+index c8547ba..339bd38 100644
+--- a/TicTacToe_AI/Net/wandb/debug.log
++++ b/TicTacToe_AI/Net/wandb/debug.log
+@@ -1,72 +1,18 @@
+-2020-01-28 15:22:12,035 DEBUG   MainThread:25522 [wandb_config.py:_load_defaults():111] no defaults not found in config-defaults.yaml
+-2020-01-28 15:22:12,045 DEBUG   MainThread:25522 [cmd.py:execute():728] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=<valid stream>)
+-2020-01-28 15:22:12,051 DEBUG   MainThread:25522 [cmd.py:execute():728] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-28 15:22:12,058 DEBUG   MainThread:25522 [cmd.py:execute():728] Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-28 15:22:12,077 DEBUG   MainThread:25522 [run_manager.py:__init__():535] Initialized sync for tictactoe/yiw34nau
+-2020-01-28 15:22:12,083 INFO    MainThread:25522 [run_manager.py:wrap_existing_process():1133] wrapping existing process 25512
+-2020-01-28 15:22:12,083 WARNING MainThread:25522 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+-2020-01-28 15:22:12,088 DEBUG   MainThread:25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): pypi.org
+-2020-01-28 15:22:12,198 DEBUG   MainThread:25522 [connectionpool.py:_make_request():396] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 39767
+-2020-01-28 15:22:12,243 INFO    MainThread:25522 [run_manager.py:init_run():918] system metrics and metadata threads started
+-2020-01-28 15:22:12,244 INFO    MainThread:25522 [run_manager.py:init_run():952] upserting run before process can begin, waiting at most 10 seconds
+-2020-01-28 15:22:12,253 DEBUG   Thread-14 :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+-2020-01-28 15:22:12,539 DEBUG   Thread-14 :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 535
+-2020-01-28 15:22:12,554 INFO    Thread-14 :25522 [run_manager.py:_upsert_run():1037] saving patches
+-2020-01-28 15:22:12,554 DEBUG   Thread-14 :25522 [cmd.py:execute():728] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-28 15:22:12,561 DEBUG   Thread-14 :25522 [cmd.py:execute():728] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-28 15:22:12,568 DEBUG   Thread-14 :25522 [cmd.py:execute():728] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-28 15:22:12,576 DEBUG   Thread-14 :25522 [cmd.py:execute():728] Popen(['git', 'version'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-28 15:22:12,598 DEBUG   Thread-14 :25522 [cmd.py:execute():728] Popen(['git', 'merge-base', 'HEAD', '56ee2635b5fec0a3976a4e7ddc55a89d4dea93bc'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
+-2020-01-28 15:22:12,607 INFO    Thread-14 :25522 [run_manager.py:_upsert_run():1041] saving pip packages
+-2020-01-28 15:22:12,609 INFO    Thread-14 :25522 [run_manager.py:_upsert_run():1043] initializing streaming files api
+-2020-01-28 15:22:12,611 INFO    Thread-14 :25522 [run_manager.py:_upsert_run():1050] unblocking file change observer, beginning sync with W&B servers
+-2020-01-28 15:22:12,611 INFO    MainThread:25522 [run_manager.py:wrap_existing_process():1150] informing user process we are ready to proceed
+-2020-01-28 15:22:12,619 DEBUG   Thread-15 :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+-2020-01-28 15:22:12,619 INFO    MainThread:25522 [run_manager.py:_sync_etc():1257] entering loop for messages from user process
+-2020-01-28 15:22:12,886 DEBUG   Thread-15 :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+-2020-01-28 15:22:13,044 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/config.yaml
+-2020-01-28 15:22:13,057 DEBUG   Thread-3  :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+-2020-01-28 15:22:13,321 DEBUG   Thread-3  :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 583
+-2020-01-28 15:22:13,324 INFO    Thread-3  :25522 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/diff.patch
+-2020-01-28 15:22:13,325 INFO    Thread-3  :25522 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:13,325 INFO    Thread-3  :25522 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/wandb-metadata.json
+-2020-01-28 15:22:13,326 INFO    Thread-3  :25522 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/requirements.txt
+-2020-01-28 15:22:14,640 DEBUG   Thread-7  :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+-2020-01-28 15:22:14,888 DEBUG   Thread-7  :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/cdautermann/tictactoe/yiw34nau/file_stream HTTP/1.1" 200 311
+-2020-01-28 15:22:15,054 DEBUG   Thread-16 :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+-2020-01-28 15:22:15,335 DEBUG   Thread-16 :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 783
+-2020-01-28 15:22:15,343 DEBUG   Thread-16 :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+-2020-01-28 15:22:15,852 DEBUG   Thread-16 :25522 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/cdautermann/tictactoe/yiw34nau/___batch_archive_1.tgz?Expires=1580221395&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=fLf%2BjIxyB8qM5izmMqpAGpDSRfGhY7rEzlH6TpmRZPtGCoQfdeuFznAdT8AMD7goFOblNFJQuOyImNSiv%2FbRxRMNnaMnu7H7L9jwNH7Ph9uyHNKOu9GObDjwKO4YoK0VH%2BrTukwXRj0%2BGSA42qNk77QJJFUZlVcvkmNyupsLX7hW%2BSb%2FJzCKdW6nacac11mPWO8kFRN74wo%2BL1UtDnO6H%2FiuE2sgyLDydOIwJP4g4MPKu7DIklTVXaxz%2B6srVaujPqBpfCU1Lfv2PeVJfxlnV9GRmswdANP7FIlzIsQk7ysi4V5lhI%2BRWAuJ%2BJv9d1qtgOz9MlCTOMhMTld70ZunIg%3D%3D HTTP/1.1" 200 0
+-2020-01-28 15:22:16,044 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:16,818 DEBUG   Thread-7  :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/cdautermann/tictactoe/yiw34nau/file_stream HTTP/1.1" 200 311
+-2020-01-28 15:22:17,045 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:18,045 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:18,875 DEBUG   Thread-7  :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/cdautermann/tictactoe/yiw34nau/file_stream HTTP/1.1" 200 311
+-2020-01-28 15:22:19,046 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:20,047 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:20,882 DEBUG   Thread-7  :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/cdautermann/tictactoe/yiw34nau/file_stream HTTP/1.1" 200 311
+-2020-01-28 15:22:21,048 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:22,048 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:22,888 DEBUG   Thread-7  :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/cdautermann/tictactoe/yiw34nau/file_stream HTTP/1.1" 200 311
+-2020-01-28 15:22:23,049 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:24,050 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:24,893 DEBUG   Thread-7  :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/cdautermann/tictactoe/yiw34nau/file_stream HTTP/1.1" 200 311
+-2020-01-28 15:22:25,051 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:25,278 INFO    MainThread:25522 [run_manager.py:_sync_etc():1313] process received interrupt signal, shutting down
+-2020-01-28 15:22:25,278 INFO    MainThread:25522 [run_manager.py:_sync_etc():1366] closing log streams and sending exitcode to W&B
+-2020-01-28 15:22:25,279 INFO    MainThread:25522 [run_manager.py:shutdown():1057] shutting down system stats and metadata service
+-2020-01-28 15:22:26,052 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/output.log
+-2020-01-28 15:22:26,052 INFO    Thread-3  :25522 [run_manager.py:_on_file_created():671] file/dir created: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/wandb-events.jsonl
+-2020-01-28 15:22:26,259 INFO    MainThread:25522 [run_manager.py:shutdown():1069] stopping streaming files and file change observer
+-2020-01-28 15:22:27,052 INFO    Thread-3  :25522 [run_manager.py:_on_file_modified():682] file/dir modified: /home/clemens/Dokumente/repos/pytorch-ai/TicTacToe_AI/Net/wandb/run-20200128_142211-yiw34nau/wandb-metadata.json
+-2020-01-28 15:22:27,070 DEBUG   MainThread:25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+-2020-01-28 15:22:27,332 DEBUG   MainThread:25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 583
+-2020-01-28 15:22:28,076 DEBUG   Thread-19 :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+-2020-01-28 15:22:28,175 DEBUG   Thread-20 :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+-2020-01-28 15:22:28,212 DEBUG   Thread-7  :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/cdautermann/tictactoe/yiw34nau/file_stream HTTP/1.1" 200 311
+-2020-01-28 15:22:28,277 DEBUG   Thread-21 :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+-2020-01-28 15:22:28,307 DEBUG   Thread-19 :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 774
+-2020-01-28 15:22:28,315 DEBUG   Thread-19 :25522 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+-2020-01-28 15:22:28,352 DEBUG   Thread-7  :25522 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/cdautermann/tictactoe/yiw34nau/file_stream HTTP/1.1" 200 310
+-2020-01-28 15:22:28,354 INFO    MainThread:25522 [run_manager.py:_sync_etc():1378] process only ran for 16 seconds, not syncing files
+-2020-01-28 15:22:28,354 INFO    MainThread:25522 [yiw34nau:run_manager.py:_sync_etc():1378] process only ran for 16 seconds, not syncing files
++2020-01-28 15:24:02,985 DEBUG   MainThread:25599 [wandb_config.py:_load_defaults():111] no defaults not found in config-defaults.yaml
++2020-01-28 15:24:02,997 DEBUG   MainThread:25599 [cmd.py:execute():728] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=<valid stream>)
++2020-01-28 15:24:03,004 DEBUG   MainThread:25599 [cmd.py:execute():728] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-28 15:24:03,009 DEBUG   MainThread:25599 [cmd.py:execute():728] Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-28 15:24:03,029 DEBUG   MainThread:25599 [run_manager.py:__init__():535] Initialized sync for tictactoe/y6dbhic3
++2020-01-28 15:24:03,034 INFO    MainThread:25599 [run_manager.py:wrap_existing_process():1133] wrapping existing process 25589
++2020-01-28 15:24:03,034 WARNING MainThread:25599 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
++2020-01-28 15:24:03,039 DEBUG   MainThread:25599 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): pypi.org
++2020-01-28 15:24:03,146 DEBUG   MainThread:25599 [connectionpool.py:_make_request():396] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 39767
++2020-01-28 15:24:03,193 INFO    MainThread:25599 [run_manager.py:init_run():918] system metrics and metadata threads started
++2020-01-28 15:24:03,193 INFO    MainThread:25599 [run_manager.py:init_run():952] upserting run before process can begin, waiting at most 10 seconds
++2020-01-28 15:24:03,207 DEBUG   Thread-14 :25599 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
++2020-01-28 15:24:03,514 DEBUG   Thread-14 :25599 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 535
++2020-01-28 15:24:03,526 INFO    Thread-14 :25599 [run_manager.py:_upsert_run():1037] saving patches
++2020-01-28 15:24:03,527 DEBUG   Thread-14 :25599 [cmd.py:execute():728] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-28 15:24:03,533 DEBUG   Thread-14 :25599 [cmd.py:execute():728] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-28 15:24:03,540 DEBUG   Thread-14 :25599 [cmd.py:execute():728] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
++2020-01-28 15:24:03,551 DEBUG   Thread-14 :25599 [cmd.py:execute():728] Popen(['git', 'version'], cwd=/home/clemens/Dokumente/repos/pytorch-ai, universal_newlines=False, shell=None, istream=None)
