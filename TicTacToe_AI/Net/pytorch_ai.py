@@ -8,7 +8,7 @@ import wandb
 
 wandb.init(project="tictactoe")
 
-BATCH_SIZE = 3
+BATCH_SIZE = 250
 
 
 def to_set(raw_list):
@@ -85,17 +85,19 @@ def buildsets():
         testset = to_batched_set(alllines[0:10000])
 
         print('Generating trainset...')
-        trainset = to_batched_set(alllines[10001:20000])
+        trainset = to_batched_set(alllines[10001:])
 
     return trainset, testset
 
 
-def testnet(net, testset):
+def testnet(net, testset, device):
     correct = 0
     total = 0
     with torch.no_grad():
         for X, label in testset:
+            X = X.to(device)
             output = net(X)
+            output = output.cpu()
             if torch.argmax(output) == label[0]:
                 correct += 1
             total += 1
@@ -134,18 +136,20 @@ loss_function = nn.CrossEntropyLoss()
 
 trainset, testset = buildsets()
 
-for epoch in range(100):
+for epoch in range(300):
     print('Epoch: ' + str(epoch))
     wandb.log({'epoch': epoch})
     for X, label in tqdm(trainset):
         net.zero_grad()
-        X.to(device)
+        X = X.to(device)
         output = net(X)
-        output.cpu()
+        output = output.cpu()
         loss = loss_function(output.view(-1, 10), label)
         loss.backward()
         optimizer.step()
         wandb.log({'loss': loss})
 
+    net = net.cpu()
     torch.save(net, './nets/gpunets/net_' + str(epoch) + '.pt')
-    testnet(net, testset)
+    net = net.to(device)
+    testnet(net, testset, device)
