@@ -90,6 +90,7 @@ def buildsets():
     return trainset, testset
 
 
+# TODO testnet is wrong since batching has been implemented
 def testnet(net, testset, device):
     correct = 0
     total = 0
