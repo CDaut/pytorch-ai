@@ -52,3 +52,5 @@
 \contentsline {figure}{\numberline {25}{\ignorespaces Average Pooling mit $2\times 2$ gro\IeC {\ss }en Submatritzen\newline Aus: Dominguez-Morales, Juan Pedro. (2018). Neuromorphic audio processing through real-time embedded spiking neural networks. Abbildung 33}}{20}{figure.caption.23}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {26}{\ignorespaces Gegen\IeC {\"u}berstellung von Max und Average Pooling\relax }}{21}{figure.caption.24}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {27}{\ignorespaces Der Code zum Laden des MNIST Datensatzes\relax }}{22}{figure.caption.25}% 

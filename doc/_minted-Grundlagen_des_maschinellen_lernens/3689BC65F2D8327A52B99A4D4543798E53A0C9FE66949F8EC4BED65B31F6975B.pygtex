@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{torchvision} \PYG{k+kn}{import} \PYG{n}{transforms}\PYG{p}{,} \PYG{n}{datasets}
+
+\PYG{n}{train} \PYG{o}{=} \PYG{n}{datasets}\PYG{o}{.}\PYG{n}{MNIST}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./datasets\PYGZsq{}}\PYG{p}{,} \PYG{n}{train}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{download}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,}
+\PYG{n}{transform}\PYG{o}{=}\PYG{n}{transforms}\PYG{o}{.}\PYG{n}{Compose}\PYG{p}{([}
+	\PYG{n}{transforms}\PYG{o}{.}\PYG{n}{ToTensor}\PYG{p}{()}
+\PYG{p}{]))}
+
+\PYG{n}{test} \PYG{o}{=} \PYG{n}{datasets}\PYG{o}{.}\PYG{n}{MNIST}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./datasets\PYGZsq{}}\PYG{p}{,} \PYG{n}{train}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{,} \PYG{n}{download}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,}
+\PYG{n}{transform}\PYG{o}{=}\PYG{n}{transforms}\PYG{o}{.}\PYG{n}{Compose}\PYG{p}{([}
+	\PYG{n}{transforms}\PYG{o}{.}\PYG{n}{ToTensor}\PYG{p}{()}
+\PYG{p}{]))}
+
+\PYG{n}{trainset} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{utils}\PYG{o}{.}\PYG{n}{data}\PYG{o}{.}\PYG{n}{DataLoader}\PYG{p}{(}\PYG{n}{train}\PYG{p}{,} \PYG{n}{batch\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{200}\PYG{p}{,} \PYG{n}{shuffle}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+\PYG{n}{testset} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{utils}\PYG{o}{.}\PYG{n}{data}\PYG{o}{.}\PYG{n}{DataLoader}\PYG{p}{(}\PYG{n}{test}\PYG{p}{,} \PYG{n}{batch\PYGZus{}size}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{shuffle}\PYG{o}{=}\PYG{n+nb+bp}{False}\PYG{p}{)}
+\end{Verbatim}

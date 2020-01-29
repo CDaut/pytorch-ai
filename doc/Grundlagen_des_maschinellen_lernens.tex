@@ -18,6 +18,7 @@
 \usepackage{pgfplots}
 \usepackage{txfonts}
 \usepackage{caption}
+\usepackage{minted}
 
 \author{Clemens Dautermann}
 \title{\Huge Grundbegriffe des maschinellen Lernens\\
@@ -532,13 +533,59 @@ Die Dimension der Submatritzen beträgt meißt $2\times2$. In Abbildung \ref{Poo
 \section{PyTorch}
 Pytorch ist ein von der Facebook Research Group entwickeltes Framework für machinelles Lernen in Python. Es ermöglicht Programmierern, maschinelles Lernen einfach und hochoptimiret umzusetzen. Dafür stellt es unter anderem eine Schnittstelle für Grafikkarten bereit und lieferet viele Funktionen, die oft benötigt werden. So muss beispielsweise die Gradientenberechnung oder die Berechnung der Fehlerfunktion nicht in jedem Projekt erneut implementiert werden. Die Grundlage der Pytorch Library ist der Datentyp \glqq Tensor''. Dabei handelt es sich im wesentlichen um eine Matrix, die optimierte Funktionen für maschinelles Lernen aufweist und auf Grafikkarten transferiert werden kann. Alle Daten werden in Form dieser Tensoren gespeichert und verarbeitet. Sollen also Bilder erkannt werden, müssen diese erst zu Tensoren konvertiert werden. Neben den Fehlerfunktionen und der Gradientenberechnung ist besonders die Einfachheit mit der ein Netz in Pytorch definiert werden kann bezeichnend. Pytorch ermöglicht es also, dass die Entwicklung auf die Logik selber fokusiert sein kann und trotzdem komplexe mathematische Funktionen verwendet werden können. Häufig genannte Alternativen zu Pytorch sind die Frameworks \glqq Tensorflow'' oder \glqq Keras''. Tensorflow wird von Google entwickelt und ist auch für andere Sprachen als Python verfügbar.
 \subsection{Datenvorbereitung}
-Wie bereits erwähnt, müssen die Daten erst vorbereitet werden. Dies kann unter Umständen das größte Problem bei einem Projekt, das maschinelles Lernen involviert, darstellen, da die Datenvorbereitung sehr komplex werden kann. In einem einfachen Fall liegt der Datensatz bereitzs in Pytorch vor und muss nur noch geladen werden, im komplexesten Fall, kann es allerdings notwendig werden, mehrere sogenannte \glqq Transforms'' auf die Daten anzuwenden. Das sind kleine Funktionen, die die Daten verändern. Sie schneiden beispielsweise das Eingabebild zu, normalisieren es oder wenden eine vollständig selbst definierte Funktion darauf an.
+Wie bereits erwähnt, müssen die Daten erst vorbereitet werden. Dies kann unter Umständen das größte Problem bei einem Projekt, das maschinelles Lernen involviert, darstellen, da die Datenvorbereitung sehr komplex werden kann. In einem einfachen Fall liegt der Datensatz bereits in Pytorchs interner Datenlibrary \glqq Torchvision'' vor und muss nur noch geladen werden. Im komplexesten Fall, kann es allerdings notwendig werden, mehrere sogenannte \glqq Transforms'' auf die Daten anzuwenden. Das sind kleine Funktionen, die die Daten verändern. Sie schneiden beispielsweise das Eingabebild zu, normalisieren es oder wenden eine vollständig selbst definierte Funktion darauf an.\\
+In ein neuronales Netz können immer nur Bilder der gleichen Größe gegeben werden, da die Größe der Eingabetensoren konstant ist und die Form des Eingabelayers definiert. Ist also ein Datensatz gegeben, in dem zum Beispiel  einige Bilder im hoch und einige im Querformat vorliegen, müssen diese erst durch geschicktes Zuschneiden und verschieben auf eine Größe gebracht werden. Auch dafür lassen sich Transforms verwenden. Liegen die Daten allerdings nicht als Bilder vor, müssen gegebenenfalls angepasste Algorythmen angewandt werden um diese Daten zu Tensoren zu konvertieren.\\
+Aufgrund der Vielseitigkeit von PyTorch ist es ebenfalls möglich andere Librarys einzubinden um vor der Konvertierung der Bilder zu einem Tensor zum Beispiel einen Kantenerkennungsalgorythmus darauf anzuwenden. Im einfachsten Fall stellt sich das Laden der Daten wie in Abbildung \ref{MNIST_Dataloader_Code} dar.
+\begin{figure}[h]
+	\begin{minted}[
+	frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	fontsize=\footnotesize,
+	linenos,
+	autogobble
+	]{python}
+		from torchvision import transforms, datasets
+	
+		train = datasets.MNIST('./datasets', train=True, download=True,
+		transform=transforms.Compose([
+			transforms.ToTensor()
+		]))
+		
+		test = datasets.MNIST('./datasets', train=False, download=True,
+		transform=transforms.Compose([
+			transforms.ToTensor()
+		]))
+		
+		trainset = torch.utils.data.DataLoader(train, batch_size=200, shuffle=True)
+		testset = torch.utils.data.DataLoader(test, batch_size=10, shuffle=False)
+	\end{minted}
+	\caption{Der Code zum Laden des MNIST Datensatzes}
+	\label{MNIST_Dataloader_Code}
+\end{figure}
+\\
+Der Code lädt zwei Datensätze. Einen zum testen und einen zum trainieren. Anschließend wird aus diesen je ein DataLoader erstellt, um über die Daten iterieren zu können. In Zeile 1 werden dafür zunächst alle nötigen Funktionen importiert. Die Zeilen 3 bis 6 sind für das eigentliche Laden der Daten zuständig. \\
+Die Funktion \mintinline{python}{datasets.MNIST()} nimmt dabei vier Parameter an:
+\begin{enumerate}
+	\item \mintinline{python}{'./datasets'} Dieser Parameter gibt den Speicherort für den heruntergeladenen Datensatz an
+	\item \mintinline{python}{train} Dieser Booleanparameter gibt an, ob es sich bei diesem Datensatz um den Trainingsdatensatz oder um den Testdatensatz handeln soll.
+	\item \mintinline{python}{download} Mit diesem Parameter wird festgelegt ob der Datensatz heruntergeladen werden soll, oder jedes mal erneut aus dem Internet abgerufen werden soll.
+	\item \mintinline{python}{transform} Hier werden die Transforms angegeben, die auf die geladenen Daten angewandt werden sollen. In diesem Fall wurde der Ansatz\\ \mintinline{python}{transforms.Compose([transforms.ToTensor()])} gewählt.\\ \mintinline{python}{transforms.Compose()} ist dabei dafür verantwortlich die Transforms im Array zu kaskadieren, also nach einander auf die Eingabedaten anzuwenden. \mintinline{python}{transforms.ToTensor()} ist der häufigste Transform. Er wird eingesetzt um Bilddaten in einen Tensor umzuwandeln.
+\end{enumerate}
+In Zeile 13 wird dann der DataLoader erstellt. Er nimmt folgende Parameter an:
+\begin{enumerate}
+	\item Der erste Parameter ist der Datensatz aus dem der DataLoader erstellt werden soll
+	\item \mintinline{python}{batch\_size} Ist ein Parameter, der eine ganz fundamentale Variable beim maschinellen Lernen durch neuronale Netze festlegt: die Batch size.\\
+	Die Tensoren werden nämlich nicht einzeln, sondern in sogenannten minibatches in das Netz gegeben. Es wird mit Durchschnittswerten über diese Tensoren in einer Minibatch gerechnet. Dies dient der Reduktion der Rechenzeit. Batching kann veranschaulicht werden, indem man sich vorstellt, dass die \glqq Eingabebilder'' hinter einander geklebt und alle gleichzeitzig betrachtet werden. Die Batch size gibt dann analog an, wie viele Bilder hinter einander geklebt werden. Je höher die Batch size, desto höher ist die Speicherauslastung auf der Grafikkarte und desto ungenauer ist das Ergebnis, da über mehr Werte der Durchschnitt gerechnet wird. Mit höherer Batch size sinkt allerdings auch die Rechenzeit massiv.
+	\item \mintinline{python}{shuffle} gibt lediglich an, ob die Reihenfolge der Daten randomisiert werden soll. Dies ist wie am Anfang bereits erwähnt ein sehr nützlicher Parameter um overfitting vorzubeugen.
+\end{enumerate}
+Über den entstandenen DataLoader kann jetzt in einer konventionellen Schleife iteriert werden, da die Klasse DataLoader die MagicMethod \mintinline{python}{__iter__} implementiert. Der DataLoader gibt dabei Tupel der Form (Batch von Bildern als Tensoren, Batch von Labels als Klassenindices) zurück.
 \subsection{Definieren des Netzes}
+Das Definieren des Netzes ist in Pytorch bereitsa sehr einfach möglich, bietet jedoch dennoch extreme individuelle Anpassungsmöglichkeiten.
 \subsection{Trainieren des Netzes}
 \section{Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk für handgeschriebene Ziffern}
 \subsection{Aufgabe}
 \subsection{Der MNIST Datensatz}
-\subsection{Fragmentbasierte Erkennung}
 \subsection{Ergebnis}
 \section{Fallbeispiel II:\newline Eine selbsttrainierende KI für Tic-Tac-Toe}
 \subsection{Das Prinzip}
