@@ -55,24 +55,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Definieren des Netzes}{23}{subsection.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Trainieren des Netzes}{24}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.3}Trainieren des Netzes}{25}{subsection.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk f\IeC {\"u}r handgeschriebene Ziffern}{24}{section.5}% 
+\contentsline {section}{\numberline {5}Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk f\IeC {\"u}r handgeschriebene Ziffern}{25}{section.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Aufgabe}{24}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.1}Aufgabe}{25}{subsection.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Der MNIST Datensatz}{24}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.2}Der MNIST Datensatz}{25}{subsection.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Ergebnis}{24}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.3}Ergebnis}{25}{subsection.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fallbeispiel II:\newline Eine selbsttrainierende KI f\IeC {\"u}r Tic-Tac-Toe}{24}{section.6}% 
+\contentsline {section}{\numberline {6}Fallbeispiel II:\newline Eine selbsttrainierende KI f\IeC {\"u}r Tic-Tac-Toe}{25}{section.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Das Prinzip}{24}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.1}Das Prinzip}{25}{subsection.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Chance-Tree Optimierung}{24}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.2}Chance-Tree Optimierung}{25}{subsection.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}L\IeC {\"o}sung mittels eines neuronalen Netzes}{24}{subsection.6.3}% 
+\contentsline {subsection}{\numberline {6.3}L\IeC {\"o}sung mittels eines neuronalen Netzes}{25}{subsection.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Vergleich}{24}{subsection.6.4}% 
+\contentsline {subsection}{\numberline {6.4}Vergleich}{25}{subsection.6.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Schlusswort}{24}{section.7}% 
+\contentsline {section}{\numberline {7}Schlusswort}{25}{section.7}% 

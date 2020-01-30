@@ -570,19 +570,49 @@ Die Funktion \mintinline{python}{datasets.MNIST()} nimmt dabei vier Parameter an
 	\item \mintinline{python}{'./datasets'} Dieser Parameter gibt den Speicherort für den heruntergeladenen Datensatz an
 	\item \mintinline{python}{train} Dieser Booleanparameter gibt an, ob es sich bei diesem Datensatz um den Trainingsdatensatz oder um den Testdatensatz handeln soll.
 	\item \mintinline{python}{download} Mit diesem Parameter wird festgelegt ob der Datensatz heruntergeladen werden soll, oder jedes mal erneut aus dem Internet abgerufen werden soll.
-	\item \mintinline{python}{transform} Hier werden die Transforms angegeben, die auf die geladenen Daten angewandt werden sollen. In diesem Fall wurde der Ansatz\\ \mintinline{python}{transforms.Compose([transforms.ToTensor()])} gewählt.\\ \mintinline{python}{transforms.Compose()} ist dabei dafür verantwortlich die Transforms im Array zu kaskadieren, also nach einander auf die Eingabedaten anzuwenden. \mintinline{python}{transforms.ToTensor()} ist der häufigste Transform. Er wird eingesetzt um Bilddaten in einen Tensor umzuwandeln.
+	\item \mintinline{python}{transform} Hier werden die Transforms angegeben, die auf die geladenen Daten angewandt werden sollen. In diesem Fall wurde der Ansatz\\ \mintinline{python}{transforms.Compose([transforms.ToTensor()])} gewählt.\\ \mintinline{python}{transforms.Compose()} ist dabei dafür verantwortlich die Transforms im Array zu kaskadieren, also nach einander auf die Eingabedaten anzuwenden. \\
+	\mintinline{python}{transforms.ToTensor()} ist der häufigste Transform. Er wird eingesetzt um Bilddaten in einen Tensor umzuwandeln.
 \end{enumerate}
 In Zeile 13 wird dann der DataLoader erstellt. Er nimmt folgende Parameter an:
 \begin{enumerate}
 	\item Der erste Parameter ist der Datensatz aus dem der DataLoader erstellt werden soll
-	\item \mintinline{python}{batch\_size} Ist ein Parameter, der eine ganz fundamentale Variable beim maschinellen Lernen durch neuronale Netze festlegt: die Batch size.\\
+	\item \mintinline{python}{batch_size} Ist ein Parameter, der eine ganz fundamentale Variable beim maschinellen Lernen durch neuronale Netze festlegt: die Batch size.\\
 	Die Tensoren werden nämlich nicht einzeln, sondern in sogenannten minibatches in das Netz gegeben. Es wird mit Durchschnittswerten über diese Tensoren in einer Minibatch gerechnet. Dies dient der Reduktion der Rechenzeit. Batching kann veranschaulicht werden, indem man sich vorstellt, dass die \glqq Eingabebilder'' hinter einander geklebt und alle gleichzeitzig betrachtet werden. Die Batch size gibt dann analog an, wie viele Bilder hinter einander geklebt werden. Je höher die Batch size, desto höher ist die Speicherauslastung auf der Grafikkarte und desto ungenauer ist das Ergebnis, da über mehr Werte der Durchschnitt gerechnet wird. Mit höherer Batch size sinkt allerdings auch die Rechenzeit massiv.
 	\item \mintinline{python}{shuffle} gibt lediglich an, ob die Reihenfolge der Daten randomisiert werden soll. Dies ist wie am Anfang bereits erwähnt ein sehr nützlicher Parameter um overfitting vorzubeugen.
 \end{enumerate}
 Über den entstandenen DataLoader kann jetzt in einer konventionellen Schleife iteriert werden, da die Klasse DataLoader die MagicMethod \mintinline{python}{__iter__} implementiert. Der DataLoader gibt dabei Tupel der Form (Batch von Bildern als Tensoren, Batch von Labels als Klassenindices) zurück.
 \subsection{Definieren des Netzes}
-Das Definieren des Netzes ist in Pytorch bereitsa sehr einfach möglich, bietet jedoch dennoch extreme individuelle Anpassungsmöglichkeiten.
+Das Definieren des Netzes ist in Pytorch bereits sehr einfach möglich, bietet jedoch dennoch extreme individuelle Anpassungsmöglichkeiten. Um ein Netz zu definieren muss zunächst eine neue Klasse erstellt werden, die Subklkasse von \mintinline{python}{nn.Module} ist. Im Konstruktor wird dann angegeben, welche Layers das Netz haben soll. Es muss außerdem die Methode \mintinline{python}{forward(self, x)} implementiert werden. Diese spezifiziert, wie mit den Daten innerhalbn des Netzes verfahren wird. Eine möglichst einfache Definition  eines Netzes ist in Abbildung \ref{Net_simple_definition} gegeben.
+\begin{figure}[h]
+	\begin{minted}[
+	frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	fontsize=\footnotesize,
+	linenos,
+	autogobble
+	]{python}
+	class Net(nn.Module):
+		def __init__(self):
+			super().__init__()
+			self.fc0 = nn.Linear(28 * 28, 64)
+			self.fc1 = nn.Linear(64, 120)
+			self.fc2 = nn.Linear(120, 10)
+	
+		def forward(self, x):
+			x = F.relu(self.fc0(x))
+			x = F.relu(self.fc1(x))
+			x = self.fc2(x)
+			return F.log_softmax(x)
+	
+	\end{minted}
+	\caption{Code um ein einfaches Netz in Pytorch zu definieren}
+	\label{Net_simple_definition}
+\end{figure}\\
+Dieses Netz hat nur drei Layers: Ein Eingabelayer (\mintinline{python}{fc0}), das genau die Größe der Eingabedaten ($28\times28$) aufweist, ein hidden Layer (\mintinline{python}{fc1}), das 64 Skalere annimmt und 120 Skalare ausgibt und ein Ausgabelayer (\mintinline{python}{fc2}), das 120 Skalare annimmt und 10 ausgibt. Dass \mintinline{python}{fc2} 10 Ausgabeneuronen besitzt ist kein Zufall, sondern liegt darin begründet, dass dieses Klassifizierungsnetz genau 10 Klassen unterscheiden soll. Die Größe von \mintinline{python}{fc1} ist jedoch völlig frei gewählt. Es ist allerdings wichtig Acht zu geben, dass die Layers die Daten auch an einander weitergeben können. Ein Layer muss also stets so viele Ausgaben aufweisen, wie das Layer, an das die Daten weitergegeben werden sollen, Eingaben besitzt.\\
+Die \mintinline{python}{forward(self, x)} Funktion definiert, wie die Daten innerhalb des Netzes weitergegeben werden sollen. Hier werden sie erst in \mintinline{python}{fc0} gegeben, dann wird auf die Ausgabe aus \mintinline{python}{fc0} die Aktivierungsfunktion \glqq ReLu'' (REctified Linear Unit) angewandt. Die Ausgabe daraus wird dann in das hidden Layer \mintinline{python}{fc1} gegebnen und die Aktivierungsfunktion wird erneut angewandt. Im Output Layer geschieht dies nicht. Abschließend wird die Ausgabe von \mintinline{python}{F.log_softmax} zurück gegeben. Dies wendet erst einen SoftMax und dann einen Logarythmus auf die Daten an \cite{6} um diese zu normalisieren und ist in Klassifizierungsnetzwerken oft nötig. Da die Netze als Klassen definiert werden und der Interne Datenverkehr in der \mintinline{python}{forward(self, x)} Funktion abläuft, sind neuronale Netze in Pytorch also sehr anpassbar. So wäre es beispielsweise kein Problem zwischen Input und hidden Layer die Daten mit 2 zu multiplizieren (dafür würde man zwischen Zeile 9 und 10 den Code \glqq\mintinline{python}{x = x * 2}'' einfügen), auch wenn dies in den meißten Anwendungsbereichen keinen Sinn hätte. Pytorch kombiniert mit dieser Art Netze zu definieren also eine umfangreiche Flexibilität mit einfacher Bedienbartkeit.
 \subsection{Trainieren des Netzes}
+Das Trainieren des Netzes erfolgt in der sogenannten \glqq Training Loop''. Also in einer Schleife, die über den Datensatz iteriert. Zumeißt steht diese noch in einer Schleife, die über die Epochenzahl iteriert.
 \section{Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk für handgeschriebene Ziffern}
 \subsection{Aufgabe}
 \subsection{Der MNIST Datensatz}
@@ -617,7 +647,11 @@ Das Definieren des Netzes ist in Pytorch bereitsa sehr einfach möglich, bietet 
 	A US government study confirms most face recognition systems are racist\\
 	20.12.2019 MIT technology review\\
 	https://www.technologyreview.com/f/614986/ai-face-recognition-racist-us-government-nist-study/\\
-	Abgerufen am 23.01.2019
+	Abgerufen am 23.01.2020
+	\bibitem{6}
+	Offizielle Dokumentation des PyTorch Frameworks\\
+	https://pytorch.org/docs/stable/nn.functional.html\\
+	Abgerufen am 30.01.2020
 \end{thebibliography}
 \listoffigures
 \end{document}
