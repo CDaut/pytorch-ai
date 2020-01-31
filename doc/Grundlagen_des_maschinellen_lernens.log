@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.1.22)  30 JAN 2020 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.1.22)  31 JAN 2020 13:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1547,22 +1547,23 @@ ailable
 ut line 4.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 4.
-)
+
+[1])
 \tf@toc=\write8
 \openout8 = `Grundlagen_des_maschinellen_lernens.toc'.
 
-[1] [2]
+ [2]
 
 LaTeX Warning: Citation '1' on page 3 undefined on input line 49.
 
-<../graphics/Classification.png, id=220, 467.5869pt x 464.6961pt>
+<../graphics/Classification.png, id=230, 467.5869pt x 464.6961pt>
 File: ../graphics/Classification.png Graphic file (type png)
 <use ../graphics/Classification.png>
 Package pdftex.def Info: ../graphics/Classification.png  used on input line 62.
 
 (pdftex.def)             Requested size: 137.9979pt x 137.14088pt.
 [3]
-<../graphics/Regression.png, id=227, 467.5869pt x 464.6961pt>
+<../graphics/Regression.png, id=237, 467.5869pt x 464.6961pt>
 File: ../graphics/Regression.png Graphic file (type png)
 <use ../graphics/Regression.png>
 Package pdftex.def Info: ../graphics/Regression.png  used on input line 72.
@@ -1575,7 +1576,7 @@ LaTeX Warning: Citation '4' on page 5 undefined on input line 80.
 LaTeX Warning: Citation '5' on page 5 undefined on input line 84.
 
 [5]
-<../graphics/overfitting.png, id=244, 467.5869pt x 529.0164pt>
+<../graphics/overfitting.png, id=254, 467.5869pt x 529.0164pt>
 File: ../graphics/overfitting.png Graphic file (type png)
 <use ../graphics/overfitting.png>
 Package pdftex.def Info: ../graphics/overfitting.png  used on input line 91.
@@ -1587,7 +1588,7 @@ lem bei Klas-si-fi-zie-rungs-auf-ga-ben. Die Klas-
  []
 
 [6 <../graphics/overfitting.png>] [7]
-<../graphics/Neuron.png, id=262, 299.9205pt x 158.994pt>
+<../graphics/Neuron.png, id=272, 299.9205pt x 158.994pt>
 File: ../graphics/Neuron.png Graphic file (type png)
 <use ../graphics/Neuron.png>
 Package pdftex.def Info: ../graphics/Neuron.png  used on input line 115.
@@ -1597,7 +1598,7 @@ Package pdftex.def Info: ../graphics/Neuron.png  used on input line 115.
 LaTeX Warning: Citation '2' on page 8 undefined on input line 121.
 
 [8 <../graphics/Neuron.png>]
-<../graphics/Neural_Net.png, id=270, 548.16795pt x 432.8973pt>
+<../graphics/Neural_Net.png, id=280, 548.16795pt x 432.8973pt>
 File: ../graphics/Neural_Net.png Graphic file (type png)
 <use ../graphics/Neural_Net.png>
 Package pdftex.def Info: ../graphics/Neural_Net.png  used on input line 126.
@@ -1651,25 +1652,25 @@ nded (in y). (see also unbounded coords=jump).
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14]
-<../graphics/gdf_big_lr.png, id=325, 484.57034pt x 482.0409pt>
+<../graphics/gdf_big_lr.png, id=335, 484.57034pt x 482.0409pt>
 File: ../graphics/gdf_big_lr.png Graphic file (type png)
 <use ../graphics/gdf_big_lr.png>
 Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 320.
 (pdftex.def)             Requested size: 172.5pt x 171.60013pt.
  [15] [16 <../graphics/gdf_big_lr.png>]
-<../graphics/conv/conv008.png, id=342, 396.48125pt x 450.68375pt>
+<../graphics/conv/conv008.png, id=352, 396.48125pt x 450.68375pt>
 File: ../graphics/conv/conv008.png Graphic file (type png)
 <use ../graphics/conv/conv008.png>
 Package pdftex.def Info: ../graphics/conv/conv008.png  used on input line 338.
 (pdftex.def)             Requested size: 68.99895pt x 78.43071pt.
  [17 <../graphics/conv/conv008.png>]
-<../graphics/mnist_5/mnist_5_raw.png, id=352, 462.528pt x 346.896pt>
+<../graphics/mnist_5/mnist_5_raw.png, id=362, 462.528pt x 346.896pt>
 File: ../graphics/mnist_5/mnist_5_raw.png Graphic file (type png)
 <use ../graphics/mnist_5/mnist_5_raw.png>
 Package pdftex.def Info: ../graphics/mnist_5/mnist_5_raw.png  used on input lin
 e 401.
 (pdftex.def)             Requested size: 172.5pt x 129.37639pt.
-<../graphics/mnist_5/conv_only/mnist_5_upper_edges.png, id=353, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_upper_edges.png, id=363, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png Graphic file (type 
 png)
@@ -1677,7 +1678,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png 
  used on input line 410.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_only/mnist_5_left_edges.png, id=354, 462.528pt x 346.
+<../graphics/mnist_5/conv_only/mnist_5_left_edges.png, id=364, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png Graphic file (type p
 ng)
@@ -1685,7 +1686,7 @@ ng)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png  
 used on input line 415.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_only/mnist_5_lower_edges.png, id=355, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_lower_edges.png, id=365, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png Graphic file (type 
 png)
@@ -1693,7 +1694,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png 
  used on input line 420.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_only/mnist_5_right_edges.png, id=356, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_right_edges.png, id=366, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png Graphic file (type 
 png)
@@ -1701,7 +1702,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png 
  used on input line 425.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/features.png, id=359, 833.1125pt x 388.45125pt>
+<../graphics/features.png, id=369, 833.1125pt x 388.45125pt>
 File: ../graphics/features.png Graphic file (type png)
 <use ../graphics/features.png>
 Package pdftex.def Info: ../graphics/features.png  used on input line 436.
@@ -1715,13 +1716,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--443
 5_upper_edges.png> <../graphics/mnist_5/conv_only/mnist_5_left_edges.png> <../g
 raphics/mnist_5/conv_only/mnist_5_lower_edges.png> <../graphics/mnist_5/conv_on
 ly/mnist_5_right_edges.png>] [19 <../graphics/features.png>]
-<../graphics/MaxpoolSample2.png, id=381, 164.25pt x 68.547pt>
+<../graphics/MaxpoolSample2.png, id=391, 164.25pt x 68.547pt>
 File: ../graphics/MaxpoolSample2.png Graphic file (type png)
 <use ../graphics/MaxpoolSample2.png>
 Package pdftex.def Info: ../graphics/MaxpoolSample2.png  used on input line 454
 .
 (pdftex.def)             Requested size: 241.49895pt x 100.79422pt.
-<../graphics/Average-Pooling-Example.png, id=382, 746.79pt x 337.26pt>
+<../graphics/Average-Pooling-Example.png, id=392, 746.79pt x 337.26pt>
 File: ../graphics/Average-Pooling-Example.png Graphic file (type png)
 <use ../graphics/Average-Pooling-Example.png>
 Package pdftex.def Info: ../graphics/Average-Pooling-Example.png  used on input
@@ -1751,7 +1752,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png 
  used on input line 487.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/upper_horiz_pooled.png, id=384, 462.528pt x 346.
+<../graphics/mnist_5/conv_pool/upper_horiz_pooled.png, id=394, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png Graphic file (type p
 ng)
@@ -1759,7 +1760,7 @@ ng)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png  
 used on input line 492.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/left_vert_pooled.png, id=385, 462.528pt x 346.89
+<../graphics/mnist_5/conv_pool/left_vert_pooled.png, id=395, 462.528pt x 346.89
 6pt>
 File: ../graphics/mnist_5/conv_pool/left_vert_pooled.png Graphic file (type png
 )
@@ -1767,7 +1768,7 @@ File: ../graphics/mnist_5/conv_pool/left_vert_pooled.png Graphic file (type png
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/left_vert_pooled.png  us
 ed on input line 497.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/lower_horiz_pooled.png, id=386, 462.528pt x 346.
+<../graphics/mnist_5/conv_pool/lower_horiz_pooled.png, id=396, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png Graphic file (type p
 ng)
@@ -1775,7 +1776,7 @@ ng)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png  
 used on input line 502.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/right_vert_pooled.png, id=387, 462.528pt x 346.8
+<../graphics/mnist_5/conv_pool/right_vert_pooled.png, id=397, 462.528pt x 346.8
 96pt>
 File: ../graphics/mnist_5/conv_pool/right_vert_pooled.png Graphic file (type pn
 g)
@@ -1783,7 +1784,7 @@ g)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/right_vert_pooled.png  u
 sed on input line 507.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png, id=388, 462.528pt x 3
+<../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png, id=398, 462.528pt x 3
 46.896pt>
 File: ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png Graphic file (typ
 e png)
@@ -1791,7 +1792,7 @@ e png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.pn
 g  used on input line 512.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/left_vert_avgpooled.png, id=389, 462.528pt x 346
+<../graphics/mnist_5/conv_pool/left_vert_avgpooled.png, id=399, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png Graphic file (type 
 png)
@@ -1799,7 +1800,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png 
  used on input line 517.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png, id=390, 462.528pt x 3
+<../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png, id=400, 462.528pt x 3
 46.896pt>
 File: ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png Graphic file (typ
 e png)
@@ -1807,7 +1808,7 @@ e png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.pn
 g  used on input line 522.
 (pdftex.def)             Requested size: 68.99895pt x 51.7463pt.
-<../graphics/mnist_5/conv_pool/right_vert_avgpooled.png, id=391, 462.528pt x 34
+<../graphics/mnist_5/conv_pool/right_vert_avgpooled.png, id=401, 462.528pt x 34
 6.896pt>
 File: ../graphics/mnist_5/conv_pool/right_vert_avgpooled.png Graphic file (type
  png)
@@ -1976,33 +1977,92 @@ F6C426F58C5CCC27D3C7BD698FEC22DB.pygtex)
 
 (./_minted-Grundlagen_des_maschinellen_lernens/5A0B7618927FB8AEA4B96F5552228CD8
 F6C426F58C5CCC27D3C7BD698FEC22DB.pygtex) [23] [24]
+\openout5 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/B39808E7C45EEBD5237FE1E82D273879
+53A0C9FE66949F8EC4BED65B31F6975B.pygtex)
+
+LaTeX Warning: Citation '7' on page 25 undefined on input line 655.
+
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/6843D04ED2E2C37F8AF3EB0462FB514B
+F6C426F58C5CCC27D3C7BD698FEC22DB.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/00B37D79FD3312AD6F59A2B37BA81087
+F6C426F58C5CCC27D3C7BD698FEC22DB.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/684559E268B2B047D1C82BB00E985301
+F6C426F58C5CCC27D3C7BD698FEC22DB.pygtex) [25]
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/ECDE410C14A506CF9F77A687B26F5474
+F6C426F58C5CCC27D3C7BD698FEC22DB.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/30299FD7E2187F6D53ED8A608F3958F2
+F6C426F58C5CCC27D3C7BD698FEC22DB.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/458D5F1AFC81AE7291A7AAAD852DC12A
+F6C426F58C5CCC27D3C7BD698FEC22DB.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/B51E2DE1996D35173C012720F7A4FDA4
+F6C426F58C5CCC27D3C7BD698FEC22DB.pygtex)
+Overfull \hbox (1.4092pt too wide) in paragraph at lines 657--660
+[] \T1/LinuxBiolinumT-TLF/m/n/10 das Pro-jekt in-itia-li-siert. Da-nach muss
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 616.
+(hyperref)                removing `\newline' on input line 660.
+
+[26]
+Overfull \hbox (3.56537pt too wide) in paragraph at lines 665--666
+\T1/LinuxBiolinumT-TLF/m/n/10 nor-ma-li-siert, was die-sen Da-ten-satz be-son-d
+ers ge-eig-net für Ein-stei-ger macht. Die meiÿ-
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 620.
+(hyperref)                removing `\newline' on input line 668.
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 637--641
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 22.45502pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 685--689
 \T1/LinuxBiolinumT-TLF/m/n/10 Quelle: https://towardsdatascience.com/common-los
 s-functions-in-machine-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--646
+Underfull \hbox (badness 10000) in paragraph at lines 690--694
 \T1/LinuxBiolinumT-TLF/m/n/10 https://www.bloomberg.com/news/articles/2019-12-1
 1/face-recognition-tech-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--651
+Underfull \hbox (badness 10000) in paragraph at lines 695--699
 \T1/LinuxBiolinumT-TLF/m/n/10 https://www.technologyreview.com/f/614986/ai-face
 -recognition-racist-us-
  []
 
-(./Grundlagen_des_maschinellen_lernens.lof [26]
+(./Grundlagen_des_maschinellen_lernens.lof [29]
 Overfull \hbox (21.8196pt too wide) in paragraph at lines 34--34
  \T1/LinuxBiolinumT-TLF/m/n/10 https://github.com/vdumoulin/conv_arithmetic/blo
 b/master/README.md 
@@ -2024,15 +2084,15 @@ p/Max-pooling_/_Pooling
 \tf@lof=\write9
 \openout9 = `Grundlagen_des_maschinellen_lernens.lof'.
 
- [27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 657.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 657.
+ [30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 710.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 710.
  (./Grundlagen_des_maschinellen_lernens.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 657.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 657.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 710.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 710.
 Package rerunfilecheck Info: File `Grundlagen_des_maschinellen_lernens.out' has
  not changed.
-(rerunfilecheck)             Checksum: 55E78BB917E1CDC45B3A46532A965534;2804.
+(rerunfilecheck)             Checksum: 21CF25714EC87AA39DD08877ED0E5E2E;2942.
 
 
 LaTeX Warning: There were undefined references.
@@ -2050,13 +2110,13 @@ un.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41567 strings out of 492609
- 930705 string characters out of 6131462
- 1496572 words of memory out of 5000000
- 44587 multiletter control sequences out of 15000+600000
- 96852 words of font info for 128 fonts, out of 8000000 for 9000
+ 41613 strings out of 492609
+ 933901 string characters out of 6131462
+ 1497267 words of memory out of 5000000
+ 44599 multiletter control sequences out of 15000+600000
+ 98228 words of font info for 130 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 62i,14n,100p,1509b,3452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,14n,100p,3352b,3452s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}</usr/share/texlive/texm
 f-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/share/texlive/texmf-
@@ -2071,11 +2131,11 @@ ist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
 tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Grundlagen_des_maschinellen_lernens.pdf (28 pages, 1450552 by
+Output written on Grundlagen_des_maschinellen_lernens.pdf (31 pages, 1461523 by
 tes).
 PDF statistics:
- 586 PDF objects out of 1000 (max. 8388607)
- 492 compressed objects within 5 object streams
- 123 named destinations out of 1000 (max. 500000)
- 432 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 519 compressed objects within 6 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 448 words of extra memory for PDF output out of 10000 (max. 10000000)
 

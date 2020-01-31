@@ -56,3 +56,5 @@
 \contentsline {figure}{\numberline {27}{\ignorespaces Der Code zum Laden des MNIST Datensatzes\relax }}{22}{figure.caption.25}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {28}{\ignorespaces Code um ein einfaches Netz in Pytorch zu definieren\relax }}{24}{figure.caption.26}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {29}{\ignorespaces Code um das Netz auf einem Datensatz zu trainieren\relax }}{25}{figure.caption.27}% 

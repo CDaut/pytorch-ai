@@ -57,22 +57,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Trainieren des Netzes}{25}{subsection.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk f\IeC {\"u}r handgeschriebene Ziffern}{25}{section.5}% 
+\contentsline {subsection}{\numberline {4.4}Pytorch und weights and biases}{26}{subsection.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Aufgabe}{25}{subsection.5.1}% 
+\contentsline {section}{\numberline {5}Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk f\IeC {\"u}r handgeschriebene Ziffern}{27}{section.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Der MNIST Datensatz}{25}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.1}Aufgabe}{27}{subsection.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Ergebnis}{25}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.2}Der MNIST Datensatz}{27}{subsection.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fallbeispiel II:\newline Eine selbsttrainierende KI f\IeC {\"u}r Tic-Tac-Toe}{25}{section.6}% 
+\contentsline {subsection}{\numberline {5.3}Das Netz}{28}{subsection.5.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Das Prinzip}{25}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {5.4}Ergebnis}{28}{subsection.5.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Chance-Tree Optimierung}{25}{subsection.6.2}% 
+\contentsline {section}{\numberline {6}Fallbeispiel II:\newline Eine selbsttrainierende KI f\IeC {\"u}r Tic-Tac-Toe}{28}{section.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}L\IeC {\"o}sung mittels eines neuronalen Netzes}{25}{subsection.6.3}% 
+\contentsline {subsection}{\numberline {6.1}Das Prinzip}{28}{subsection.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Vergleich}{25}{subsection.6.4}% 
+\contentsline {subsection}{\numberline {6.2}Chance-Tree Optimierung}{28}{subsection.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Schlusswort}{25}{section.7}% 
+\contentsline {subsection}{\numberline {6.3}L\IeC {\"o}sung mittels eines neuronalen Netzes}{28}{subsection.6.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}Vergleich}{28}{subsection.6.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Schlusswort}{28}{section.7}% 

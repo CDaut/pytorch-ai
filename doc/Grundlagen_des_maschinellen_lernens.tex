@@ -610,12 +610,60 @@ Das Definieren des Netzes ist in Pytorch bereits sehr einfach möglich, bietet j
 	\label{Net_simple_definition}
 \end{figure}\\
 Dieses Netz hat nur drei Layers: Ein Eingabelayer (\mintinline{python}{fc0}), das genau die Größe der Eingabedaten ($28\times28$) aufweist, ein hidden Layer (\mintinline{python}{fc1}), das 64 Skalere annimmt und 120 Skalare ausgibt und ein Ausgabelayer (\mintinline{python}{fc2}), das 120 Skalare annimmt und 10 ausgibt. Dass \mintinline{python}{fc2} 10 Ausgabeneuronen besitzt ist kein Zufall, sondern liegt darin begründet, dass dieses Klassifizierungsnetz genau 10 Klassen unterscheiden soll. Die Größe von \mintinline{python}{fc1} ist jedoch völlig frei gewählt. Es ist allerdings wichtig Acht zu geben, dass die Layers die Daten auch an einander weitergeben können. Ein Layer muss also stets so viele Ausgaben aufweisen, wie das Layer, an das die Daten weitergegeben werden sollen, Eingaben besitzt.\\
-Die \mintinline{python}{forward(self, x)} Funktion definiert, wie die Daten innerhalb des Netzes weitergegeben werden sollen. Hier werden sie erst in \mintinline{python}{fc0} gegeben, dann wird auf die Ausgabe aus \mintinline{python}{fc0} die Aktivierungsfunktion \glqq ReLu'' (REctified Linear Unit) angewandt. Die Ausgabe daraus wird dann in das hidden Layer \mintinline{python}{fc1} gegebnen und die Aktivierungsfunktion wird erneut angewandt. Im Output Layer geschieht dies nicht. Abschließend wird die Ausgabe von \mintinline{python}{F.log_softmax} zurück gegeben. Dies wendet erst einen SoftMax und dann einen Logarythmus auf die Daten an \cite{6} um diese zu normalisieren und ist in Klassifizierungsnetzwerken oft nötig. Da die Netze als Klassen definiert werden und der Interne Datenverkehr in der \mintinline{python}{forward(self, x)} Funktion abläuft, sind neuronale Netze in Pytorch also sehr anpassbar. So wäre es beispielsweise kein Problem zwischen Input und hidden Layer die Daten mit 2 zu multiplizieren (dafür würde man zwischen Zeile 9 und 10 den Code \glqq\mintinline{python}{x = x * 2}'' einfügen), auch wenn dies in den meißten Anwendungsbereichen keinen Sinn hätte. Pytorch kombiniert mit dieser Art Netze zu definieren also eine umfangreiche Flexibilität mit einfacher Bedienbartkeit.
+Die \mintinline{python}{forward(self, x)} Funktion definiert, wie die Daten innerhalb des Netzes weitergegeben werden sollen. Hier werden sie erst in \mintinline{python}{fc0} gegeben, dann wird auf die Ausgabe aus \mintinline{python}{fc0} die Aktivierungsfunktion \glqq ReLu'' (REctified Linear Unit) angewandt. Die Ausgabe daraus wird dann in das hidden Layer \mintinline{python}{fc1} gegebnen und die Aktivierungsfunktion wird erneut angewandt. Im Output Layer geschieht dies nicht. Abschließend wird die Ausgabe von \mintinline{python}{F.log_softmax} zurück gegeben. Dies wendet erst einen SoftMax und dann einen Logarythmus auf die Daten an \cite{6} um diese zu normalisieren und ist in Klassifizierungsnetzwerken oft nötig um sogenannte \glqq One hot Vectors'' zu erstellen. Herkömmliche Ausgabevektoren haben einen Wert für jede Klasse und geben an wie wahrscheinlich das Netz die Eingabedaten dieser Klasse zuordnet. In One hot Vektoren ist immer der höhste Wert 1 und alle anderen Werte sind 0.\\
+Da die Netze als Klassen definiert werden und der Interne Datenverkehr in der\\ \mintinline{python}{forward(self, x)} Funktion abläuft, sind neuronale Netze in Pytorch also sehr anpassbar. So wäre es beispielsweise kein Problem zwischen Input und hidden Layer die Daten mit 2 zu multiplizieren (dafür würde man zwischen Zeile 9 und 10 den Code \glqq\mintinline{python}{x = x * 2}'' einfügen), auch wenn dies in den meißten Anwendungsbereichen keinen Sinn hätte. Pytorch kombiniert mit dieser Art Netze zu definieren also eine umfangreiche Flexibilität mit einfacher Bedienbartkeit.
 \subsection{Trainieren des Netzes}
-Das Trainieren des Netzes erfolgt in der sogenannten \glqq Training Loop''. Also in einer Schleife, die über den Datensatz iteriert. Zumeißt steht diese noch in einer Schleife, die über die Epochenzahl iteriert.
+Das Trainieren des Netzes erfolgt in der sogenannten \glqq Training Loop''. Also in einer Schleife, die über den Datensatz iteriert. Zumeißt steht diese noch in einer Schleife, die über die Epochenzahl iteriert. In der Training loop wird ein Element des Datensatzes gelesen, in das Netz gegeben, die Ausgabe wird mit dem Label verglichen und schließlich werden die Parameter des Netzes Angepasst. Der Code dafür ist in Abbildung \ref{Code_train_loop} dargestellt.
+ \begin{figure}[h]
+ 	\begin{minted}[
+ 	frame=lines,
+ 	framesep=2mm,
+ 	baselinestretch=1.2,
+ 	fontsize=\footnotesize,
+ 	linenos,
+ 	autogobble
+ 	]{python}
+net = Net()
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+print('runnning on %s' % device)
+
+net = net.to(device)
+
+loss_function = nn.CrossEntropyLoss()
+optimizer = optim.Adam(net.parameters(), lr=LEARNING_RATE)
+
+for epoch in range(EPOCHS):
+	for data in trainset:
+		X, y = data
+		net.zero_grad() 
+		X = X.to(device)
+		output = net(X.view(-1, n * n))
+		output = output.cpu()
+		loss = loss_function(output, y)  
+		loss.backward() 
+		optimizer.step()  
+		
+	net = net.cpu()
+	torch.save(net, './nets/net_' + str(epoch) + ".pt")
+	net = net.to(device)
+
+ 	\end{minted}
+ 	\caption{Code um das Netz auf einem Datensatz zu trainieren}
+ 	\label{Code_train_loop}
+ \end{figure}\\
+In Zeile 1 wird dafür zunächst das Netz instanziiert. In Zeile 3 und 4 Wird bestimmt ob eine Grafikkarte zum trainieren verfügbar ist und diese wird gegebenenfalls genutzt. Auch wird ausgegeben, auf welchem Gerät das Netz trainiert wird. Der Code in Zeile 6 verschiebt das Netz auf die Grafikkarte, um dort mit diesem rechnen zu können. In Zeile 8 wird die Fehlerfunktion definiert, hier der Kreuzentropiefehler. In der nächsten Zeile wird der sogenannte \glqq Optimizer'' instanziiert. Dieser berechnet später die Gradienten und passt die Parameter des Netzes an. Der Optimizer, der hier gewählt wurde nennt sich \glqq Adam''. Es handelt sich um einen gradienten basierten Optimierungsalgorythmus, der von Diederik P. Kingma und Jimmy Ba entwickelt wurde \cite{7}. Eine Liste aller Implementierten Optimierungsalgorythmen ist in der PyTorch Dokumentation unter https://pytorch.org/docs/stable/optim.html gegeben. In Zeile 11 folgt nun die Schleife, die Über die Anzahl der Epochen iteriert, in der nächste Zeile die Train loop. Sie iteriert pro Epoche ein mal über den Datensatz. In Zeile 13 werden die Daten entpackt, da diese als Tupel vorliegen. X stellt dabei eine batch von Eingabevektoren dar, y eine Batch von Features. Zeile 14 setzt die Gradienten auf 0 zurück. Dies ist notwendig, da diese sonsnt aufsummiert würden. Die Parameter würden also nicht nur den Gradienten aus diesem Schleifendurchgang entsprechend angepasst werden, sonndern entsprechend zu einer Suppe aus allen Gradienten. Das würde das Ergebnis verfälschen. Der Befehl in Zeile 15 verschiebt auch den Eingabevektor auf die Grafikkarte, da alle Daten, mit denen das Netz rechnen soll erst auf dieser sein müssen. In Zeile 16 wird dann die Ausgabe des Netzes aus den Daten berechnet. Hier wird eine weitere Einfachheit von PyTorch deutlich: Um eine Ausgabe eines Netzes zu berechnen reicht der Befehl \mintinline{python}{output = net(input)} völlig aus. \mintinline{python}{X.view(-1, n * n)} wandelt den 2-dimensionalen\footnote{Streng genommen ist der Tensor der Bilder aus dem Datensatz nicht 2, sondern 4-dimensional. Er weist die Dimensionen $Batch\_size\times Kanalanzahl\times n \times n$ auf. Die Kanalanzahl entspricht bei Bildern den Farbkanälen, liegt bei schwarz-weiß Bildern also bei 1 und sonst bei 3 bis 4 für RGBA} Tensor des Eingabebildes in einen Eingabevektor um. Auch hier muss das batching wieder beachtet werden, daher die -1. $n\times n$ stellt nämlich die Größe der Eingabebilder dar und -1 passt den ersten Wert automatisch an den zweiten an, entspricht hier also immer der Batch size. Nachdem der Ausgabevektor berechnet wurde wird er zunächst auf die CPU verschoben, da dort der Fehler berechnet wird und anschließend mit Hilfe der Fehlerfunktion mit dem Label verglichen. Dies geschieht in Zeile 17 und 18. \mintinline{python}{loss.backward()} in Zeile 19 sorgt dann dafür, dass der Optimizer alle Alle Anpassungen berechnet um sie in Zeile 20 anzuwenden. Der weitere Code dient dazu jede Epoche das Netz in einer Datei abzuspeichern. Dafür muss es erst auf die CPU verschoben werden und danach wieder zurück auf die Grafikkarte.
+\subsection{Pytorch und weights and biases}
+In den im folgenden erläuterten Projekten wurde ein Framework namens weights and biases verwendet. Es erlaubt während des Trainingsprozesses auf einer Seite Parameter des Netzes und wichtige Characteristika des Lernprozesses sowie Eigenschaften der Hardware zu tracken. Da es mit Pytorch gut kompatibel ist sind hierfür nur wenige Zeilen Code notwendig. Zunächst wird mit\\ \mintinline{python}{wandb.init(project='Beispielprojekt')
+} das Projekt initialisiert. Danach muss angegeben werden, welches Netz betrachtet werden soll. Dafür verwendet man nachdem das Netz initialisiert wurde den Befehl \mintinline{python}{wandb.watch(model)}, wobei \mintinline{python}{model} der Instanz des Netzes entspricht. Danach kann einfach über\\ 
+\mintinline{python}{wandb.log({'loss': loss})} Zum Beispiel in der Training loop jedes Mahl der Fehler mitgeschrieben werden.
 \section{Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk für handgeschriebene Ziffern}
+Die Klassifizierung handgeschriebener Ziffern aus dem MNIST Datensatz stellt etwa die \glqq Hello world'' Aufgabe des maschinellen Lernens dar. Sie ist gut zum Erlernen der verschiedenen Algorythmen geeignet, extrem gut Dokumentiert und daher leicht nachvollziehbar und ein Paradebeispiel eines Klassifizierungsproblemes. Wenn man sich mit maschinellem Lernen beschäftigt ist es also sehr wahrscheinlich, dass man als aller erstes ein Klassifizierungssystem für den MNIST Datensatz programmieren wird.
 \subsection{Aufgabe}
+Die Aufgabe besteht darin den die handgeschriebenen Ziffern des MNIST Datensatzes klassifizieren zu können. Das Ziel dabei ist es mit möglichst wenig Trainingsaufwand eine Genauigkeit von mindestens 97\% zu erreichen. Um dies zu bewältigen soll ein neuronales Netz in PyTorch programmiert und trainiert werden.
 \subsection{Der MNIST Datensatz}
+Der MNIST Datensatz ist ein Datensatz von $28\times28$ Pixel großen Graustufenbildern von handgeschriebenen Ziffern. Er weist 60000 Trainingsbilder und 10000 Testbilder auf und ist ein Teil des EMNIST Datensatzes vom National Institute for Standards and Technology, U.S. Department of Commerce. Der Datensatz ist frei unter http://yann.lecun.com/exdb/mnist/ verfügbar. Die Bilder sind bereits zentriert und normalisiert, was diesen Datensatz besonders geeignet für Einsteiger macht. Die meißten Bilder des Datensatzes sind auch von Menschen einfach zu erkennen, einige sind jedoch sehr schwierig einzuordnen und teilweise kaum als Zahl erkennbar. Aufgrund der Einfachheit der Daten sind durchaus hohe Erfolgsquoten zu erwarten. Diese liegen im Schnitt bei 98\%.
+\subsection{Das Netz}
 \subsection{Ergebnis}
 \section{Fallbeispiel II:\newline Eine selbsttrainierende KI für Tic-Tac-Toe}
 \subsection{Das Prinzip}
@@ -652,6 +700,11 @@ Das Trainieren des Netzes erfolgt in der sogenannten \glqq Training Loop''. Also
 	Offizielle Dokumentation des PyTorch Frameworks\\
 	https://pytorch.org/docs/stable/nn.functional.html\\
 	Abgerufen am 30.01.2020
+	\bibitem{7}
+	Adam: A Method for Stochastic Optimization\\
+	Diederik P. Kingma und Jimmy Ba\\
+	arXiv:1412.6980 [cs.LG] (https://arxiv.org/abs/1412.6980)\\
+	Abgerufen am 31.01.2020
 \end{thebibliography}
 \listoffigures
 \end{document}
