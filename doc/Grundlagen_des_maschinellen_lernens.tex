@@ -140,7 +140,7 @@ Der Ausgabevektor wird berechnet, indem:
 	\item Der Bias des Neurons hinzuaddiert wird
 	\item Die Aktivierungsfunktion auf diesen Wert angewandt wird
 \end{enumerate}
-Die Aktivierungsfunktion hat dabei die Rolle die Werte zu normieren. Sie sorgt also dafür, dass alle Werte innerhalb des Netzes im Intervall $[0, 1]$ bleiben. Es gibt eine Vielzahl von Aktivierungsfunktionen. Die häufigste ist die sogenannte \glqq Sigmoid'' Funktion:
+Die Aktivierungsfunktion hat dabei die Rolle die Werte zu normieren. Sie sorgt also dafür, dass alle Werte innerhalb des Netzes im Intervall $[0, 1]$ bleiben. Es gibt eine Vielzahl von Aktivierungsfunktionen. Die häufigste ist die in Abbildung \ref{Sigmoid} dargestellte \glqq Sigmoid'' Funktion.
 \begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}
@@ -150,6 +150,7 @@ Die Aktivierungsfunktion hat dabei die Rolle die Werte zu normieren. Sie sorgt a
 \end{tikzpicture}
 \end{center}
 \caption{Der Plot der Sigmoid Funktion $\sigma(x)=\frac{e^x}{e^x+1}$}
+\label{Sigmoid}
 \end{figure}
 \newline
 Im Gegensatz dazu haben Gewichtungen typischerweise etwa den doppelten Wert der Eingaben. Alle Were werden jedoch automatisch im Lernprozess angepasst.
@@ -657,20 +658,81 @@ In Zeile 1 wird dafür zunächst das Netz instanziiert. In Zeile 3 und 4 Wird be
 In den im folgenden erläuterten Projekten wurde ein Framework namens weights and biases verwendet. Es erlaubt während des Trainingsprozesses auf einer Seite Parameter des Netzes und wichtige Characteristika des Lernprozesses sowie Eigenschaften der Hardware zu tracken. Da es mit Pytorch gut kompatibel ist sind hierfür nur wenige Zeilen Code notwendig. Zunächst wird mit\\ \mintinline{python}{wandb.init(project='Beispielprojekt')
 } das Projekt initialisiert. Danach muss angegeben werden, welches Netz betrachtet werden soll. Dafür verwendet man nachdem das Netz initialisiert wurde den Befehl \mintinline{python}{wandb.watch(model)}, wobei \mintinline{python}{model} der Instanz des Netzes entspricht. Danach kann einfach über\\ 
 \mintinline{python}{wandb.log({'loss': loss})} Zum Beispiel in der Training loop jedes Mahl der Fehler mitgeschrieben werden.
-\section{Fallbeispiel I:\newline Ein Klassifizierungsnetzwerk für handgeschriebene Ziffern}
+\section{Ein Klassifizierungsnetzwerk für handgeschriebene Ziffern}
 Die Klassifizierung handgeschriebener Ziffern aus dem MNIST Datensatz stellt etwa die \glqq Hello world'' Aufgabe des maschinellen Lernens dar. Sie ist gut zum Erlernen der verschiedenen Algorythmen geeignet, extrem gut Dokumentiert und daher leicht nachvollziehbar und ein Paradebeispiel eines Klassifizierungsproblemes. Wenn man sich mit maschinellem Lernen beschäftigt ist es also sehr wahrscheinlich, dass man als aller erstes ein Klassifizierungssystem für den MNIST Datensatz programmieren wird.
 \subsection{Aufgabe}
 Die Aufgabe besteht darin den die handgeschriebenen Ziffern des MNIST Datensatzes klassifizieren zu können. Das Ziel dabei ist es mit möglichst wenig Trainingsaufwand eine Genauigkeit von mindestens 97\% zu erreichen. Um dies zu bewältigen soll ein neuronales Netz in PyTorch programmiert und trainiert werden.
 \subsection{Der MNIST Datensatz}
-Der MNIST Datensatz ist ein Datensatz von $28\times28$ Pixel großen Graustufenbildern von handgeschriebenen Ziffern. Er weist 60000 Trainingsbilder und 10000 Testbilder auf und ist ein Teil des EMNIST Datensatzes vom National Institute for Standards and Technology, U.S. Department of Commerce. Der Datensatz ist frei unter http://yann.lecun.com/exdb/mnist/ verfügbar. Die Bilder sind bereits zentriert und normalisiert, was diesen Datensatz besonders geeignet für Einsteiger macht. Die meißten Bilder des Datensatzes sind auch von Menschen einfach zu erkennen, einige sind jedoch sehr schwierig einzuordnen und teilweise kaum als Zahl erkennbar. Aufgrund der Einfachheit der Daten sind durchaus hohe Erfolgsquoten zu erwarten. Diese liegen im Schnitt bei 98\%.
+Der MNIST Datensatz ist ein Datensatz aus $28\times28$ Pixel großen Graustufenbildern von handgeschriebenen Ziffern. Er weist 60000 Trainingsbilder und 10000 Testbilder auf und ist ein Teil des EMNIST Datensatzes vom National Institute for Standards and Technology, U.S. Department of Commerce. Der Datensatz ist frei unter http://yann.lecun.com/exdb/mnist/ verfügbar. Die Bilder sind bereits zentriert und normalisiert, was diesen Datensatz besonders geeignet für Einsteiger macht. Die meißten Bilder des Datensatzes sind auch von Menschen einfach zu erkennen, einige sind jedoch sehr schwierig einzuordnen und teilweise kaum als Zahl erkennbar. Aufgrund der Einfachheit der Daten sind durchaus hohe Erfolgsquoten zu erwarten. Diese liegen im Schnitt bei 98\%.
 \subsection{Das Netz}
+Das Netz wurde für diese vergleichsweise unkomplizierte Aufgabe einfach gehalten. Es weist drei hidden Layers auf, besteht insgesamt also aus fünf Layers, die alle klassische Lineare Layers sind. Die Aktivierungsfunktion ist überall eine ReLu\footnote{ReLu steht für rectified linear unit. Diese Aktivierungsfunktion ist neben den Sigmoid Funktionen ebenfalls eine sehr populäre Aktivierungsfunktion. Sie ist als $f(x)=\max(0,x)$ definiert und ist somit für alle $x\le0$ $0$ und für alle $x>0$ $x$.}, deren Plot in Abbildung \ref{ReLu} dargestellt ist. Da es sich um eine Klassifizierungsaufgabe handelt hat das Ausgabelayer 10 Ausgabeneuronen, die die 10 Ziffern repräsentieren. Es ist wie in Abbildung \ref{net} dargestellt, definiert.
+\begin{figure}[h]
+ 	\begin{minted}[
+	frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	fontsize=\footnotesize,
+	linenos,
+	autogobble
+	]{python}
+	class Net(nn.Module):
+	def __init__(self):
+		super().__init__()
+		self.fc1 = nn.Linear(28 * 28, 64)
+		self.fc2 = nn.Linear(64, 120)
+		self.fc3 = nn.Linear(120, 120)
+		self.fc4 = nn.Linear(120, 64)
+		self.fc5 = nn.Linear(64, 10)
+	
+	def forward(self, x):
+		x = F.relu(self.fc1(x))
+		x = F.relu(self.fc2(x))
+		x = F.relu(self.fc3(x))
+		x = F.relu(self.fc4(x))
+		x = self.fc5(x)
+		return F.log_softmax(x, dim=1)
+	\end{minted}
+	\caption{Der Code um das in diesem Projekt genutzte Klassifizierungsnetz zu definieren.}
+	 \label{net}
+\end{figure}
+\\
+Das erste Layer nimmt also einen Tensor der Größe $1\times 784$ an, da die Bilder genau so groß sind, und gibt einen $1\times 64$ großen Tensor aus. Dieser wird vom ersten hidden Layer angenommen, dass einen $1\times 120$ großen Tensor ausgibt. Im zweiten hidden Layer bleibt die Größe mit $1\times 120$ konstant und im dritten wird sie wieder auf $1\times 64$ reduiziert. Schlussendlich wird der Ausgabevektor mit den zehn Klassenwahrscheinlichkeiten berechnet.\\
+in der \mintinline{python}{forward()} Funktion wird jedem Layer außer dem output Layer noch eine ReLu Aktivierungsfunktion zugewiesen und der SoftMax sowie der Logarythmus werden angewandt.
+\begin{figure}[h]
+	\begin{center}
+		\begin{tikzpicture}
+		\begin{axis}[width=0.5\linewidth, 
+		xmax=5, 
+		ymax=5, 
+		xmin=-5, 
+		samples=5,
+		xlabel={x},
+		ylabel={y}]
+		\addplot[blue]{max(x,0)};
+		\end{axis}
+		\end{tikzpicture}
+	\end{center}
+	\caption{Der Graph der ReLu Aktivierungsfunktion}
+	\label{ReLu}
+\end{figure}
 \subsection{Ergebnis}
-\section{Fallbeispiel II:\newline Eine selbsttrainierende KI für Tic-Tac-Toe}
-\subsection{Das Prinzip}
-\subsection{Chance-Tree Optimierung}
-\subsection{Lösung mittels eines neuronalen Netzes}
-\subsection{Vergleich}
+Das Netz wurde innerhalb von 2 Stunden 200 Epochen lang trainiert und erreicht am Ende eine Genauigkeit von $98,13\%$. Das verwendete System bestand aus einer Nvidia GeForce GTX 960, sowie einer CPU mit 4 Kernen, die hier jedoch nicht weiter relevant sind, da das Training auf der GPU stattfand, unter Ubuntu 18.04. Die Batchsize betrug 200. Der Kreuzentropiefehler wurde jedes mal, nachdem er berechnet wurde mit Hilfe von weights and biases geloggt. Nach jeder Epoche wurde das Netz außerdem auf dem Testdatensatz getestet und die Trefferquote wurde ebenfalls geloggt. Wie sich diese im Laufe der Zeit entwickelt ist in Abbildung \ref{accuracy} dargestellt.
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{../graphics/Wandb_accuracy.png}
+	\caption{Ein Plot der Trefferquote aufgetragen gegen die Trainingszeit}
+	\label{accuracy}
+\end{figure}
+\\
+Aus den Daten geht hervor, dass der Anstieg der Trefferquote in den ersten 10 Epochen extrem groß ist. In den nächsten rund 65 Epochen schwankt sie zwischen etwa 97\% und 98\% und stagniert danach knapp über 98\% wo sie nur noch eine geringe Verbesserung aufweist. Das Netz hat also nach 75 Epochen seinen Höhepunkt erreicht und konnte sich nicht weiter verbessern. Dies korrespondiert auch mit dem in Abbildung \ref{loss} dargestellten Plot, der die Entwicklung des Kreuzentropiefehlers im Laufe des Trainings darstellt.
+\begin{figure}[h]
+	\includegraphics[width=\linewidth]{../graphics/Wandb_loss.png}
+	\caption{Ein Plot des Kreuzentropiefehlers aufgetragen gegen die Trainingszeit}
+	\label{loss}
+\end{figure}
+\\
+Auch hier lässt sich ein extremes Abnehmen des Fehlers in den ersten 10 Epochen ablesen, das von einem starken Schwanken bis etwa zur 75. Epoche gefolgt ist. Von da an stagniert der Fehler bei 0. Das Ziel von 97\% Genauigkeit wurde also um einen Prozent überschritten und somit lässt sich feststellen, dass das Netz sehr gut in der Lage ist handgeschriebene Ziffern zu klassifizieren.
 \section{Schlusswort}
+Maschinelles Lernen ist ein extrem komplexes Forschungsgebiet, das ein enormes Potential aufweist. Die daraus hervorgehenden Technologien können das Leben revolutionieren und haben dies bereits in vielen Bereichen getan. Neuronale Netze stellen hier eine häufig verwendete Methode maschinellen Lernens dar. Sie sind an das menschliche Lernen angelehnt und können klassifizierungs, regressions und viele weitere Probleme lösen. Ihnen liegen algebraische Prozesse zu grunde, die aus dem Bereich der Statistik stammen. Um die Netze zu trainieren müssen große Datensätze vorhanden sein. Dies kann ein großes datenschutztechnisches Problem darstellen. Die Ausgabe neuronaler Netze ist außerdem nie zu 100\% verlässlich. Trotz des großen Potentiales ist maschinelles Lernen jedoch nicht dass Allheilmittel und kann zwar viele aber bei weitem nicht alle Probleme lösen und ist bei einem Großteil der  Problemen schlichtweg nicht effizient und verlässlich genug. maschinelles Lernen hat dennoch einen Einzug in unser Alltagsleben gefunden und wir begegnen ihm am Flughafen, im Supermarkt und am Smartphone (Die Gesichtserkennungssoftware zum Entsperren vieler Geräte nutzt maschinelles Lernen um eine höhere Genauigkeit zu erzielen). Von einer Welt, die von selbstbewussten und intelligenten Maschinen beherrscht wird, sind wir allerdings noch weit entfernt.
 \newpage
 \begin{thebibliography}{99}
 	\bibitem{1}

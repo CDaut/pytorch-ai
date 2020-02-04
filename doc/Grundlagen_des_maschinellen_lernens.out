@@ -27,14 +27,9 @@
 \BOOKMARK [2][-]{subsection.4.2}{Definieren des Netzes}{section.4}% 27
 \BOOKMARK [2][-]{subsection.4.3}{Trainieren des Netzes}{section.4}% 28
 \BOOKMARK [2][-]{subsection.4.4}{Pytorch und weights and biases}{section.4}% 29
-\BOOKMARK [1][-]{section.5}{Fallbeispiel I:Ein Klassifizierungsnetzwerk f\374r handgeschriebene Ziffern}{}% 30
+\BOOKMARK [1][-]{section.5}{Ein Klassifizierungsnetzwerk f\374r handgeschriebene Ziffern}{}% 30
 \BOOKMARK [2][-]{subsection.5.1}{Aufgabe}{section.5}% 31
 \BOOKMARK [2][-]{subsection.5.2}{Der MNIST Datensatz}{section.5}% 32
 \BOOKMARK [2][-]{subsection.5.3}{Das Netz}{section.5}% 33
 \BOOKMARK [2][-]{subsection.5.4}{Ergebnis}{section.5}% 34
-\BOOKMARK [1][-]{section.6}{Fallbeispiel II:Eine selbsttrainierende KI f\374r Tic-Tac-Toe}{}% 35
-\BOOKMARK [2][-]{subsection.6.1}{Das Prinzip}{section.6}% 36
-\BOOKMARK [2][-]{subsection.6.2}{Chance-Tree Optimierung}{section.6}% 37
-\BOOKMARK [2][-]{subsection.6.3}{L\366sung mittels eines neuronalen Netzes}{section.6}% 38
-\BOOKMARK [2][-]{subsection.6.4}{Vergleich}{section.6}% 39
-\BOOKMARK [1][-]{section.7}{Schlusswort}{}% 40
+\BOOKMARK [1][-]{section.6}{Schlusswort}{}% 35
