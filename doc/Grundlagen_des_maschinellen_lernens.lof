@@ -19,7 +19,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {9}{\ignorespaces Die Gleichung f\IeC {\"u}r den durchschnittlichen absoluten Fehler\relax }}{15}{figure.caption.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Der Graph der Kreuzentropie Fehlerfunktion wenn das tats\IeC {\"a}chliche Label 1 ist\relax }}{16}{figure.caption.11}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces Der Graph der Kreuzentropie-Fehlerfunktion, wenn das tats\IeC {\"a}chliche Label 1 ist\relax }}{16}{figure.caption.11}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {11}{\ignorespaces Die Gleichung f\IeC {\"u}r den Kreuzentropiefehler\relax }}{16}{figure.caption.12}% 
 \defcounter {refsection}{0}\relax 
@@ -29,7 +29,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {14}{\ignorespaces Die Gleichung f\IeC {\"u}r die Anpassung eines einzelnen Parameters\relax }}{18}{figure.caption.15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces $\eta $ ist hier zu gro\IeC {\ss } gew\IeC {\"a}hlt\relax }}{18}{figure.caption.16}% 
+\contentsline {figure}{\numberline {15}{\ignorespaces $\eta $ ist hier zu gro\IeC {\ss } gew\IeC {\"a}hlt.\relax }}{18}{figure.caption.16}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {16}{\ignorespaces Eine Verbildlichung der Vorg\IeC {\"a}nge in einem convolutional Layer\newline Aus einer Animation von\newline https://github.com/vdumoulin/conv\_arithmetic/blob/master/README.md Vincent Dumoulin, Francesco Visin - A guide to convolution arithmetic for deep learning (BibTeX)}}{20}{figure.caption.17}% 
 \defcounter {refsection}{0}\relax 
