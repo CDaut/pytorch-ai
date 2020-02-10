@@ -55,14 +55,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {27}{\ignorespaces Der Code zum Laden des MNIST Datensatzes\relax }}{25}{figure.caption.25}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {28}{\ignorespaces Code um ein einfaches Netz in Pytorch zu definieren\relax }}{27}{figure.caption.26}% 
+\contentsline {figure}{\numberline {28}{\ignorespaces Code, um ein einfaches Netz in Pytorch zu definieren\relax }}{27}{figure.caption.26}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {29}{\ignorespaces Code um das Netz auf einem Datensatz zu trainieren\relax }}{29}{figure.caption.27}% 
+\contentsline {figure}{\numberline {29}{\ignorespaces Code, um das Netz auf einem Datensatz zu trainieren\relax }}{29}{figure.caption.27}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces Der Code um das in diesem Projekt genutzte Klassifizierungsnetz zu definieren.\relax }}{32}{figure.caption.28}% 
+\contentsline {figure}{\numberline {30}{\ignorespaces Der Code, um das in diesem Projekt genutzte Klassifizierungsnetz zu definieren.\relax }}{32}{figure.caption.28}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {31}{\ignorespaces Der Graph der ReLu Aktivierungsfunktion\relax }}{33}{figure.caption.29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {32}{\ignorespaces Ein Plot der Trefferquote aufgetragen gegen die Trainingszeit\relax }}{34}{figure.caption.30}% 
+\contentsline {figure}{\numberline {32}{\ignorespaces Ein Plot der Trefferquote, aufgetragen gegen die Trainingszeit\relax }}{34}{figure.caption.30}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {33}{\ignorespaces Ein Plot des Kreuzentropiefehlers aufgetragen gegen die Trainingszeit\relax }}{35}{figure.caption.31}% 
