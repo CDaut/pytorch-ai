@@ -31,12 +31,9 @@
 \pagestyle{fancy}
 \captionsetup{justification=raggedright,singlelinecheck=false}
 
-
-
 \begin{document}
 \biolinum
 \pagenumbering{gobble}
-\
 \begin{titlepage}
 	\maketitle
 \end{titlepage}
@@ -96,7 +93,8 @@ Overfitting ist ein häufig auftretendes Problem bei Klassifizierungsaufgaben. D
 \\
 Overfitting tritt auf, wenn man ein neuronales Netz zu lange auf einem Datensatz trainiert. Das Netz lernt dann die Daten auswendig, da es so einen Fehler von 0 erreichen kann. Dadurch werden aber keine wirklichen Klassengrenzen erlernt.\\
 Um Overfitting entgegenzuwirken, reicht es oftmals, den Trainingsdatensatz in der Reihenfolge zu randomisieren. Dadurch kann das Netz die Reihenfolge gar nicht auswendig lernen.
-
+\subsection{Adversarial attacks}
+Sogenannte \glqq Adversarial attacks'' können genutzt werden, um neuronale Netze gezielt zu täuschen. Dabei werden die Eingabedaten so manipuliert, dass für einen Menschen kaum ein Unterschied erkennbar ist, das neuronale Netz sie jedoch falsch klassifiziert. Dafür wird meißt ein anderes neuronales Netz genutzt, das innerhalb eines gewissen Maßes die Daten verändert. Der Änderungsspielraum wird dabei so festgelegt, dass ein Mensch keinen Unterschied wahrnehmen kann. Dieses Netz versucht dann, eine Ausgabe zu erzeugen, sodass der Unterschied minimal und der Fehler des Klassifizierungsnetzwerkes maximal wird. So werden die Daten möglichst falsch klassifiziert, und der Unterschied ist trotzdem nicht erkennbar. Dies gelingt besonders gut bei Bildern, ist jedoch auch auf Text übertragbar, wie Di Jin, Zhijing Jin, Joey Tianyi Zhou und Peter Szolovits 2019 gezeigt haben\cite{8}. Die Gefahr bei adversarial attacks besteht darin, dass eine belibige Ausgabe erzeugt werden kann. Es ist also nicht nur möglich einen Fehler zu erzeugen, sondern dieser ist auch noch genau steuerbar. Dabei kann die Genauigkeit bekannter Bildklassifizierungsnetzwerke von etwa 92\% auf etwa 2\% also um rund 90\% gesenkt werden\cite{9}. 
 \section{Verschiedene Techniken maschinellen Lernens}\label{sec:verschiedene-techniken-maschinellen-lernens}
 Es gibt viele verschiedene Ansätze und Algorithmen, um maschinelles Lernen zu implementieren. Der wohl häufigste ist das Neuronale Netz, von dem diese Arbeit handelt. Aber auch sogenannte \glqq Support Vector machines'' sind eine bekannte Technik, sollen aber hier nicht weiter behandelt werden. Neuronale Netze können in vielen verschiedenen Szenarien angewandt werden, um unterschiedliche Ergebnisse zu erzielen. Beim Adversarial Learning lässt man mehrere Netze gegeneinander antreten, sodass sie sich gegenseitig trainieren. Beim Q-Learning beginnt man mit zufälligen Reaktionen auf eine Eingabe und \glqq belohnt'' das Netz, falls es wie gewünscht reagiert hat. Ein Beispiel hierfür ist die \glqq hide and seek AI'' von OpenAI\footnote{https://openai.com/blog/emergent-tool-use/}. Grob unterscheidet man jedoch in überwachtes (supervised), unüberwachtes (unsupervised) und bestärkendes (reinforcement) Lernen.
 \subsection{Überwachtes Lernen}
@@ -110,7 +108,7 @@ Bestärkendes Lernen ist der letzte der drei häufig unterschiedenen Lerntypen. 
 Bei Neuronalen Netzen handelt es sich um eine programminterne Struktur, die für das maschinelle Lernen genutzt wird. Wie der Name bereits vermuten lässt, ist diese Methode ein Versuch das menschliche Lernen nachzuahmen.
 \subsection{Maschinelles Lernen und menschliches Lernen}
 Das menschliche Gehirn ist aus sogenannten \glqq Neuronen'' aufgebaut. Ein Neuron ist eine Nervenzelle, die elektrische oder chemische Impulse annimmt und gegebenenfalls einen elektrischen oder chemischen Impuls weitergibt. Die Nervenzellen berühren sich nicht direkt, sondern sind nur über die sogenannten Synapsen verbunden, über die diese Signale übertragen werden, sodass sich ein hoch komplexes Netzwerk von Milliarden von Neuronen ergibt.\footnote{
-Diese Definition ist stark vereinfacht. Sie enthält ausschließlich die wesentlichen Komponenten um das menschliche Gehirn mit einem neuronalen Netz vergleichen zu können.}
+Diese Definition ist stark vereinfacht. Sie enthält ausschließlich die wesentlichen Komponenten, um das menschliche Gehirn mit einem neuronalen Netz vergleichen zu können.}
 \begin{figure}[h]
 	\centering
 	\includegraphics[]{../graphics/Neuron.png}
@@ -254,7 +252,7 @@ Der Kreuzentropiefehler ist die am häufigsten verwendete Fehlerfunktion für Kl
 		xmax=1, 
 		ymax=10, 
 		xmin=0, 
-		samples=10,
+		samples=10000,
 		xlabel={vorhergesagte Wahrscheinlichkeit},
 		ylabel={Kreuzentropiefehler}]
 		\addplot[blue]{-ln(x))};
@@ -770,6 +768,17 @@ Maschinelles Lernen ist ein extrem komplexes Forschungsgebiet, das ein enormes P
 	Diederik P. Kingma und Jimmy Ba\\
 	arXiv:1412.6980 [cs.LG] (https://arxiv.org/abs/1412.6980)\\
 	Abgerufen am 31.01.2020
+	\bibitem{8}
+	Is BERT Really Robust? A Strong Baseline for Natural Language Attack on Text Classification and Entailment\\
+	Di Jin, Zhijing Jin, Joey Tianyi Zhou und Peter Szolovits\\
+	arXiv:1907.11932 [cs.CL] (https://arxiv.org/abs/1907.11932)\\
+	Abgerufen am 12.02.2020
+	\bibitem{9}
+	Natural Adversarial Examples\\
+	Dan Hendrycks, Kevin Zhao, Steven Basart, Jacob Steinhardt und Dawn Song\\
+	arXiv:1907.07174 [cs.LG] (https://arxiv.org/abs/1907.07174)\\
+	Abgerufen am 12.02.2020
+	
 \end{thebibliography}
 \listoffigures
 \end{document}
