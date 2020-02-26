@@ -3,7 +3,7 @@
 \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
 	\PYG{n+nb}{super}\PYG{p}{()}\PYG{o}{.}\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{()}
 	\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{fc1} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{28} \PYG{o}{*} \PYG{l+m+mi}{28}\PYG{p}{,} \PYG{l+m+mi}{64}\PYG{p}{)}
-	\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{fc2} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{p}{,} \PYG{l+m+mi}{120}\PYG{p}{)}
+	\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{fc2} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{p}{,} \PYG{l+m+mi}{1260}\PYG{p}{)}
 	\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{fc3} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{120}\PYG{p}{,} \PYG{l+m+mi}{120}\PYG{p}{)}
 	\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{fc4} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{120}\PYG{p}{,} \PYG{l+m+mi}{64}\PYG{p}{)}
 	\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{fc5} \PYG{o}{=} \PYG{n}{nn}\PYG{o}{.}\PYG{n}{Linear}\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{)}

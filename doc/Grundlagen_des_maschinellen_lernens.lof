@@ -1,17 +1,17 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Bin\IeC {\"a}rklassifizierung\relax }}{4}{figure.caption.2}% 
+\contentsline {figure}{\numberline {1}{\ignorespaces Die zwei Klassen w\IeC {\"a}ren hier \glqq gr\IeC {\"u}n'' und \glqq blau''. Die Linie stellt die Klassengrenze dar, die die zwei Klassen unterscheidet. Es sind au\IeC {\ss }erdem einige Ausrei\IeC {\ss }er in den Daten vorhanden. \relax }}{4}{figure.caption.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Regression\relax }}{5}{figure.caption.3}% 
+\contentsline {figure}{\numberline {2}{\ignorespaces Die Kurve stellt hier keine Grenze, sondern die Funktion, die die Werte approximiert, dar. Die Punkte repr\IeC {\"a}sentieren die Eingabedaten, wobei auch hier einige Ausrei\IeC {\ss }er erkennbar sind.\relax }}{5}{figure.caption.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3}{\ignorespaces Klassengrenzen mit und ohne Overfitting\relax }}{7}{figure.caption.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4}{\ignorespaces Neuron \newline Quelle: simple.wikipedia.org/wiki/File:Neuron.svg\newline Copyright: CC Attribution-Share Alike von Nutzer Dhp1080,\newline bearbeitet}}{10}{figure.caption.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Ein einfaches neuronales Netz\relax }}{11}{figure.caption.6}% 
+\contentsline {figure}{\numberline {5}{\ignorespaces Schematische Darstellung eines einfachen neuronalen Netzes\relax }}{11}{figure.caption.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Der Plot der Sigmoid Funktion $\sigma (x)=\frac {e^x}{e^x+1}$\relax }}{12}{figure.caption.7}% 
+\contentsline {figure}{\numberline {6}{\ignorespaces Darstellung der Sigmoid-Funktion $\sigma (x)=\frac {e^x}{e^x+1}$ im Intervall $[-5, 5]$\relax }}{12}{figure.caption.7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7}{\ignorespaces Formel zur Berechnung eines Ausgabevektors aus einem Eingabevektor durch eine Schicht von Neuronen. \relax }}{14}{figure.caption.8}% 
 \defcounter {refsection}{0}\relax 
@@ -29,29 +29,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {14}{\ignorespaces Die Gleichung f\IeC {\"u}r die Anpassung eines einzelnen Parameters\relax }}{18}{figure.caption.15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces $\eta $ ist hier zu gro\IeC {\ss } gew\IeC {\"a}hlt.\relax }}{19}{figure.caption.16}% 
+\contentsline {figure}{\numberline {15}{\ignorespaces $\eta $ ist hier zu gro\IeC {\ss } gew\IeC {\"a}hlt, sodass das Minimum stets \IeC {\"u}bersprungen wird.\relax }}{19}{figure.caption.16}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {16}{\ignorespaces Eine Verbildlichung der Vorg\IeC {\"a}nge in einem convolutional Layer\newline Aus einer Animation von\newline https://github.com/vdumoulin/conv\_arithmetic/blob/master/README.md Vincent Dumoulin, Francesco Visin - A guide to convolution arithmetic for deep learning (BibTeX)}}{20}{figure.caption.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Erkennt obere horizontale Kanten\relax }}{21}{figure.caption.18}% 
+\contentsline {figure}{\numberline {17}{\ignorespaces Erkennt obere horizontale Kanten\relax }}{20}{figure.caption.18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Erkennt linke vertikale Kanten\relax }}{21}{figure.caption.18}% 
+\contentsline {figure}{\numberline {18}{\ignorespaces Erkennt linke vertikale Kanten\relax }}{20}{figure.caption.18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces Erkennt untere horizontale Kanten\relax }}{21}{figure.caption.18}% 
+\contentsline {figure}{\numberline {19}{\ignorespaces Erkennt untere horizontale Kanten\relax }}{20}{figure.caption.18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {20}{\ignorespaces Erkennt rechte vertikale Kanten\relax }}{21}{figure.caption.18}% 
+\contentsline {figure}{\numberline {20}{\ignorespaces Erkennt rechte vertikale Kanten\relax }}{20}{figure.caption.18}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {21}{\ignorespaces Das Beispielbild aus dem Mnist Datensatz\relax }}{21}{figure.caption.19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {22}{\ignorespaces Die jeweils oben stehenden Filter wurden auf das Beispielbild angewandt.\relax }}{22}{figure.caption.20}% 
+\contentsline {figure}{\numberline {22}{\ignorespaces Die jeweils oben stehenden Filter wurden auf das Beispielbild angewandt.\relax }}{21}{figure.caption.20}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {23}{\ignorespaces Beispiele f\IeC {\"u}r low-, mid- und high-level Features in Convolutional Neural Nets\newline Quelle: https://tvirdi.github.io/2017-10-29/cnn/}}{22}{figure.caption.21}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {24}{\ignorespaces Max Pooling mit $2\times 2$ gro\IeC {\ss }en Submatritzen\newline Quelle: https://computersciencewiki.org/index.php/Max-pooling\_/\_Pooling CC BY NC SA Lizenz}}{24}{figure.caption.22}% 
+\contentsline {figure}{\numberline {24}{\ignorespaces Max Pooling mit $2\times 2$ gro\IeC {\ss }en Submatrizen\newline Quelle: https://computersciencewiki.org/index.php/Max-pooling\_/\_Pooling CC BY NC SA Lizenz}}{23}{figure.caption.22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {25}{\ignorespaces Average Pooling mit $2\times 2$ gro\IeC {\ss }en Submatritzen\newline Aus: Dominguez-Morales, Juan Pedro. (2018). Neuromorphic audio processing through real-time embedded spiking neural networks. Abbildung 33}}{24}{figure.caption.23}% 
+\contentsline {figure}{\numberline {25}{\ignorespaces Average-Pooling mit $2\times 2$ gro\IeC {\ss }en Submatrizen\newline Aus: Dominguez-Morales, Juan Pedro. (2018). Neuromorphic audio processing through real-time embedded spiking neural networks. Abbildung 33}}{23}{figure.caption.23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {26}{\ignorespaces Gegen\IeC {\"u}berstellung von Max und Average Pooling\relax }}{25}{figure.caption.24}% 
+\contentsline {figure}{\numberline {26}{\ignorespaces Gegen\IeC {\"u}berstellung von Max- und Average-Pooling\relax }}{24}{figure.caption.24}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {27}{\ignorespaces Der Code zum Laden des MNIST Datensatzes\relax }}{26}{figure.caption.25}% 
 \defcounter {refsection}{0}\relax 
@@ -65,4 +65,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {32}{\ignorespaces Ein Plot der Trefferquote, aufgetragen gegen die Trainingszeit\relax }}{34}{figure.caption.30}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {33}{\ignorespaces Ein Plot des Kreuzentropiefehlers aufgetragen gegen die Trainingszeit\relax }}{35}{figure.caption.31}% 
+\contentsline {figure}{\numberline {33}{\ignorespaces Ein Plot des Kreuzentropiefehlers aufgetragen gegen die Trainingszeit\relax }}{34}{figure.caption.31}% 
