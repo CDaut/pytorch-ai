@@ -27,7 +27,7 @@ gitdb2==2.0.6
 gitpython==3.0.5
 gql==0.2.0
 graphql-core==1.1
-httplib2==0.11.3
+httplib2==0.18.0
 idna==2.6
 keyring==18.0.1
 keyrings.alt==3.1.1
