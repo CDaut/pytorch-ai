@@ -170,7 +170,7 @@ lazr.restfulclient==0.13.5
 lazr.uri==1.0.3
 llvmlite==0.29.0
 louis==3.5.0
-lxml==4.2.1
+lxml==4.6.2
 macaroonbakery==1.1.3
 macholib==1.11
 mako==1.0.7
