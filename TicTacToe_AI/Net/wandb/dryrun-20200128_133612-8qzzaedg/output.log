@@ -1,13 +1,0 @@
-running on cpu
-Loading file...
-986410
-Generating testset...
-  0%|                                                 | 0/10000 [00:00<?, ?it/s]  0%|                                                 | 0/10000 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "pytorch_ai.py", line 135, in <module>
-    trainset, testset = buildsets()
-  File "pytorch_ai.py", line 85, in buildsets
-    testset = to_batched_set(alllines[0:10000])
-  File "pytorch_ai.py", line 55, in to_batched_set
-    labeltensor[counter][9] = 1
-IndexError: dimension specified as 0 but tensor has no dimensions
