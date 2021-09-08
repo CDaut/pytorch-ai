@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{wandb}\PYG{o}{.}\PYG{n}{init}\PYG{p}{(}\PYG{n}{project}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}Beispielprojekt\PYGZsq{}}\PYG{p}{)} 
-\end{Verbatim}

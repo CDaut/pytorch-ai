@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{output} \PYG{o}{=} \PYG{n}{net}\PYG{p}{(}\PYG{n+nb}{input}\PYG{p}{)}
-\end{Verbatim}
