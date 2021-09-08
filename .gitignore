@@ -195,3 +195,10 @@ dmypy.json
 
 # End of https://www.gitignore.io/api/python,pycharm+all
  *.pt
+
+# tex generated files
+*.aux
+*.bcf
+*.synctex.gz
+*.toc
+*.pyg
