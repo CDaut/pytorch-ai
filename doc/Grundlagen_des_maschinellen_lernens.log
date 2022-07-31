@@ -1,39 +1,39 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.23)  18 OCT 2021 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.4.29)  31 JUL 2022 15:51
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **Grundlagen_des_maschinellen_lernens.tex
 (./Grundlagen_des_maschinellen_lernens.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18>
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-10>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count179
-\c@section=\count180
-\c@subsection=\count181
-\c@subsubsection=\count182
-\c@paragraph=\count183
-\c@subparagraph=\count184
-\c@figure=\count185
-\c@table=\count186
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/09/23 v2.17i AMS math features
+Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+Package: amstext 2021/08/26 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks15
+\@emptytoks=\toks16
 \ex@=\dimen139
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -41,53 +41,53 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count187
+\inf@bad=\count193
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count188
-\leftroot@=\count189
+\uproot@=\count194
+\leftroot@=\count195
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count190
-\DOTSCASE@=\count191
+\classnum@=\count196
+\DOTSCASE@=\count197
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
+\Mathstrutbox@=\box50
+\strutbox@=\box51
 \big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count192
-\c@MaxMatrixCols=\count193
+\macc@depth=\count198
+\c@MaxMatrixCols=\count199
 \dotsspace@=\muskip16
-\c@parentequation=\count194
-\dspbrk@lvl=\count195
-\tag@help=\toks16
-\row@=\count196
-\column@=\count197
-\maxfields@=\count198
-\andhelp@=\toks17
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks17
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks18
 \eqnshift@=\dimen142
 \alignsep@=\dimen143
 \tagshift@=\dimen144
 \tagwidth@=\dimen145
 \totwidth@=\dimen146
 \lineht@=\dimen147
-\@envbody=\toks18
+\@envbody=\toks19
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
 )
 (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
 )
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (/usr/share/texmf-dist/tex/latex/libertine/biolinum.sty
 Package: biolinum 2020/03/26 (Bob Tennent) Supports Biolinum fonts for all LaTe
@@ -97,7 +97,7 @@ X engines.
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 
 (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 (/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
@@ -107,18 +107,18 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks22
-\XKV@tempa@toks=\toks23
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count199
+\XKV@depth=\count271
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
 (/usr/share/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
@@ -134,18 +134,14 @@ LaTeX Info: Redefining \textssc on input line 48.
 LaTeX Info: Redefining \textulc on input line 49.
 ))
 (/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2021/03/24 3.56 The Babel package
-
-(/usr/share/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2021/03/24 3.56 Babel common definitions
-\babel@savecnt=\count266
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count272
 \U@D=\dimen148
-\l@babelnohyphens=\language87
+\l@unhyphenated=\language87
 
 (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-)
-\bbl@dirlevel=\count267
+\bbl@dirlevel=\count273
 
 (/usr/share/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthogra
@@ -161,15 +157,15 @@ Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
 
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count268
+\etb@tempcnta=\count274
 )
-\csq@reset=\count269
-\csq@gtype=\count270
-\csq@glevel=\count271
-\csq@qlevel=\count272
-\csq@maxlvl=\count273
-\csq@tshold=\count274
-\csq@ltx@everypar=\toks24
+\csq@reset=\count275
+\csq@gtype=\count276
+\csq@glevel=\count277
+\csq@qlevel=\count278
+\csq@maxlvl=\count279
+\csq@tshold=\count280
+\csq@ltx@everypar=\toks25
 
 (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
@@ -183,7 +179,7 @@ File: csquotes.cfg
 Package csquotes Info: Enabling multilingual quotes.
 )
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
@@ -221,17 +217,13 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen149
-\Hy@linkcounter=\count275
-\Hy@pagecounter=\count276
+\Hy@linkcounter=\count281
+\Hy@pagecounter=\count282
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(/usr/share/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
-nguages
 )
 (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
@@ -239,27 +231,27 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count277
+\Hy@SavedSpaceFactor=\count283
 
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count278
+Package hyperref Info: Bookmarks ON on input line 4390.
+\c@Hy@tempcnt=\count284
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
+LaTeX Info: Redefining \url on input line 4749.
 \XeTeXLinkMargin=\dimen150
 
 (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
@@ -269,40 +261,39 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count279
+\Fld@menulength=\count285
 \Field@Width=\dimen151
 \Fld@charsize=\dimen152
-Package hyperref Info: Hyper figures OFF on input line 6075.
-Package hyperref Info: Link nesting OFF on input line 6080.
-Package hyperref Info: Hyper index ON on input line 6083.
-Package hyperref Info: backreferencing OFF on input line 6090.
-Package hyperref Info: Link coloring OFF on input line 6095.
-Package hyperref Info: Link coloring with OCG OFF on input line 6100.
-Package hyperref Info: PDF/A mode OFF on input line 6105.
-LaTeX Info: Redefining \ref on input line 6145.
-LaTeX Info: Redefining \pageref on input line 6149.
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
 
 (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
 )
-\Hy@abspage=\count280
-\c@Item=\count281
-\c@Hfootnote=\count282
+\Hy@abspage=\count286
+\c@Item=\count287
+\c@Hfootnote=\count288
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
 
 (/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
 with kernel methods
 )
-\Fld@listcount=\count283
-\c@bookmark@seq@number=\count284
+\Fld@listcount=\count289
+\c@bookmark@seq@number=\count290
 
 (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -316,18 +307,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip52
 )
 (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
 (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
@@ -336,24 +327,24 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \Gin@req@width=\dimen154
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count285
-\lst@gtempboxa=\box49
-\lst@token=\toks25
-\lst@length=\count286
+\lst@mode=\count291
+\lst@gtempboxa=\box52
+\lst@token=\toks26
+\lst@length=\count292
 \lst@currlwidth=\dimen155
-\lst@column=\count287
-\lst@pos=\count288
+\lst@column=\count293
+\lst@pos=\count294
 \lst@lostspace=\dimen156
 \lst@width=\dimen157
-\lst@newlines=\count289
-\lst@lineno=\count290
+\lst@newlines=\count295
+\lst@lineno=\count296
 \lst@maxwidth=\dimen158
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count291
-\lst@skipnumbers=\count292
-\lst@framebox=\box50
+\c@lstnumber=\count297
+\lst@skipnumbers=\count298
+\lst@framebox=\box53
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -374,60 +365,60 @@ rs
 \f@nch@O@orf=\skip61
 )
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
+Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count293
+\lrq@indent=\count299
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count294
-\c@listtotal=\count295
-\c@listcount=\count296
-\c@liststart=\count297
-\c@liststop=\count298
-\c@citecount=\count299
-\c@citetotal=\count300
-\c@multicitecount=\count301
-\c@multicitetotal=\count302
-\c@instcount=\count303
-\c@maxnames=\count304
-\c@minnames=\count305
-\c@maxitems=\count306
-\c@minitems=\count307
-\c@citecounter=\count308
-\c@maxcitecounter=\count309
-\c@savedcitecounter=\count310
-\c@uniquelist=\count311
-\c@uniquename=\count312
-\c@refsection=\count313
-\c@refsegment=\count314
-\c@maxextratitle=\count315
-\c@maxextratitleyear=\count316
-\c@maxextraname=\count317
-\c@maxextradate=\count318
-\c@maxextraalpha=\count319
-\c@abbrvpenalty=\count320
-\c@highnamepenalty=\count321
-\c@lownamepenalty=\count322
-\c@maxparens=\count323
-\c@parenlevel=\count324
-\blx@tempcnta=\count325
-\blx@tempcntb=\count326
-\blx@tempcntc=\count327
-\blx@maxsection=\count328
-\blx@maxsegment@0=\count329
-\blx@notetype=\count330
-\blx@parenlevel@text=\count331
-\blx@parenlevel@foot=\count332
-\blx@sectionciteorder@0=\count333
-\blx@entrysetcounter=\count334
-\blx@biblioinstance=\count335
+\c@tabx@nest=\count300
+\c@listtotal=\count301
+\c@listcount=\count302
+\c@liststart=\count303
+\c@liststop=\count304
+\c@citecount=\count305
+\c@citetotal=\count306
+\c@multicitecount=\count307
+\c@multicitetotal=\count308
+\c@instcount=\count309
+\c@maxnames=\count310
+\c@minnames=\count311
+\c@maxitems=\count312
+\c@minitems=\count313
+\c@citecounter=\count314
+\c@maxcitecounter=\count315
+\c@savedcitecounter=\count316
+\c@uniquelist=\count317
+\c@uniquename=\count318
+\c@refsection=\count319
+\c@refsegment=\count320
+\c@maxextratitle=\count321
+\c@maxextratitleyear=\count322
+\c@maxextraname=\count323
+\c@maxextradate=\count324
+\c@maxextraalpha=\count325
+\c@abbrvpenalty=\count326
+\c@highnamepenalty=\count327
+\c@lownamepenalty=\count328
+\c@maxparens=\count329
+\c@parenlevel=\count330
+\blx@tempcnta=\count331
+\blx@tempcntb=\count332
+\blx@tempcntc=\count333
+\c@blx@maxsection=\count334
+\c@blx@maxsegment@0=\count335
+\blx@notetype=\count336
+\blx@parenlevel@text=\count337
+\blx@parenlevel@foot=\count338
+\c@blx@sectionciteorder@0=\count339
+\blx@entrysetcounter=\count340
+\blx@biblioinstance=\count341
 \labelnumberwidth=\skip62
 \labelalphawidth=\skip63
 \biblabelsep=\skip64
@@ -439,85 +430,85 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language88
-\c@mincomprange=\count336
-\c@maxcomprange=\count337
-\c@mincompwidth=\count338
+\c@mincomprange=\count342
+\c@maxcomprange=\count343
+\c@mincompwidth=\count344
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2020/12/31 v3.16 biblatex localization (PK/MW)
+File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count339
-\c@savedafterword=\count340
-\c@annotator=\count341
-\c@savedannotator=\count342
-\c@author=\count343
-\c@savedauthor=\count344
-\c@bookauthor=\count345
-\c@savedbookauthor=\count346
-\c@commentator=\count347
-\c@savedcommentator=\count348
-\c@editor=\count349
-\c@savededitor=\count350
-\c@editora=\count351
-\c@savededitora=\count352
-\c@editorb=\count353
-\c@savededitorb=\count354
-\c@editorc=\count355
-\c@savededitorc=\count356
-\c@foreword=\count357
-\c@savedforeword=\count358
-\c@holder=\count359
-\c@savedholder=\count360
-\c@introduction=\count361
-\c@savedintroduction=\count362
-\c@namea=\count363
-\c@savednamea=\count364
-\c@nameb=\count365
-\c@savednameb=\count366
-\c@namec=\count367
-\c@savednamec=\count368
-\c@translator=\count369
-\c@savedtranslator=\count370
-\c@shortauthor=\count371
-\c@savedshortauthor=\count372
-\c@shorteditor=\count373
-\c@savedshorteditor=\count374
-\c@labelname=\count375
-\c@savedlabelname=\count376
-\c@institution=\count377
-\c@savedinstitution=\count378
-\c@lista=\count379
-\c@savedlista=\count380
-\c@listb=\count381
-\c@savedlistb=\count382
-\c@listc=\count383
-\c@savedlistc=\count384
-\c@listd=\count385
-\c@savedlistd=\count386
-\c@liste=\count387
-\c@savedliste=\count388
-\c@listf=\count389
-\c@savedlistf=\count390
-\c@location=\count391
-\c@savedlocation=\count392
-\c@organization=\count393
-\c@savedorganization=\count394
-\c@origlocation=\count395
-\c@savedoriglocation=\count396
-\c@origpublisher=\count397
-\c@savedorigpublisher=\count398
-\c@publisher=\count399
-\c@savedpublisher=\count400
-\c@language=\count401
-\c@savedlanguage=\count402
-\c@origlanguage=\count403
-\c@savedoriglanguage=\count404
-\c@pageref=\count405
-\c@savedpageref=\count406
+\c@afterword=\count345
+\c@savedafterword=\count346
+\c@annotator=\count347
+\c@savedannotator=\count348
+\c@author=\count349
+\c@savedauthor=\count350
+\c@bookauthor=\count351
+\c@savedbookauthor=\count352
+\c@commentator=\count353
+\c@savedcommentator=\count354
+\c@editor=\count355
+\c@savededitor=\count356
+\c@editora=\count357
+\c@savededitora=\count358
+\c@editorb=\count359
+\c@savededitorb=\count360
+\c@editorc=\count361
+\c@savededitorc=\count362
+\c@foreword=\count363
+\c@savedforeword=\count364
+\c@holder=\count365
+\c@savedholder=\count366
+\c@introduction=\count367
+\c@savedintroduction=\count368
+\c@namea=\count369
+\c@savednamea=\count370
+\c@nameb=\count371
+\c@savednameb=\count372
+\c@namec=\count373
+\c@savednamec=\count374
+\c@translator=\count375
+\c@savedtranslator=\count376
+\c@shortauthor=\count377
+\c@savedshortauthor=\count378
+\c@shorteditor=\count379
+\c@savedshorteditor=\count380
+\c@labelname=\count381
+\c@savedlabelname=\count382
+\c@institution=\count383
+\c@savedinstitution=\count384
+\c@lista=\count385
+\c@savedlista=\count386
+\c@listb=\count387
+\c@savedlistb=\count388
+\c@listc=\count389
+\c@savedlistc=\count390
+\c@listd=\count391
+\c@savedlistd=\count392
+\c@liste=\count393
+\c@savedliste=\count394
+\c@listf=\count395
+\c@savedlistf=\count396
+\c@location=\count397
+\c@savedlocation=\count398
+\c@organization=\count399
+\c@savedorganization=\count400
+\c@origlocation=\count401
+\c@savedoriglocation=\count402
+\c@origpublisher=\count403
+\c@savedorigpublisher=\count404
+\c@publisher=\count405
+\c@savedpublisher=\count406
+\c@language=\count407
+\c@savedlanguage=\count408
+\c@origlanguage=\count409
+\c@savedoriglanguage=\count410
+\c@pageref=\count411
+\c@savedpageref=\count412
 \shorthandwidth=\skip70
 \shortjournalwidth=\skip71
 \shortserieswidth=\skip72
@@ -536,45 +527,45 @@ Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
+File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count407
-\c@textcitetotal=\count408
-\c@textcitemaxnames=\count409
-\c@biburlbigbreakpenalty=\count410
-\c@biburlbreakpenalty=\count411
-\c@biburlnumpenalty=\count412
-\c@biburlucpenalty=\count413
-\c@biburllcpenalty=\count414
+File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+\c@textcitecount=\count413
+\c@textcitetotal=\count414
+\c@textcitemaxnames=\count415
+\c@biburlbigbreakpenalty=\count416
+\c@biburlbreakpenalty=\count417
+\c@biburlnumpenalty=\count418
+\c@biburlucpenalty=\count419
+\c@biburllcpenalty=\count420
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count415
+\c@smartand=\count421
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
+File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count416
-\c@bbx:relatedtotal=\count417
+File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count422
+\c@bbx:relatedtotal=\count423
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2020/12/31 v3.16 biblatex citation style (PK/MW)
+File: numeric.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -592,40 +583,62 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-04-10 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count424
+\l__pdf_internal_box=\box54
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-04-10 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
 ))
 (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 
 (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks26
+\pgfutil@everybye=\toks27
 \pgfutil@tempdima=\dimen159
 \pgfutil@tempdimb=\dimen160
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box51
+\pgfutil@abb=\box55
 )
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
-Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks27
-\pgfkeys@temptoks=\toks28
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks29
+\pgfkeys@tmptoks=\toks30
 ))
 \pgf@x=\dimen161
 \pgf@y=\dimen162
@@ -639,64 +652,64 @@ Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@yd=\dimen170
 \w@pgf@writea=\write4
 \r@pgf@reada=\read4
-\c@pgf@counta=\count418
-\c@pgf@countb=\count419
-\c@pgf@countc=\count420
-\c@pgf@countd=\count421
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count422
+\c@pgf@counta=\count425
+\c@pgf@countb=\count426
+\c@pgf@countc=\count427
+\c@pgf@countd=\count428
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count429
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count423
-\pgfsyssoftpath@bigbuffer@items=\count424
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count430
+\pgfsyssoftpath@bigbuffer@items=\count431
 )
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen171
-\pgfmath@count=\count425
-\pgfmath@box=\box52
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
+\pgfmath@count=\count432
+\pgfmath@box=\box56
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
 )
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
@@ -709,10 +722,10 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
 .code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count426
+\c@pgfmathroundto@lastzeros=\count433
 )) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picminx=\dimen172
 \pgf@picmaxx=\dimen173
 \pgf@picminy=\dimen174
@@ -729,82 +742,82 @@ File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@zy=\dimen185
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@path@lastx=\dimen186
 \pgf@path@lasty=\dimen187
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@end@additional=\dimen188
 \pgf@shorten@start@additional=\dimen189
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfpic=\box53
-\pgf@hbox=\box54
-\pgf@layerbox@main=\box55
-\pgf@picture@serial@count=\count427
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box57
+\pgf@hbox=\box58
+\pgf@layerbox@main=\box59
+\pgf@picture@serial@count=\count434
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgflinewidth=\dimen190
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
 ex
-File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@pt@x=\dimen191
 \pgf@pt@y=\dimen192
 \pgf@pt@temp=\dimen193
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
 x
-File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowsep=\dimen194
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen195
-\pgf@sys@shading@range@num=\count428
-\pgf@shadingcount=\count429
+\pgf@sys@shading@range@num=\count435
+\pgf@shadingcount=\count436
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfexternal@startupbox=\box56
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box60
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfnodeparttextbox=\box57
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box61
 )
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@nodesepstart=\dimen196
 \pgf@nodesepend=\dimen197
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
@@ -812,21 +825,21 @@ Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen198
 \pgffor@skip=\dimen199
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
 x
-File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count430
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count437
 \pgfplotmarksize=\dimen256
 )
 \tikz@lastx=\dimen257
@@ -837,34 +850,34 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikz@lastmovetoy=\dimen262
 \tikzleveldistance=\dimen263
 \tikzsiblingdistance=\dimen264
-\tikz@figbox=\box58
-\tikz@figbox@bg=\box59
-\tikz@tempbox=\box60
-\tikz@tempbox@bg=\box61
-\tikztreelevel=\count431
-\tikznumberofchildren=\count432
-\tikznumberofcurrentchild=\count433
-\tikz@fig@count=\count434
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
+\tikztreelevel=\count438
+\tikznumberofchildren=\count439
+\tikznumberofcurrentchild=\count440
+\tikz@fig@count=\count441
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count435
-\pgfmatrixcurrentcolumn=\count436
-\pgf@matrix@numberofcolumns=\count437
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count442
+\pgfmatrixcurrentcolumn=\count443
+\pgf@matrix@numberofcolumns=\count444
 )
-\tikz@expandcount=\count438
+\tikz@expandcount=\count445
 
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
-File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks38
-\t@pgfplots@tokb=\toks39
-\t@pgfplots@tokc=\toks40
+\t@pgfplots@toka=\toks39
+\t@pgfplots@tokb=\toks40
+\t@pgfplots@tokc=\toks41
 \pgfplots@tmpa=\dimen265
-\c@pgfplots@coordindex=\count439
-\c@pgfplots@scanlineindex=\count440
+\c@pgfplots@coordindex=\count446
+\c@pgfplots@scanlineindex=\count447
 
 (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
 (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
@@ -878,14 +891,14 @@ oader.code.tex
 ext.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.te
 x
-\c@pgfplotsarray@tmp=\count441
+\c@pgfplotsarray@tmp=\count448
 )
 (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.t
 ex)
 (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.t
 ex
-\c@pgfplotstable@counta=\count442
-\t@pgfplotstable@a=\toks41
+\c@pgfplotstable@counta=\count449
+\t@pgfplotstable@a=\toks42
 )
 (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.te
 x) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
@@ -893,7 +906,7 @@ x) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
 (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading
 .code.tex
-\c@pgfplotslibrarysurf@no=\count443
+\c@pgfplotslibrarysurf@no=\count450
 
 (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.
 pgfsys-pdftex.def)))
@@ -917,11 +930,11 @@ decorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen268
 \pgfdecoratedinputsegmentremainingdistance=\dimen269
 \pgf@decorate@distancetomove=\dimen270
-\pgf@decorate@repeatstate=\count444
+\pgf@decorate@repeatstate=\count451
 \pgfdecorationsegmentamplitude=\dimen271
 \pgfdecorationsegmentlength=\dimen272
 )
-\tikz@lib@dec@box=\box62
+\tikz@lib@dec@box=\box66
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 decorations.pathmorphing.code.tex
@@ -931,7 +944,9 @@ ons.pathmorphing.code.tex))
 decorations.pathreplacing.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
 ons.pathreplacing.code.tex))
-\pgfplots@numplots=\count445
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua
+.code.tex)
+\pgfplots@numplots=\count452
 \pgfplots@xmin@reg=\dimen273
 \pgfplots@xmax@reg=\dimen274
 \pgfplots@ymin@reg=\dimen275
@@ -941,10 +956,10 @@ ons.pathreplacing.code.tex))
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 plotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/share/texmf-dist/tex/latex/txfonts/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
@@ -1024,37 +1039,38 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 591.
 LaTeX Info: Redefining \not on input line 1043.
 )
 (/usr/share/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
 (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen279
-\captionmargin@=\dimen280
-\captionwidth=\dimen281
-\caption@tempdima=\dimen282
-\caption@indent=\dimen283
-\caption@parindent=\dimen284
-\caption@hangindent=\dimen285
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen279
+\captionmargin=\dimen280
+\caption@leftmargin=\dimen281
+\caption@rightmargin=\dimen282
+\caption@width=\dimen283
+\caption@indent=\dimen284
+\caption@parindent=\dimen285
+\caption@hangindent=\dimen286
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count446
-\c@continuedfloat=\count447
+\c@caption@flags=\count453
+\c@continuedfloat=\count454
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
 (/usr/share/texmf-dist/tex/latex/minted/minted.sty
-Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+Package: minted 2021/12/24 v2.6 Yet another Pygments shim for LaTeX
 
 (/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
 Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
 
 (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count448
+Package: fancyvrb 2022/04/12 4.2 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count455
 \FV@InFile=\read5
-\FV@TabBox=\box63
-\c@FancyVerbLine=\count449
-\FV@StepNumber=\count450
+\FV@TabBox=\box67
+\c@FancyVerbLine=\count456
+\FV@StepNumber=\count457
 \FV@OutFile=\write5
 )
 (/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
@@ -1063,20 +1079,20 @@ tim
 )
 (/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count451
-\output=\toks42
-\linenoprevgraf=\count452
-\linenumbersep=\dimen286
-\linenumberwidth=\dimen287
-\c@linenumber=\count453
-\c@pagewiselinenumber=\count454
-\c@LN@truepage=\count455
-\c@internallinenumber=\count456
-\c@internallinenumbers=\count457
-\quotelinenumbersep=\dimen288
-\bframerule=\dimen289
-\bframesep=\dimen290
-\bframebox=\box64
+\linenopenalty=\count458
+\output=\toks43
+\linenoprevgraf=\count459
+\linenumbersep=\dimen287
+\linenumberwidth=\dimen288
+\c@linenumber=\count460
+\c@pagewiselinenumber=\count461
+\c@LN@truepage=\count462
+\c@internallinenumber=\count463
+\c@internallinenumbers=\count464
+\quotelinenumbersep=\dimen289
+\bframerule=\dimen290
+\bframesep=\dimen291
+\bframebox=\box68
 
 
 LaTeX Warning: Command \@parboxrestore  has changed.
@@ -1088,44 +1104,44 @@ LaTeX Info: Redefining \\ on input line 3056.
 Package fvextra Warning: csquotes should be loaded after fvextra, to avoid a wa
 rning from the lineno package on input line 37.
 
-\c@FV@TrueTabGroupLevel=\count458
-\c@FV@TrueTabCounter=\count459
-\FV@TabBox@Group=\box65
+\c@FV@TrueTabGroupLevel=\count465
+\c@FV@TrueTabCounter=\count466
+\FV@TabBox@Group=\box69
 \FV@TmpLength=\skip84
-\c@FV@HighlightLinesStart=\count460
-\c@FV@HighlightLinesStop=\count461
-\FV@LoopCount=\count462
-\FV@NCharsBox=\box66
-\FV@BreakIndent=\dimen291
-\FV@BreakIndentNChars=\count463
-\FV@BreakSymbolSepLeft=\dimen292
-\FV@BreakSymbolSepLeftNChars=\count464
-\FV@BreakSymbolSepRight=\dimen293
-\FV@BreakSymbolSepRightNChars=\count465
-\FV@BreakSymbolIndentLeft=\dimen294
-\FV@BreakSymbolIndentLeftNChars=\count466
-\FV@BreakSymbolIndentRight=\dimen295
-\FV@BreakSymbolIndentRightNChars=\count467
-\c@FancyVerbLineBreakLast=\count468
-\FV@LineBox=\box67
-\FV@LineIndentBox=\box68
-\FV@LineWidth=\dimen296
+\c@FV@HighlightLinesStart=\count467
+\c@FV@HighlightLinesStop=\count468
+\FV@LoopCount=\count469
+\FV@NCharsBox=\box70
+\FV@BreakIndent=\dimen292
+\FV@BreakIndentNChars=\count470
+\FV@BreakSymbolSepLeft=\dimen293
+\FV@BreakSymbolSepLeftNChars=\count471
+\FV@BreakSymbolSepRight=\dimen294
+\FV@BreakSymbolSepRightNChars=\count472
+\FV@BreakSymbolIndentLeft=\dimen295
+\FV@BreakSymbolIndentLeftNChars=\count473
+\FV@BreakSymbolIndentRight=\dimen296
+\FV@BreakSymbolIndentRightNChars=\count474
+\c@FancyVerbLineBreakLast=\count475
+\FV@LineBox=\box71
+\FV@LineIndentBox=\box72
+\FV@LineWidth=\dimen297
 ) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count469
-\calc@Bcount=\count470
-\calc@Adimen=\dimen297
-\calc@Bdimen=\dimen298
+\calc@Acount=\count476
+\calc@Bcount=\count477
+\calc@Adimen=\dimen298
+\calc@Bdimen=\dimen299
 \calc@Askip=\skip85
 \calc@Bskip=\skip86
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count471
+\calc@Ccount=\count478
 \calc@Cskip=\skip87
 )
 (/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 (/usr/share/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
@@ -1133,91 +1149,66 @@ Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
 (/usr/share/texmf-dist/tex/generic/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 )
+runsystem(uname -s > "Grundlagen_des_maschinellen_lernens.w18")...executed.
 
-Package ifplatform Warning: 
-    shell escape is disabled, so I can only detect \ifwindows.
 
-) (/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count472
-\decimalpart=\count473
+(./Grundlagen_des_maschinellen_lernens.w18)
+runsystem(rm -- "Grundlagen_des_maschinellen_lernens.w18")...executed.
+
 )
-Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count479
+\decimalpart=\count480
+)
+Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
 (/usr/share/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip88
-\fb@frw=\dimen299
-\fb@frh=\dimen300
-\FrameRule=\dimen301
-\FrameSep=\dimen302
+\fb@frw=\dimen300
+\fb@frh=\dimen301
+\FrameRule=\dimen302
+\FrameSep=\dimen303
 )
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count474
-\float@exts=\toks43
-\float@box=\box69
-\@float@everytoks=\toks44
-\@floatcapt=\box70
+\c@float@type=\count481
+\float@exts=\toks44
+\float@box=\box73
+\@float@everytoks=\toks45
+\@floatcapt=\box74
 )
 \minted@appexistsfile=\read6
-\minted@bgbox=\box71
+\minted@bgbox=\box75
 \minted@code=\write6
-\c@minted@FancyVerbLineTemp=\count475
-\c@minted@pygmentizecounter=\count476
-\@float@every@listing=\toks45
-\c@listing=\count477
+\c@minted@FancyVerbLineTemp=\count482
+\c@minted@pygmentizecounter=\count483
+\@float@every@listing=\toks46
+\c@listing=\count484
 )
-runsystem(mkdir -p _minted-Grundlagen_des_maschinellen_lernens)...disabled (res
-tricted).
-
-
-
-! Package minted Error: You must invoke LaTeX with the -shell-escape flag.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.22 
-     
-Pass the -shell-escape flag to LaTeX. Refer to the minted.sty documentation for
- more information.
+runsystem(mkdir -p _minted-Grundlagen_des_maschinellen_lernens)...executed.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 runsystem(which pygmentize && touch Grundlagen_des_maschinellen_lernens.aex)...
-disabled (restricted).
+executed.
 
-
-! Package minted Error: You must have `pygmentize' installed to use this packag
-e.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 \begin{document}
-                     
-Refer to the installation instructions in the minted documentation for more inf
-ormation.
+runsystem(rm Grundlagen_des_maschinellen_lernens.aex)...executed.
 
 LaTeX Font Info:    Trying to load font information for T1+txr on input line 34
 .
+
 (/usr/share/texmf-dist/tex/latex/txfonts/t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
 )
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count478
-\l__pdf_internal_box=\box72
-)
-No file Grundlagen_des_maschinellen_lernens.aux.
+(./Grundlagen_des_maschinellen_lernens.aux)
 \openout1 = `Grundlagen_des_maschinellen_lernens.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 34.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 34.
+
 (/usr/share/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1256,8 +1247,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
-\c@mv@tabular=\count479
-\c@mv@boldtabular=\count480
+\c@mv@tabular=\count485
+\c@mv@boldtabular=\count486
 Package hyperref Info: Link coloring OFF on input line 34.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1269,28 +1260,31 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count481
+\c@section@level=\count487
 )
 LaTeX Info: Redefining \ref on input line 34.
 LaTeX Info: Redefining \pageref on input line 34.
 LaTeX Info: Redefining \nameref on input line 34.
+
+(./Grundlagen_des_maschinellen_lernens.out)
+(./Grundlagen_des_maschinellen_lernens.out)
 \@outlinefile=\write7
 \openout7 = `Grundlagen_des_maschinellen_lernens.out'.
 
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count482
-\scratchdimen=\dimen303
-\scratchbox=\box73
-\nofMPsegments=\count483
-\nofMParguments=\count484
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count485
-\MPscratchDim=\dimen304
-\MPnumerator=\count486
-\makeMPintoPDFobject=\count487
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count488
+\scratchdimen=\dimen304
+\scratchbox=\box76
+\nofMPsegments=\count489
+\nofMParguments=\count490
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count491
+\MPscratchDim=\dimen305
+\MPnumerator=\count492
+\makeMPintoPDFobject=\count493
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1300,43 +1294,27 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count488
+\c@lstlisting=\count494
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
-File: ngerman.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+File: ngerman.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/lbx/german.lbx
-File: german.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+File: german.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/lbx/german.lbx
-File: german.lbx 2020/12/31 v3.16 biblatex localization (PK/MW)
+File: german.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Document encoding is UTF8 ....
-
-(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-02-18 L3 programming layer (loader) 
-)
-Package biblatex Info: ... and expl3
-(biblatex)             2021-02-18 L3 programming layer (loader) 
-(biblatex)             is new enough (at least 2020/04/06),
-(biblatex)             setting 'casechanger=expl3'.
-
-(/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex)))
-Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
-)
 \openout3 = `Grundlagen_des_maschinellen_lernens.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
@@ -1348,7 +1326,7 @@ Package biblatex Info: Reference section=0 on input line 34.
 Package biblatex Info: Reference segment=0 on input line 34.
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
  on input line 34.
 
@@ -1407,6 +1385,19 @@ File: utxsyc.fd 2000/12/15 v3.1
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 41.
+ (./Grundlagen_des_maschinellen_lernens.toc
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 2.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[1])
 \tf@toc=\write8
 \openout8 = `Grundlagen_des_maschinellen_lernens.toc'.
 
@@ -1419,19 +1410,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[1]
+[2]
 
-LaTeX Warning: Citation '1' on page 2 undefined on input line 47.
+LaTeX Warning: Citation '1' on page 3 undefined on input line 47.
 
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10.95> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 54.
-
-LaTeX Warning: Reference `Classification' on page 2 undefined on input line 57.
-
-
-<../graphics/Classification.png, id=21, 467.5869pt x 464.6961pt>
+<../graphics/Classification.png, id=208, 467.5869pt x 464.6961pt>
 File: ../graphics/Classification.png Graphic file (type png)
 <use ../graphics/Classification.png>
 Package pdftex.def Info: ../graphics/Classification.png  used on input line 60.
@@ -1445,15 +1432,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[2]
-
-LaTeX Warning: Reference `Regression' on page 3 undefined on input line 65.
-
-<../graphics/Regression.png, id=29, 467.5869pt x 464.6961pt>
+[3]
+<../graphics/Regression.png, id=215, 467.5869pt x 464.6961pt>
 File: ../graphics/Regression.png Graphic file (type png)
 <use ../graphics/Regression.png>
 Package pdftex.def Info: ../graphics/Regression.png  used on input line 68.
 (pdftex.def)             Requested size: 180.0pt x 178.88373pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1465,9 +1450,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3 <../graphics/classification.png>]
+[4 <../graphics/classification.png>]
 
-LaTeX Warning: Citation '4' on page 4 undefined on input line 76.
+LaTeX Warning: Citation '4' on page 5 undefined on input line 76.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1477,24 +1462,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4 <../graphics/regression.png>]
+[5 <../graphics/regression.png>]
 
-LaTeX Warning: Citation '5' on page 5 undefined on input line 80.
+LaTeX Warning: Citation '5' on page 6 undefined on input line 80.
 
-LaTeX Font Info:    Font shape `T1/txr/b/n' in size <9> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 82.
-
-LaTeX Warning: Reference `Gradient_section' on page 5 undefined on input line 8
-2.
-
-
-LaTeX Warning: Reference `Gradient_section' on page 5 undefined on input line 8
-2.
-
-
-LaTeX Warning: Reference `Overfitting' on page 5 undefined on input line 84.
-
-<../graphics/overfitting.png, id=45, 467.5869pt x 529.0164pt>
+<../graphics/overfitting.png, id=232, 467.5869pt x 529.0164pt>
 File: ../graphics/overfitting.png Graphic file (type png)
 <use ../graphics/overfitting.png>
 Package pdftex.def Info: ../graphics/overfitting.png  used on input line 87.
@@ -1507,25 +1479,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5]
+[6]
 
-LaTeX Warning: Citation '8' on page 6 undefined on input line 95.
-
-
-LaTeX Warning: Citation '9' on page 6 undefined on input line 95.
+LaTeX Warning: Citation '8' on page 7 undefined on input line 95.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[6 <../graphics/overfitting.png>]
-
-LaTeX Warning: Reference `sec:neuronale-netze' on page 7 undefined on input lin
-e 99.
+LaTeX Warning: Citation '9' on page 7 undefined on input line 95.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1535,18 +1494,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7]
+[7 <../graphics/overfitting.png>]
 
-LaTeX Warning: Reference `sec:verschiedene-techniken-maschinellen-lernens' on p
-age 8 undefined on input line 104.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-<../graphics/Neuron.png, id=72, 299.9205pt x 158.994pt>
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8]
+<../graphics/Neuron.png, id=255, 299.9205pt x 158.994pt>
 File: ../graphics/Neuron.png Graphic file (type png)
 <use ../graphics/Neuron.png>
 Package pdftex.def Info: ../graphics/Neuron.png  used on input line 112.
 (pdftex.def)             Requested size: 299.91975pt x 158.9936pt.
 
-LaTeX Warning: Citation '2' on page 8 undefined on input line 118.
+
+LaTeX Warning: Citation '2' on page 9 undefined on input line 118.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1559,8 +1524,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8]
-<../graphics/Neural_Net.png, id=82, 548.16795pt x 432.8973pt>
+[9]
+<../graphics/Neural_Net.png, id=262, 548.16795pt x 432.8973pt>
 File: ../graphics/Neural_Net.png Graphic file (type png)
 <use ../graphics/Neural_Net.png>
 Package pdftex.def Info: ../graphics/Neural_Net.png  used on input line 123.
@@ -1574,10 +1539,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9 <../graphics/Neuron.png>]
+[10 <../graphics/Neuron.png>]
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
 28.
- (/usr/share/texmf-dist/tex/latex/txfonts/ts1txr.fd
+
+(/usr/share/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
 
@@ -1588,28 +1554,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10 <../graphics/Neural_Net.png>]
-
-LaTeX Warning: Reference `Sigmoid' on page 11 undefined on input line 140.
-
-
-LaTeX Warning: Reference `sec:das-netz' on page 11 undefined on input line 140.
-
-
+[11 <../graphics/Neural_Net.png>]
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no t in font nullfont!
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[11]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1629,16 +1579,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13]
 
-LaTeX Warning: Reference `MSE_equation' on page 14 undefined on input line 224.
-
-
-
-LaTeX Warning: Citation '3' on page 14 undefined on input line 233.
-
-
-LaTeX Warning: Citation '3' on page 14 undefined on input line 244.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -1648,8 +1588,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14]
 
-LaTeX Warning: Reference `CEL_Graph' on page 15 undefined on input line 246.
+LaTeX Warning: Citation '3' on page 15 undefined on input line 233.
 
+
+LaTeX Warning: Citation '3' on page 15 undefined on input line 244.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[15]
 NOTE: coordinate (2Y5.0e0],3Y0.0e0]) has been dropped because it is unbounded (
 in y). (see also unbounded coords=jump). 
 NOTE: coordinate (2Y4.9990002e0],3Y0.0e0]) has been dropped because it is unbou
@@ -11655,27 +11607,6 @@ unded (in y). (see also unbounded coords=jump).
 NOTE: coordinate (2Y8.30038e-5],3Y0.0e0]) has been dropped because it is unboun
 ded (in y). (see also unbounded coords=jump). 
 
-LaTeX Warning: Reference `CEL_Function' on page 15 undefined on input line 266.
-
-
-
-LaTeX Warning: Reference `CEL_Function_cummulative' on page 15 undefined on inp
-ut line 276.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[15]
-
-LaTeX Warning: Reference `Gradient_Function' on page 16 undefined on input line
- 288.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -11685,17 +11616,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16]
 
-LaTeX Warning: Reference `Learning_Rate_Function' on page 17 undefined on input
- line 307.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-<../graphics/gdf_big_lr.png, id=151, 484.57034pt x 482.0409pt>
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[17]
+<../graphics/gdf_big_lr.png, id=332, 484.57034pt x 482.0409pt>
 File: ../graphics/gdf_big_lr.png Graphic file (type png)
 <use ../graphics/gdf_big_lr.png>
 Package pdftex.def Info: ../graphics/gdf_big_lr.png  used on input line 319.
 (pdftex.def)             Requested size: 143.9978pt x 143.24529pt.
-
-LaTeX Warning: Reference `Learning_Rate_Graphic' on page 17 undefined on input 
-line 325.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -11708,7 +11641,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[17]
+[18]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -11717,31 +11650,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[18 <../graphics/gdf_big_lr.png>]
-
-LaTeX Warning: Reference `Convolution_illustration' on page 19 undefined on inp
-ut line 334.
-
-<../graphics/conv/conv008.png, id=171, 396.48125pt x 450.68375pt>
+[19 <../graphics/gdf_big_lr.png>]
+<../graphics/conv/conv008.png, id=350, 396.48125pt x 450.68375pt>
 File: ../graphics/conv/conv008.png Graphic file (type png)
 <use ../graphics/conv/conv008.png>
 Package pdftex.def Info: ../graphics/conv/conv008.png  used on input line 337.
 (pdftex.def)             Requested size: 71.9989pt x 81.84164pt.
-
-LaTeX Warning: Reference `Filter_Example_raw' on page 19 undefined on input lin
-e 396.
-
-
-LaTeX Warning: Reference `Filter_output dargestellt' on page 19 undefined on in
-put line 396.
-
-<../graphics/mnist_5/mnist_5_raw.png, id=172, 462.528pt x 346.896pt>
+<../graphics/mnist_5/mnist_5_raw.png, id=353, 462.528pt x 346.896pt>
 File: ../graphics/mnist_5/mnist_5_raw.png Graphic file (type png)
 <use ../graphics/mnist_5/mnist_5_raw.png>
 Package pdftex.def Info: ../graphics/mnist_5/mnist_5_raw.png  used on input lin
 e 399.
 (pdftex.def)             Requested size: 180.0pt x 135.00305pt.
-<../graphics/mnist_5/conv_only/mnist_5_upper_edges.png, id=173, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_upper_edges.png, id=354, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png Graphic file (type 
 png)
@@ -11749,7 +11670,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png 
  used on input line 407.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_only/mnist_5_left_edges.png, id=174, 462.528pt x 346.
+<../graphics/mnist_5/conv_only/mnist_5_left_edges.png, id=355, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png Graphic file (type p
 ng)
@@ -11757,7 +11678,7 @@ ng)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_left_edges.png  
 used on input line 412.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_only/mnist_5_lower_edges.png, id=175, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_lower_edges.png, id=356, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png Graphic file (type 
 png)
@@ -11765,7 +11686,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_lower_edges.png 
  used on input line 417.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_only/mnist_5_right_edges.png, id=176, 462.528pt x 346
+<../graphics/mnist_5/conv_only/mnist_5_right_edges.png, id=357, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png Graphic file (type 
 png)
@@ -11773,15 +11694,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png 
  used on input line 422.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-
-LaTeX Warning: Reference `Convolution_illustration' on page 19 undefined on inp
-ut line 428.
-
-
-LaTeX Warning: Reference `HL_features_conv' on page 19 undefined on input line 
-431.
-
-<../graphics/features.png, id=177, 833.1125pt x 388.45125pt>
+<../graphics/features.png, id=360, 833.1125pt x 388.45125pt>
 File: ../graphics/features.png Graphic file (type png)
 <use ../graphics/features.png>
 Package pdftex.def Info: ../graphics/features.png  used on input line 433.
@@ -11805,7 +11718,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[19 <../graphics/conv/conv008.png>]
+[20 <../graphics/conv/conv008.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -11814,7 +11727,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[20 <../graphics/mnist_5/mnist_5_raw.png> <../graphics/mnist_5/conv_only/mnist_
+[21 <../graphics/mnist_5/mnist_5_raw.png> <../graphics/mnist_5/conv_only/mnist_
 5_upper_edges.png> <../graphics/mnist_5/conv_only/mnist_5_left_edges.png> <../g
 raphics/mnist_5/conv_only/mnist_5_lower_edges.png> <../graphics/mnist_5/conv_on
 ly/mnist_5_right_edges.png>]
@@ -11831,29 +11744,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[21 <../graphics/features.png>]
-
-LaTeX Warning: Reference `Maxpool' on page 22 undefined on input line 444.
-
-
-LaTeX Warning: Reference `AvgPool' on page 22 undefined on input line 445.
-
-<../graphics/MaxpoolSample2.png, id=203, 164.25pt x 68.547pt>
+[22 <../graphics/features.png>]
+<../graphics/MaxpoolSample2.png, id=387, 164.25pt x 68.547pt>
 File: ../graphics/MaxpoolSample2.png Graphic file (type png)
 <use ../graphics/MaxpoolSample2.png>
 Package pdftex.def Info: ../graphics/MaxpoolSample2.png  used on input line 451
 .
 (pdftex.def)             Requested size: 251.9989pt x 105.17671pt.
-<../graphics/Average-Pooling-Example.png, id=204, 746.79pt x 337.26pt>
+<../graphics/Average-Pooling-Example.png, id=388, 746.79pt x 337.26pt>
 File: ../graphics/Average-Pooling-Example.png Graphic file (type png)
 <use ../graphics/Average-Pooling-Example.png>
 Package pdftex.def Info: ../graphics/Average-Pooling-Example.png  used on input
  line 459.
 (pdftex.def)             Requested size: 251.9989pt x 113.80232pt.
-
-LaTeX Warning: Reference `Pooling_Mnist' on page 22 undefined on input line 465
-.
-
 File: ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png Graphic file (type 
 png)
 <use ../graphics/mnist_5/conv_only/mnist_5_upper_edges.png>
@@ -11878,7 +11781,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_only/mnist_5_right_edges.png 
  used on input line 484.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_pool/upper_horiz_pooled.png, id=205, 462.528pt x 346.
+<../graphics/mnist_5/conv_pool/upper_horiz_pooled.png, id=390, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png Graphic file (type p
 ng)
@@ -11886,7 +11789,7 @@ ng)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/upper_horiz_pooled.png  
 used on input line 489.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_pool/left_vert_pooled.png, id=206, 462.528pt x 346.89
+<../graphics/mnist_5/conv_pool/left_vert_pooled.png, id=391, 462.528pt x 346.89
 6pt>
 File: ../graphics/mnist_5/conv_pool/left_vert_pooled.png Graphic file (type png
 )
@@ -11894,7 +11797,7 @@ File: ../graphics/mnist_5/conv_pool/left_vert_pooled.png Graphic file (type png
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/left_vert_pooled.png  us
 ed on input line 494.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_pool/lower_horiz_pooled.png, id=207, 462.528pt x 346.
+<../graphics/mnist_5/conv_pool/lower_horiz_pooled.png, id=392, 462.528pt x 346.
 896pt>
 File: ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png Graphic file (type p
 ng)
@@ -11902,7 +11805,7 @@ ng)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/lower_horiz_pooled.png  
 used on input line 499.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_pool/right_vert_pooled.png, id=208, 462.528pt x 346.8
+<../graphics/mnist_5/conv_pool/right_vert_pooled.png, id=393, 462.528pt x 346.8
 96pt>
 File: ../graphics/mnist_5/conv_pool/right_vert_pooled.png Graphic file (type pn
 g)
@@ -11910,7 +11813,7 @@ g)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/right_vert_pooled.png  u
 sed on input line 504.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png, id=209, 462.528pt x 3
+<../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png, id=394, 462.528pt x 3
 46.896pt>
 File: ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.png Graphic file (typ
 e png)
@@ -11918,7 +11821,7 @@ e png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/upper_horiz_avgpooled.pn
 g  used on input line 509.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_pool/left_vert_avgpooled.png, id=210, 462.528pt x 346
+<../graphics/mnist_5/conv_pool/left_vert_avgpooled.png, id=395, 462.528pt x 346
 .896pt>
 File: ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png Graphic file (type 
 png)
@@ -11926,7 +11829,7 @@ png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/left_vert_avgpooled.png 
  used on input line 514.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png, id=211, 462.528pt x 3
+<../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png, id=396, 462.528pt x 3
 46.896pt>
 File: ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png Graphic file (typ
 e png)
@@ -11934,7 +11837,7 @@ e png)
 Package pdftex.def Info: ../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.pn
 g  used on input line 519.
 (pdftex.def)             Requested size: 71.9989pt x 53.99593pt.
-<../graphics/mnist_5/conv_pool/right_vert_avgpooled.png, id=212, 462.528pt x 34
+<../graphics/mnist_5/conv_pool/right_vert_avgpooled.png, id=397, 462.528pt x 34
 6.896pt>
 File: ../graphics/mnist_5/conv_pool/right_vert_avgpooled.png Graphic file (type
  png)
@@ -11955,7 +11858,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[22 <../graphics/MaxpoolSample2.png> <../graphics/Average-pooling-example.png>]
+[23 <../graphics/MaxpoolSample2.png> <../graphics/Average-pooling-example.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -11964,353 +11867,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[23 <../graphics/mnist_5/conv_pool/upper_horiz_pooled.png> <../graphics/mnist_5
+[24 <../graphics/mnist_5/conv_pool/upper_horiz_pooled.png> <../graphics/mnist_5
 /conv_pool/left_vert_pooled.png> <../graphics/mnist_5/conv_pool/lower_horiz_poo
 led.png> <../graphics/mnist_5/conv_pool/right_vert_pooled.png> <../graphics/mni
 st_5/conv_pool/upper_horiz_avgpooled.png> <../graphics/mnist_5/conv_pool/left_v
 ert_avgpooled.png> <../graphics/mnist_5/conv_pool/lower_horiz_avgpooled.png> <.
 ./graphics/mnist_5/conv_pool/right_vert_avgpooled.png>]
-
-LaTeX Warning: Reference `MNIST_Dataloader_Code' on page 24 undefined on input 
-line 535.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[24]
-\openout5 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -S default -f latex -P commandprefix=PYG > _minted-Grundla
-gen_des_maschinellen_lernens/default-pyg-prefix.pygstyle)...disabled (restricte
-d).
-
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.560 	\end{minted}^^M
-                      
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(pygmentize -S default -f latex -P commandprefix=PYGdefault > _minted-
-Grundlagen_des_maschinellen_lernens/default.pygstyle)...disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.560 	\end{minted}^^M
-                      
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; fname = os.path.expanduser(os.path.expandvars(\"Grundlagen_des_maschinellen_
-lernens.pyg\")); f = open(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fn
-ame) else None; t = f.readlines() if f is not None else None; t_opt = t if t is
- not None else []; f.close() if f is not None else None; tmpfname = os.path.exp
-anduser(os.path.expandvars(\"Grundlagen_des_maschinellen_lernens.pyg\")); f = o
-pen(tmpfname, \"w\", encoding=\"UTF8\") if t is not None else None; fvstartnum 
-= 0; fvstopnum = 0; s = fvstartnum-1 if fvstartnum != 0 else 0; e = fvstopnum i
-f fvstopnum != 0 else len(t_opt); [f.write(textwrap.dedent(\"\".join(x))) for x
- in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is not None]; f.close() if t
- is not None else os.remove(tmpfname);")...disabled (restricted).
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/3689BC65F2D8327A52B99A4D4543798E53A0
-C9FE66949F8EC4BED65B31F6975B.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.560 	\end{minted}
-                   
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/A4B374C1656F7019947BB217D7D8C34BF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.565 ...ion \mintinline{python}{datasets.MNIST()}
-                                                   nimmt dabei vier Paramete...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/6E136E4601877EDF7BAFA4E113440C09F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.567 	\item \mintinline{python}{./datasets}
-                                             Dieser Parameter gibt den Speic...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/269EB77B41B74A0DDA1E98D8C4CCFD9DF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.568 	\item \mintinline{python}{train}
-                                        Dieser Booleanparameter gibt an, ob ...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/9B331F10CD24BEF694DFB75FBF495B69F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.569 	\item \mintinline{python}{download}
-                                           Mit diesem Parameter wird festgel...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/E569CCE4C53760D94B3D7D8143D84D55F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.570 	\item \mintinline{python}{transform}
-                                            Hier werden die Transforms angeg...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/FAA14B25340C2458FD5D369A042116ABF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.570 ...nsforms.Compose([transforms.ToTensor()])}
-                                                   gewählt.\\ \mintinline{p...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/745405EA92794205A61C3062FFF26B3CF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.570 ...\mintinline{python}{transforms.Compose()}
-                                                   ist dabei dafür verantwo...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/2310AA0C124794A026E719F78EC1B44DF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.571 	\mintinline{python}{transforms.ToTensor()}
-                                                  ist der häufigste Transfo...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/EDB0BACF1F2CD448B8D22F1A9B4F026EF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.576 	\item \mintinline{python}{batch_size}
-                                             Ist ein Parameter, der eine gan...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/9A791CC5219F6F4D627591113AE747DBF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.578 	\item \mintinline{python}{shuffle}
-                                          gibt lediglich an, ob die Reihenfo...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -12320,86 +11882,65 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [25]
+\openout5 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+ (./_minted-Grundlagen_des_maschinellen_lernens/default.pygstyle)
+(./_minted-Grundlagen_des_maschinellen_lernens/3689BC65F2D8327A52B99A4D4543798E
+D88DB7F4C4AEEB32519EEBE6046CF420.pygtex
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
+.
+
+(/usr/share/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <9> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 2.
+LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
+4.
+
+(/usr/share/texmf-dist/tex/latex/txfonts/ts1txtt.fd
+File: ts1txtt.fd 2000/12/15 v3.1
+))
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/090D83D976E5CEECA0A0961BB3B3A5A6F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.580 ...MagicMethod \mintinline{python}{__iter__}
-                                                   implementiert. Der DataLo...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/A4B374C1656F7019947BB217D7D8C34B
+1885931C223FFA18A253A0DB6685291E.pygtex)
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/12F96C5C5DB151598C41F68BDCE383E2F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.582 ...klasse von \mintinline{python}{nn.Module}
-                                                   ist. Im Konstruktor wird ...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/6E136E4601877EDF7BAFA4E113440C09
+1885931C223FFA18A253A0DB6685291E.pygtex)
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/7C08F8DDD5F5D41169EB51C2ADB3E0B1F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
+
+(./_minted-Grundlagen_des_maschinellen_lernens/269EB77B41B74A0DDA1E98D8C4CCFD9D
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
 
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.582 ...ode \mintinline{python}{forward(self, x)}
-                                                   implementiert werden. Die...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
+(./_minted-Grundlagen_des_maschinellen_lernens/9B331F10CD24BEF694DFB75FBF495B69
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
 
-LaTeX Warning: Reference `Net_simple_definition' on page 26 undefined on input 
-line 582.
+(./_minted-Grundlagen_des_maschinellen_lernens/E569CCE4C53760D94B3D7D8143D84D55
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
+
+(./_minted-Grundlagen_des_maschinellen_lernens/FAA14B25340C2458FD5D369A042116AB
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/745405EA92794205A61C3062FFF26B3C
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/2310AA0C124794A026E719F78EC1B44D
+1885931C223FFA18A253A0DB6685291E.pygtex)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -12409,464 +11950,140 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [26]
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/EDB0BACF1F2CD448B8D22F1A9B4F026E
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/9A791CC5219F6F4D627591113AE747DB
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/090D83D976E5CEECA0A0961BB3B3A5A6
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/12F96C5C5DB151598C41F68BDCE383E2
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/7C08F8DDD5F5D41169EB51C2ADB3E0B1
+1885931C223FFA18A253A0DB6685291E.pygtex)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[27]
 \openout5 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; fname = os.path.expanduser(os.path.expandvars(\"Grundlagen_des_maschinellen_
-lernens.pyg\")); f = open(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fn
-ame) else None; t = f.readlines() if f is not None else None; t_opt = t if t is
- not None else []; f.close() if f is not None else None; tmpfname = os.path.exp
-anduser(os.path.expandvars(\"Grundlagen_des_maschinellen_lernens.pyg\")); f = o
-pen(tmpfname, \"w\", encoding=\"UTF8\") if t is not None else None; fvstartnum 
-= 0; fvstopnum = 0; s = fvstartnum-1 if fvstartnum != 0 else 0; e = fvstopnum i
-f fvstopnum != 0 else len(t_opt); [f.write(textwrap.dedent(\"\".join(x))) for x
- in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is not None]; f.close() if t
- is not None else os.remove(tmpfname);")...disabled (restricted).
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/D6B06E011A4BC083034B9BD6480B9AB253A0
-C9FE66949F8EC4BED65B31F6975B.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
+(./_minted-Grundlagen_des_maschinellen_lernens/D6B06E011A4BC083034B9BD6480B9AB2
+D88DB7F4C4AEEB32519EEBE6046CF420.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
 
+(./_minted-Grundlagen_des_maschinellen_lernens/7572134CCA2BA7D050325F33C4941E41
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
 
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.606 	\end{minted}
-                   
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
+(./_minted-Grundlagen_des_maschinellen_lernens/689375EA3B9C38D437AA368912E13885
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/B68FDDAFFF09CEFEB070EDD4AD4C96E1
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/B68FDDAFFF09CEFEB070EDD4AD4C96E1
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/689375EA3B9C38D437AA368912E13885
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/7C08F8DDD5F5D41169EB51C2ADB3E0B1
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/7572134CCA2BA7D050325F33C4941E41
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/7572134CCA2BA7D050325F33C4941E41
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/689375EA3B9C38D437AA368912E13885
+1885931C223FFA18A253A0DB6685291E.pygtex)
+\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
+
+
+(./_minted-Grundlagen_des_maschinellen_lernens/6361598B18370336863B24D1B6FAE96E
+1885931C223FFA18A253A0DB6685291E.pygtex)
+
+LaTeX Warning: Citation '6' on page 28 undefined on input line 611.
 
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/7572134CCA2BA7D050325F33C4941E41F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.610 ...in Eingabelayer (\mintinline{python}{fc0}
-                                                  ), das genau die Größe d...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/7C08F8DDD5F5D41169EB51C2ADB3E0B1
+1885931C223FFA18A253A0DB6685291E.pygtex)
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/689375EA3B9C38D437AA368912E13885F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
+(./_minted-Grundlagen_des_maschinellen_lernens/5A0B7618927FB8AEA4B96F5552228CD8
+1885931C223FFA18A253A0DB6685291E.pygtex)
 
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.610 ...in hidden Layer (\mintinline{python}{fc1}
-                                                  ), das 64 Skalare annimmt ...
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/B68FDDAFFF09CEFEB070EDD4AD4C96E1F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.610 ...in Ausgabelayer (\mintinline{python}{fc2}
-                                                  ), das 120 Skalare annimmt...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/B68FDDAFFF09CEFEB070EDD4AD4C96E1F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.610 ...10 ausgibt. Dass \mintinline{python}{fc2}
-                                                   10 Ausgabeneuronen besitz...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/689375EA3B9C38D437AA368912E13885F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.610 ... Die Größe von \mintinline{python}{fc1}
-                                                   ist jedoch völlig frei g...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/7C08F8DDD5F5D41169EB51C2ADB3E0B1F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.611 Die \mintinline{python}{forward(self, x)}
-                                                Funktion definiert, wie die ...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/7572134CCA2BA7D050325F33C4941E41F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.611 ...rden sie erst in \mintinline{python}{fc0}
-                                                   gegeben, dann wird auf di...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/7572134CCA2BA7D050325F33C4941E41F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.611 ... die Ausgabe aus \mintinline{python}{fc0}
-                                                   die Aktivierungsfunktion ...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/689375EA3B9C38D437AA368912E13885F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.611 ...das hidden Layer \mintinline{python}{fc1}
-                                                   gegeben, und die Aktivier...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/6361598B18370336863B24D1B6FAE96EF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.611 ...be von \mintinline{python}{F.log_softmax}
-                                                   zurück gegeben. Dies wen...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-
-LaTeX Warning: Citation '6' on page 27 undefined on input line 611.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/7C08F8DDD5F5D41169EB51C2ADB3E0B1F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.612 ...der \mintinline{python}{forward(self, x)}
-                                                   Funktion abläuft, sind n...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-\openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/5A0B7618927FB8AEA4B96F5552228CD8F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.612 ... Code \glqq\mintinline{python}{x = x * 2}
-                                                  '' einfügen), auch wenn d...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-
-LaTeX Warning: Reference `Code_train_loop' on page 27 undefined on input line 6
-14.
-
+[28]
 \openout5 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; fname = os.path.expanduser(os.path.expandvars(\"Grundlagen_des_maschinellen_
-lernens.pyg\")); f = open(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fn
-ame) else None; t = f.readlines() if f is not None else None; t_opt = t if t is
- not None else []; f.close() if f is not None else None; tmpfname = os.path.exp
-anduser(os.path.expandvars(\"Grundlagen_des_maschinellen_lernens.pyg\")); f = o
-pen(tmpfname, \"w\", encoding=\"UTF8\") if t is not None else None; fvstartnum 
-= 0; fvstopnum = 0; s = fvstartnum-1 if fvstartnum != 0 else 0; e = fvstopnum i
-f fvstopnum != 0 else len(t_opt); [f.write(textwrap.dedent(\"\".join(x))) for x
- in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is not None]; f.close() if t
- is not None else os.remove(tmpfname);")...disabled (restricted).
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/966BC12992AE07118A5C030A258708A853A0
-C9FE66949F8EC4BED65B31F6975B.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
+(./_minted-Grundlagen_des_maschinellen_lernens/966BC12992AE07118A5C030A258708A8
+D88DB7F4C4AEEB32519EEBE6046CF420.pygtex)
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.648  	\end{minted}
-                    
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-
-LaTeX Warning: Citation '7' on page 27 undefined on input line 653.
+LaTeX Warning: Citation '7' on page 29 undefined on input line 653.
 
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/6843D04ED2E2C37F8AF3EB0462FB514BF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.654 ... \mintinline{python}{output = net(input)}
-                                                   völlig aus. \mintinline{...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/6843D04ED2E2C37F8AF3EB0462FB514B
+1885931C223FFA18A253A0DB6685291E.pygtex)
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/00B37D79FD3312AD6F59A2B37BA81087F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.654 ...s. \mintinline{python}{X.view(-1, n * n)}
-                                                   wandelt den 2-dimensional...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/00B37D79FD3312AD6F59A2B37BA81087
+1885931C223FFA18A253A0DB6685291E.pygtex)
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/684559E268B2B047D1C82BB00E985301F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.655 ...7.\\ \mintinline{python}{loss.backward()}
-                                                   in Zeile 18 sorgt dann da...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/684559E268B2B047D1C82BB00E985301
+1885931C223FFA18A253A0DB6685291E.pygtex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -12878,7 +12095,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[27]
+[29]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -12887,109 +12104,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[28]
+[30]
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/ECDE410C14A506CF9F77A687B26F5474F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.658 }
-        das Projekt initialisiert. Danach muss angegeben werden, welches Net...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/ECDE410C14A506CF9F77A687B26F5474
+1885931C223FFA18A253A0DB6685291E.pygtex)
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/30299FD7E2187F6D53ED8A608F3958F2F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.658 ...l \mintinline{python}{wandb.watch(model)}
-                                                  , wobei \mintinline{python...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/30299FD7E2187F6D53ED8A608F3958F2
+1885931C223FFA18A253A0DB6685291E.pygtex)
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/458D5F1AFC81AE7291A7AAAD852DC12AF6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.658 ...model)}, wobei \mintinline{python}{model}
-                                                   der Instanz des Netzes en...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/458D5F1AFC81AE7291A7AAAD852DC12A
+1885931C223FFA18A253A0DB6685291E.pygtex)
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/B51E2DE1996D35173C012720F7A4FDA4F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.659 ...inline{python}{wandb.log({'loss': loss})}
-                                                   zum Beispiel in der Train...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-
+(./_minted-Grundlagen_des_maschinellen_lernens/B51E2DE1996D35173C012720F7A4FDA4
+1885931C223FFA18A253A0DB6685291E.pygtex)
 Overfull \hbox (1.3531pt too wide) in paragraph at lines 660--660
 []\T1/txr/bx/n/14.4 Ein Klas-si-fi-zie-rungs-netz-werk f�r hand-ge-schrie-be-ne
  Zif-
@@ -13003,80 +12138,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.9054pt}.
 
-[29]
-
-LaTeX Warning: Reference `ReLu' on page 30 undefined on input line 667.
-
-
-LaTeX Warning: Reference `net' on page 30 undefined on input line 667.
-
+[31]
 \openout5 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(python -c "import sys; import os; import textwrap; from io import ope
-n; fname = os.path.expanduser(os.path.expandvars(\"Grundlagen_des_maschinellen_
-lernens.pyg\")); f = open(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fn
-ame) else None; t = f.readlines() if f is not None else None; t_opt = t if t is
- not None else []; f.close() if f is not None else None; tmpfname = os.path.exp
-anduser(os.path.expandvars(\"Grundlagen_des_maschinellen_lernens.pyg\")); f = o
-pen(tmpfname, \"w\", encoding=\"UTF8\") if t is not None else None; fvstartnum 
-= 0; fvstopnum = 0; s = fvstartnum-1 if fvstartnum != 0 else 0; e = fvstopnum i
-f fvstopnum != 0 else len(t_opt); [f.write(textwrap.dedent(\"\".join(x))) for x
- in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is not None]; f.close() if t
- is not None else os.remove(tmpfname);")...disabled (restricted).
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/91DA331C052E3A07FD9B933AC7C049B253A0
-C9FE66949F8EC4BED65B31F6975B.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
-
-
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.691 	\end{minted}
-                   
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-Grundlagen_des_maschinellen_lernens/91DA331C052E3A07FD9B933AC7C049B2
+D88DB7F4C4AEEB32519EEBE6046CF420.pygtex)
 \openout6 = `Grundlagen_des_maschinellen_lernens.pyg'.
 
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
-minted-Grundlagen_des_maschinellen_lernens/A26181649063E5A564A34B0EBDE29E28F6C4
-26F58C5CCC27D3C7BD698FEC22DB.pygtex Grundlagen_des_maschinellen_lernens.pyg)...
-disabled (restricted).
 
+(./_minted-Grundlagen_des_maschinellen_lernens/A26181649063E5A564A34B0EBDE29E28
+1885931C223FFA18A253A0DB6685291E.pygtex)
 
-! Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.696 In der \mintinline{python}{forward()}
-                                            Funktion wird jedem Layer außer...
-
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `accuracy' on page 30 undefined on input line 715.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 26.9054pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.9054pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
+(fancyhdr)                \addtolength{\topmargin}{-14.9054pt}.
+
+[32]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 26.9054pt, for example:
@@ -13085,31 +12172,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.9054pt}.
 
-[30]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 26.9054pt, for example:
-(fancyhdr)                \setlength{\headheight}{26.9054pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-14.9054pt}.
-
-[31]
-<../graphics/Wandb_accuracy.png, id=297, 1758.57pt x 867.24pt>
+[33]
+<../graphics/Wandb_accuracy.png, id=487, 1758.57pt x 867.24pt>
 File: ../graphics/Wandb_accuracy.png Graphic file (type png)
 <use ../graphics/Wandb_accuracy.png>
 Package pdftex.def Info: ../graphics/Wandb_accuracy.png  used on input line 718
 .
 (pdftex.def)             Requested size: 323.9978pt x 159.77524pt.
-
-
-LaTeX Warning: Reference `loss' on page 32 undefined on input line 723.
-
-<../graphics/Wandb_loss.png, id=298, 1758.57pt x 867.24pt>
+<../graphics/Wandb_loss.png, id=489, 1758.57pt x 867.24pt>
 File: ../graphics/Wandb_loss.png Graphic file (type png)
 <use ../graphics/Wandb_loss.png>
 Package pdftex.def Info: ../graphics/Wandb_loss.png  used on input line 726.
 (pdftex.def)             Requested size: 323.9978pt x 159.77524pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 26.9054pt, for example:
@@ -13118,7 +12196,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-14.9054pt}.
 
-[32 <../graphics/Wandb_accuracy.png> <../graphics/Wandb_loss.png>]
+[34 <../graphics/Wandb_accuracy.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -13127,7 +12205,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[33]
+[35 <../graphics/Wandb_loss.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 747--751
 \T1/LinuxBiolinumT-TLF/m/n/10.95 Quelle: https://towardsdatascience.com/common-
 loss-functions-in-
@@ -13153,7 +12240,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[34]
+[37] (./Grundlagen_des_maschinellen_lernens.lof
+Overfull \hbox (41.66722pt too wide) in paragraph at lines 17--17
+ \T1/LinuxBiolinumT-TLF/m/n/10.95 https://github.com/vdumoulin/conv_arithmetic/
+blob/master/README.md 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[38]
+Overfull \hbox (43.93332pt too wide) in paragraph at lines 25--25
+ \T1/LinuxBiolinumT-TLF/m/n/10.95 Quelle: https://computersciencewiki.org/index
+.php/Max-pooling_/_Pooling 
+ []
+
+
+Overfull \hbox (4.45813pt too wide) in paragraph at lines 34--34
+ [][] [][]\T1/LinuxBiolinumT-TLF/m/n/10.95 Ein Plot des Kreu-zen-tro-pie-feh-le
+rs auf-ge-tra-gen ge-gen die Trai-nings- 
+ []
+
+)
 \tf@lof=\write9
 \openout9 = `Grundlagen_des_maschinellen_lernens.lof'.
 
@@ -13166,29 +12279,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[35] (./Grundlagen_des_maschinellen_lernens.aux)
+[39] (./Grundlagen_des_maschinellen_lernens.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Grundlagen_des_maschinellen_lernens.out' 
-has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Grundlagen_des_maschinellen_lernens
-.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  13FFEC47B21B9DA16DA981C8AEC88289;6417.
+Package rerunfilecheck Info: File `Grundlagen_des_maschinellen_lernens.out' has
+ not changed.
+(rerunfilecheck)             Checksum: 13FFEC47B21B9DA16DA981C8AEC88289;6417.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                Grundlagen_des_maschinellen_lernens
 (biblatex)                and rerun LaTeX afterwards.
 
-runsystem(rm Grundlagen_des_maschinellen_lernens.pyg)...disabled (restricted).
+runsystem(rm Grundlagen_des_maschinellen_lernens.pyg)...executed.
 
 Package logreq Info: Writing requests to 'Grundlagen_des_maschinellen_lernens.r
 un.xml'.
@@ -13196,27 +12299,31 @@ un.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45461 strings out of 478994
- 996528 string characters out of 5864751
- 2906901 words of memory out of 5000000
- 62035 multiletter control sequences out of 15000+600000
- 493893 words of font info for 140 fonts, out of 8000000 for 9000
+ 47273 strings out of 478238
+ 1060753 string characters out of 5850456
+ 2911488 words of memory out of 5000000
+ 64505 multiletter control sequences out of 15000+600000
+ 563498 words of font info for 145 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 102i,14n,117p,1870b,2329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,14n,117p,1903b,2453s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf-dist/fon
 ts/enc/dvips/libertine/lbtn_25tcsq.enc}</usr/share/texmf-dist/fonts/type1/publi
-c/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/
-rtcxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/
-type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts
-/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
-exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/u
-rw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Grundlagen_des_maschinellen_lernens.pdf (36 pages, 1507817 by
+c/libertine/LinBiolinumT.pfb></usr/share/texmf-dist/fonts/type1/public/libertin
+e/LinBiolinumTB.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb
+></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-
+dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/txfonts/t1xbtt.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/t1xtt.
+pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb></usr/share/tex
+mf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/
+public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist
+/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/
+utmri8a.pfb>
+Output written on Grundlagen_des_maschinellen_lernens.pdf (40 pages, 1608519 by
 tes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
- 139 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 682 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 143 named destinations out of 1000 (max. 500000)
+ 426 words of extra memory for PDF output out of 10000 (max. 10000000)
 
